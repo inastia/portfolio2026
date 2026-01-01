@@ -1,0 +1,26 @@
+/* ===== GLOBAL STYLES ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* removes unexpected spacing */
+* {
+  margin: 0;
+}
+/* removes underline for links */
+
+a {
+  text-decoration: none;
+}
+
+/* control image sizes */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== MENU SECTION ===== */
