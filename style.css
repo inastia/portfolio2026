@@ -1,4 +1,5 @@
 /* ===== GLOBAL STYLES ===== */
+
 *,
 *::before,
 *::after {
@@ -9,18 +10,149 @@
 * {
   margin: 0;
 }
-/* removes underline for links */
 
+/* DM Sans — Regular */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/dm-sans-v17-latin-regular.woff2") format("woff2");
+}
+
+/* DM Sans — Italic */
+@font-face {
+  font-family: "DM Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/dm-sans-v17-latin-italic.woff2") format("woff2");
+}
+
+/* DM Sans — Medium */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/dm-sans-v17-latin-500.woff2") format("woff2");
+}
+
+/* DM Sans — Bold */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/dm-sans-v17-latin-700.woff2") format("woff2");
+}
+
+:root {
+  /* Font sizes */
+  --font-size-small: 1rem;
+  --font-size-base: 1.25rem;
+  --font-size-large: 1.75rem;
+  --font-size-xlarge: 3rem;
+
+  /* Line heights */
+  --line-height-small: 1.5;
+  --line-height-base: 1.6;
+  --line-height-large: 1.43;
+  --line-height-xlarge: 1.33;
+  --line-height-tight: 1;
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Letter spacing */
+  --font-letter-space: 0.08em;
+  --font-letter-space-negative: -0.02em;
+
+  /* Font family */
+  --font-family: "DM Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+    sans-serif;
+
+  /* Colors */
+  --color-text-primary: #222222;
+  --color-text-secondary: #14452f;
+  --color-border: #d9d9d9;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f3f3f3;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-normal);
+  direction: ltr;
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin-block: 1em;
+  /* in case of mixed-direction text (LTR/RTL) — a subtle accessibility improvement */
+  unicode-bidi: isolate;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-normal);
+}
+
+/* small text: captions, footnotes */
+small,
+.small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: var(--font-weight-normal);
+}
+h1 {
+  font-size: var(--font-size-xlarge);
+  line-height: var(--line-height-xlarge);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-letter-space-negative);
+  /* Using secondary text color */
+  color: var(--color-text-secondary);
+}
+h2 {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+  font-weight: var(--font-weight-bold);
+}
+h3 {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-medium);
+}
+h4 {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--font-letter-space);
+}
+
+/* removes underline for links */
 a {
   text-decoration: none;
 }
 
-/* control image sizes */
+/* controls image sizes */
 img,
 picture,
 svg {
   max-width: 100%;
   display: block;
+}
+
+/* maxing our port width at 1200 px */
+.wrapper {
+  width: min(calc(100% - 48px), calc(1200 / 16 * 1rem));
+  margin-inline: auto;
 }
 
 /* ===== MENU SECTION ===== */
