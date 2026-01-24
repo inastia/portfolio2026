@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UX Design Portfolio</title>
     <link rel="stylesheet" href="/style.css" />
-    <script src="/script.js" defer></script>
     <!-- Standard favicon -->
     <link rel="icon" href="favicons/favicon.ico" type="image/x-icon" />
     <!-- PNG favicons for modern browsers -->
@@ -42,7 +41,18 @@
             height="60"
           />
         </a>
-        <ul>
+
+        <!-- Hamburger / X -->
+        <label class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </label>
+
+        <div class="nav-overlay"></div>
+
+        <ul class="nav-menu">
           <li><a href="/index.html">Work</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
@@ -124,6 +134,7 @@
         </article>
       </section>
     </main>
+    <script src="/script.js" defer></script>
   </body>
   <!-- Footer section -->
   <footer>

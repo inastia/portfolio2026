@@ -1,55 +1,51 @@
-// This is a single-line JS comment
+// FORM
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("first-name");
+  const message = document.getElementById(input.id + "-error");
 
-/*
-  Future improvement:
-  - test comment
-  - test comment
-*/
+  const form = document.querySelector(".contact-form");
 
-const input = document.getElementById("first-name");
-const message = document.getElementById(input.id + "-error");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-const form = document.querySelector(".contact-form");
+    const fields = form.querySelectorAll(".form-field");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+    fields.forEach((field) => {
+      const input = field.querySelector("input, textarea");
+      const message = field.querySelector(".field-message");
 
-  const fields = form.querySelectorAll(".form-field");
+      field.classList.remove("has-error", "has-success");
+      message.textContent = "";
 
-  fields.forEach((field) => {
-    const input = field.querySelector("input, textarea");
-    const message = field.querySelector(".field-message");
-
-    field.classList.remove("has-error", "has-success");
-    message.textContent = "";
-
-    if (!input.checkValidity()) {
-      field.classList.add("has-error");
-      message.textContent = "Required";
-    } else {
-      field.classList.add("has-success");
-    }
+      if (!input.checkValidity()) {
+        field.classList.add("has-error");
+        message.textContent = "Required";
+      } else {
+        field.classList.add("has-success");
+      }
+    });
   });
 });
 
-form.addEventListener(
-  "blur",
-  (e) => {
-    const field = e.target.closest(".form-field");
-    if (!field) return;
+// HAMBURGER MENU
+const header = document.querySelector(".site-header");
+const toggle = document.querySelector(".nav-toggle-label");
+const overlay = document.querySelector(".nav-overlay");
+const menuLinks = document.querySelectorAll(".nav-menu a");
 
-    const input = field.querySelector("input, textarea");
-    const message = field.querySelector(".field-message");
+// Toggle menu open/close
+toggle.addEventListener("click", () => {
+  header.classList.toggle("nav-open");
+});
 
-    field.classList.remove("has-error", "has-success");
-    message.textContent = "";
+// Close menu when clicking overlay
+overlay.addEventListener("click", () => {
+  header.classList.remove("nav-open");
+});
 
-    if (!input.checkValidity()) {
-      field.classList.add("has-error");
-      message.textContent = "Required";
-    } else {
-      field.classList.add("has-success");
-    }
-  },
-  true,
-);
+// Close menu when clicking menu links
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    header.classList.remove("nav-open");
+  });
+});
