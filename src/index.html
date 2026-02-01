@@ -4,63 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UX Design Portfolio</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link href="output.css" rel="stylesheet" />
-    <!-- Standard favicon -->
-    <link rel="icon" href="favicons/favicon.ico" type="image/x-icon" />
-    <!-- PNG favicons for modern browsers -->
-    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png" />
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
-    <!-- Android Icon -->
-    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/output.css" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicons/android-chrome-192x192.png"
+    />
   </head>
 
-  <body class="font-sans">
+  <body>
     <!-- Header section -->
-    <header class="site-header max-w-7xl mx-auto sticky top-0 z-50 bg-white pt-6">
-      <nav class="site-nav flex">
-        <!-- Logo -->
-        <div class="justify-start">
-          <a href="index.html" class="logo">
-            <img
-              src="images/logo/logo.png"
-              alt="Anastasia Bigun — UX/UI Designer"
-              width="60"
-              height="60"
-            />
-          </a>
-        </div>
-
-        <div class="justify-end">
-          <!-- Hamburger / X -->
-          <label class="nav-toggle-label">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="sr-only">Toggle navigation</span>
-          </label>
-
-          <div class="nav-overlay"></div>
-
-          <ul class="nav-menu">
-            <li><a href="index.html" class="active">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <div id="site-header"></div>
 
     <!-- Main content section -->
     <main>
       <div class="max-w-7xl mx-auto px-4">
-        <section class="flex flex-col md:flex-row items-center gap-8 max-w-7xl mx-auto px-4 py-6">
+        <section
+          class="flex flex-col md:flex-row items-center gap-8 max-w-7xl mx-auto px-4 py-6"
+        >
           <!-- Text Column -->
-          <div class="flex-1 flex flex-col justify-center text-center md:text-left">
-            <h1 class="font-semibold text-6xl text-emerald-900">UX/UI Designer</h1>
+          <div
+            class="flex-1 flex flex-col justify-center text-center md:text-left"
+          >
+            <h1 class="font-semibold text-6xl text-emerald-900">
+              UX/UI Designer
+            </h1>
             <p class="text-2xl pt-6">
-              Designing with insight, empathy, and a deep respect for how people actually work.
+              Designing with insight, empathy, and a deep respect for how people
+              actually work.
             </p>
           </div>
 
@@ -77,58 +66,26 @@
 
         <section>
           <h2 class="text-4xl py-8 flex justify-center">Works</h2>
-          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <!-- Card 1 -->
-            <div class="card bg-base-100 shadow-sm w-full rounded-lg">
-              <div class="card-body p-4 space-y-3">
-                <h2 class="card-title text-2xl">Project One</h2>
-                <p class="p-2">
-                  A card component has a figure, a body part, and inside body there are title and
-                  actions parts
-                </p>
-              </div>
-              <figure class="w-full">
-                <img
-                  src="images/projects/project1/projectimage.png"
-                  alt="Project one"
-                  class="w-full h-auto object-cover rounded-lg"
-                />
-              </figure>
-            </div>
-            <!-- Card 1 -->
-            <div class="card bg-base-100 shadow-sm w-full rounded-lg">
-              <div class="card-body p-4 space-y-3">
-                <h2 class="card-title text-2xl">Project One</h2>
-                <p class="p-2">
-                  A card component has a figure, a body part, and inside body there are title and
-                  actions parts
-                </p>
-              </div>
-              <figure class="w-full">
-                <img
-                  src="images/projects/project1/projectimage.png"
-                  alt="Project one"
-                  class="w-full h-auto object-cover rounded-lg"
-                />
-              </figure>
-            </div>
-
-            <!-- end card -->
-          </div>
+          <!-- Cards section -->
+          <div
+            id="projects-grid"
+            class="grid grid-cols-1 gap-6 sm:grid-cols-2"
+          ></div>
         </section>
       </div>
     </main>
-    <script src="script.js" defer></script>
+    <script src="/js/includes.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </body>
   <!-- Footer section -->
   <footer class="bg-white">
     <div
       class="max-w-7xl mx-auto px-4 py-12 mt-40 grid grid-cols-1 md:grid-cols-2 items-center gap-6 text-center md:text-left"
     >
-      <p class="text-sm font-medium text-gray-700">2026 ©  Anastasia Bigun. All Rights Reserved.</p>
-      <p class="text-sm font-medium text-gray-700 md:text-right">
+      <h5>2026 ©  Anastasia Bigun. All Rights Reserved.</h5>
+      <h5 class="md:text-right">
         Designed & built by me · HTML · Tailwind · JavaScript
-      </p>
+      </h5>
     </div>
   </footer>
 </html>

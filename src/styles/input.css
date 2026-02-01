@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@theme {
+  --font-display: "Oswald", sans-serif;
+  --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-display--font-variation-settings: "opsz" 32;
+}
+@layer base {
+  h1 {
+    @apply text-6xl font-bold text-slate-900;
+  }
+
+  h2 {
+    @apply text-4xl font-semibold text-slate-800;
+  }
+
+  h3 {
+    @apply text-3xl font-semibold text-slate-800;
+  }
+
+  h4 {
+    @apply text-2xl font-medium text-slate-700;
+  }
+
+  h5 {
+    @apply text-sm font-semibold text-slate-800;
+  }
+
+  p {
+    @apply text-base font-light text-slate-600 leading-relaxed;
+  }
+}

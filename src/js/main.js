@@ -1,3 +1,5 @@
+// global behavior: navigation, UI iteractions
+
 // HAMBURGER MENU
 const header = document.querySelector(".site-header");
 const toggle = document.querySelector(".nav-toggle-label");

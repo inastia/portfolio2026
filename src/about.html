@@ -4,53 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UX Design Portfolio</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link href="output.css" rel="stylesheet" />
-    <!-- Standard favicon -->
-    <link rel="icon" href="favicons/favicon.ico" type="image/x-icon" />
-    <!-- PNG favicons for modern browsers -->
-    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png" />
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
-    <!-- Android Icon -->
-    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/output.css" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicons/android-chrome-192x192.png"
+    />
   </head>
 
-  <body class="font-sans">
+  <body>
     <!-- Header section -->
-    <header class="site-header max-w-7xl mx-auto sticky top-0 z-50 bg-white pt-6">
-      <nav class="site-nav flex">
-        <!-- Logo -->
-        <div class="justify-start">
-          <a href="index.html" class="logo">
-            <img
-              src="images/logo/logo.png"
-              alt="Anastasia Bigun — UX/UI Designer"
-              width="60"
-              height="60"
-            />
-          </a>
-        </div>
-
-        <div class="justify-end">
-          <!-- Hamburger / X -->
-          <label class="nav-toggle-label">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="sr-only">Toggle navigation</span>
-          </label>
-
-          <div class="nav-overlay"></div>
-
-          <ul class="nav-menu">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <div id="site-header"></div>
 
     <!-- Main content section -->
     <main>
@@ -66,21 +48,29 @@
             />
           </div>
           <!-- Text Column -->
-          <div class="flex-1 flex flex-col justify-center text-center md:text-left">
+          <div
+            class="flex-1 flex flex-col justify-center text-center md:text-left"
+          >
             <h2 class="font-semibold text-6xl text-emerald-900">About Me</h2>
             <p class="text-lg pt-6">
-              My path to UX design began with curiosity, sparked by an early introduction to user
-              experience research during my university years. That interest led me to earn a degree
-              in Web Design and Development in 2019 and a lasting focus on thoughtful,
-              people-centered digital experiences. I’ve since worked as a freelance designer and as
-              an onboarding project manager at a mid-sized tech company, supporting real customers
-              as they navigated complex products. Those experiences shape how I design today: with
-              insight, empathy, and a deep respect for how people actually work.
+              My path to UX design began with curiosity, sparked by an early
+              introduction to user experience research during my university
+              years. That interest led me to earn a degree in Web Design and
+              Development in 2019 and a lasting focus on thoughtful,
+              people-centered digital experiences. I’ve since worked as a
+              freelance designer and as an onboarding project manager at a
+              mid-sized tech company, supporting real customers as they
+              navigated complex products. Those experiences shape how I design
+              today: with insight, empathy, and a deep respect for how people
+              actually work.
             </p>
             <nav class="mt-10 secondary-nav text-emerald-900">
               <ul>
                 <li>
-                  <a href="documents/Resume.pdf" target="_blank" rel="noopener noreferrer"
+                  <a
+                    href="documents/Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >Resume</a
                   >
                 </li>
@@ -110,9 +100,9 @@
         <blockquote
           class="w-full max-w-2xl border border-slate-800 rounded-lg text-emerald-900 p-8 text-center"
         >
-          I design human-centered UX for products people rely on every day. Drawing on experience
-          supporting and onboarding real customers, I focus on clarity, usability, and long-term
-          adoption.
+          I design human-centered UX for products people rely on every day.
+          Drawing on experience supporting and onboarding real customers, I
+          focus on clarity, usability, and long-term adoption.
         </blockquote>
       </section>
 
@@ -120,49 +110,54 @@
         <div class="pt-8">
           <h3 class="text-2xl text-emerald-900">Think</h3>
           <p class="leading-6 pt-4">
-            I journal daily as a way to reflect, notice patterns, and make sense of complex ideas. I
-            started journaling at ten, and it has remained my most reliable way of processing
-            information over time. Writing helps me slow down, connect dots, and turn experience
-            into understanding.
+            I journal daily as a way to reflect, notice patterns, and make sense
+            of complex ideas. I started journaling at ten, and it has remained
+            my most reliable way of processing information over time. Writing
+            helps me slow down, connect dots, and turn experience into
+            understanding.
           </p>
         </div>
 
         <div class="pt-8">
           <h3 class="text-2xl text-emerald-900">Connect</h3>
           <p class="leading-6 pt-4">
-            Outside of work, I’m drawn to projects that turn individual effort into shared benefit.
-            Recently, I started a small composting system in my apartment building after realizing I
-            didn’t generate enough food waste on my own. I partnered with a restaurant downstairs to
-            collect their scraps, manage a weekly exchange, and process everything through my home
-            compost system. The finished compost goes back into the community—shared with friends,
-            family, and neighbors who grow food or tend gardens.
+            Outside of work, I’m drawn to projects that turn individual effort
+            into shared benefit. Recently, I started a small composting system
+            in my apartment building after realizing I didn’t generate enough
+            food waste on my own. I partnered with a restaurant downstairs to
+            collect their scraps, manage a weekly exchange, and process
+            everything through my home compost system. The finished compost goes
+            back into the community—shared with friends, family, and neighbors
+            who grow food or tend gardens.
           </p>
         </div>
 
         <div class="pt-8">
           <h3 class="text-2xl text-emerald-900">Grow</h3>
           <p class="leading-6 pt-4">
-            In 2026, I want to explore woodworking, as learning a tactile craft feels like a natural
-            extension of how I think about design. My grandfather was a brilliant furniture-maker,
-            known for pieces with intricate carved details, and I like to think some of that
-            curiosity for craft lives on in me. More than anything, this goal is about stepping into
-            creative spaces with openness, trying things that once felt out of reach and letting new
-            skills shape how I see and make.
+            In 2026, I want to explore woodworking, as learning a tactile craft
+            feels like a natural extension of how I think about design. My
+            grandfather was a brilliant furniture-maker, known for pieces with
+            intricate carved details, and I like to think some of that curiosity
+            for craft lives on in me. More than anything, this goal is about
+            stepping into creative spaces with openness, trying things that once
+            felt out of reach and letting new skills shape how I see and make.
           </p>
         </div>
       </section>
     </main>
-    <script src="script.js" defer></script>
+    <script src="/js/includes.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </body>
   <!-- Footer section -->
   <footer class="bg-white">
     <div
       class="max-w-7xl mx-auto px-4 py-12 mt-40 grid grid-cols-1 md:grid-cols-2 items-center gap-6 text-center md:text-left"
     >
-      <p class="text-sm font-medium text-gray-700">2026 ©  Anastasia Bigun. All Rights Reserved.</p>
-      <p class="text-sm font-medium text-gray-700 md:text-right">
+      <h5>2026 ©  Anastasia Bigun. All Rights Reserved.</h5>
+      <h5 class="md:text-right">
         Designed & built by me · HTML · Tailwind · JavaScript
-      </p>
+      </h5>
     </div>
   </footer>
 </html>
