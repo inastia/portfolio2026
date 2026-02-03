@@ -2,31 +2,30 @@
 
 const projects = [
   {
-    title: "Project One",
-    description:
-      "A card component has a figure, a body part, and inside body there are title and actions parts",
-    image: "images/projects/project1/projectimage.png",
+    title: "Currency exchange app",
+    description: "Short description of the UX problem and outcome.",
+    image: "images/profile/projectimage.png",
     alt: "Project One case study preview",
     url: "projects/project-one.html",
   },
   {
-    title: "Project Two",
+    title: "Chani redesign",
     description: "Short description of the UX problem and outcome.",
-    image: "images/projects/project1/projectimage.png",
+    image: "images/profile/projectimagetwo.png",
     alt: "Project Two case study preview",
     url: "projects/project-two.html",
   },
   {
-    title: "Project Three",
+    title: "Astro Journal",
     description: "Another UX/UI project description goes here.",
-    image: "images/projects/project1/projectimage.png",
+    image: "images/profile/projectimagethree.png",
     alt: "Project Three case study preview",
     url: "projects/project-three.html",
   },
   {
-    title: "Project Four",
+    title: "Photography website",
     description: "Final project description goes here.",
-    image: "images/projects/project1/projectimage.png",
+    image: "images/profile/projectimagefour.png",
     alt: "Project Four case study preview",
     url: "projects/project-four.html",
   },
@@ -44,7 +43,7 @@ function createProjectCard(project) {
       >
         <div class="card-body p-4 space-y-3">
           <h3 class="card-title text-2xl">${project.title}</h3>
-          <p class="p-2">${project.description}</p>
+          <p class="pt-2">${project.description}</p>
         </div>
 
         <figure class="relative w-full overflow-hidden rounded-b-lg group">
@@ -55,16 +54,10 @@ function createProjectCard(project) {
           />
 
           <div
-            class="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition"
+            class="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition"
             aria-hidden="true"
           ></div>
 
-          <span
-            class="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-800 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0"
-            aria-hidden="true"
-          >
-            →
-          </span>
         </figure>
       </div>
     </a>

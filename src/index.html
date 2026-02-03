@@ -6,8 +6,8 @@
     <title>UX Design Portfolio</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="/styles/output.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="output.css" />
 
     <!-- Favicons -->
     <link rel="icon" href="/favicons/favicon.ico" />
@@ -37,35 +37,26 @@
     <!-- Main content section -->
     <main>
       <div class="max-w-7xl mx-auto px-4">
-        <section
-          class="flex flex-col md:flex-row items-center gap-8 max-w-7xl mx-auto px-4 py-6"
-        >
-          <!-- Text Column -->
-          <div
-            class="flex-1 flex flex-col justify-center text-center md:text-left"
-          >
-            <h1 class="font-semibold text-6xl text-emerald-900">
-              UX/UI Designer
-            </h1>
-            <p class="text-2xl pt-6">
-              Designing with insight, empathy, and a deep respect for how people
-              actually work.
-            </p>
-          </div>
-
-          <!-- Image Column -->
-          <div class="flex-1 flex justify-center md:justify-end">
-            <img
-              src="images/profile/home-avatar-640.png"
-              srcset="images/profile/home-avatar-800.png 2x"
-              alt="Illustrated avatar of Anastasia, UX/UI designer"
-              class="w-full max-w-lg h-auto"
+        <section class="gap-8 max-w-7xl mx-auto px-4">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./images/profile/header-img-large.png"
             />
-          </div>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/profile/header-img-large.png"
+            />
+            <img
+              src="./images/profile/header-img-small.png"
+              alt="header image"
+              loading="lazy"
+              class="w-full h-auto"
+            />
+          </picture>
         </section>
 
         <section>
-          <h2 class="text-4xl py-8 flex justify-center">Works</h2>
           <!-- Cards section -->
           <div
             id="projects-grid"
@@ -74,8 +65,9 @@
         </section>
       </div>
     </main>
-    <script src="/js/includes.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <script src="./js/includes.js" defer></script>
+    <script src="./js/projects.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </body>
   <!-- Footer section -->
   <footer class="bg-white">

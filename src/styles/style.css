@@ -10,6 +10,16 @@ body {
   height: 100%;
 }
 
+html {
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  overflow-y: scroll;
+}
+
 a {
   text-decoration: none;
 }
@@ -19,12 +29,6 @@ picture,
 svg {
   max-width: 100%;
   display: block;
-}
-
-/* ===== SPACING ===== */
-
-html {
-  overflow-y: scroll;
 }
 
 /* ===== HEADER / NAV ===== */
@@ -45,6 +49,11 @@ html {
   top: 0;
   z-index: 1000;
   background: white;
+}
+
+.site-header-inner {
+  align-items: center;
+  min-height: 64px;
 }
 
 .site-nav {
@@ -148,7 +157,7 @@ html {
 
 /* Yellow underline on hover/click */
 .nav-menu a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -228,7 +237,7 @@ html {
 
 /* Underline hover effect */
 .secondary-nav a::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -242,5 +251,35 @@ html {
 /* Expand underline on hover/focus */
 .secondary-nav a:hover::after,
 .secondary-nav a:focus::after {
+  width: 100%;
+}
+
+/* ===== PROJECT ONE NAV  ====== */
+.project-one-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-one-nav a {
+  text-decoration: none;
+  color: #1e293b; /* slate-800 */
+  position: relative;
+  width: fit-content;
+}
+
+.project-one-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #1e293b; /* slate-800 */
+  transition: width 0.3s ease;
+}
+
+.project-one-nav a:hover::after,
+.project-one-nav a:focus::after {
   width: 100%;
 }
