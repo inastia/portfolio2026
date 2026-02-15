@@ -283,3 +283,97 @@ svg {
 .project-one-nav a:focus::after {
   width: 100%;
 }
+
+/* ===== IMAGE LIGHTBOX ===== */
+
+/* Clickable image cursor and hover effect */
+.lightbox-trigger {
+  cursor: zoom-in;
+  transition: all 0.3s ease;
+}
+
+.lightbox-trigger:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Lightbox content container */
+.lightbox-content {
+  position: relative;
+  max-width: 1400px;
+  max-height: 90vh;
+  width: 100%;
+  cursor: default;
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+
+/* Close button */
+.lightbox-close {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: opacity 0.2s ease;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+  opacity: 0.7;
+}
+
+.lightbox-close:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Screen reader text */
+.lightbox-close .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

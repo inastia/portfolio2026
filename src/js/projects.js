@@ -3,28 +3,32 @@
 const projects = [
   {
     title: "Currency exchange app",
-    description: "Short description of the UX problem and outcome.",
+    description:
+      "An app that helps global travelers find the current exchange rates between two currencies.",
     image: "images/profile/projectimage.png",
     alt: "Project One case study preview",
     url: "projects/project-one.html",
   },
   {
-    title: "Chani redesign",
-    description: "Short description of the UX problem and outcome.",
+    title: "Coming soon",
+    description:
+      "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
     image: "images/profile/projectimagetwo.png",
     alt: "Project Two case study preview",
     url: "projects/project-two.html",
   },
   {
-    title: "Astro Journal",
-    description: "Another UX/UI project description goes here.",
+    title: "Coming soon",
+    description:
+      "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
     image: "images/profile/projectimagethree.png",
     alt: "Project Three case study preview",
     url: "projects/project-three.html",
   },
   {
-    title: "Photography website",
-    description: "Final project description goes here.",
+    title: "Coming soon",
+    description:
+      "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
     image: "images/profile/projectimagefour.png",
     alt: "Project Four case study preview",
     url: "projects/project-four.html",

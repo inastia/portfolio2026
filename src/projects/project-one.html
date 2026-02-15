@@ -33,92 +33,202 @@
     <!-- Header section -->
     <div id="site-header"></div>
     <main>
-      <!-- Main image of the project -->
-      <div> <img src="" alt=""></div>
-      
-      <div class="max-w-7xl mx-auto px-4"> 
-         <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
-         <!-- Title of the project -->
-         <h2>Currency exchange app</h2>
-            <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="../images/profile/projectimage.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="../images/profile/projectimage.png"
-            />
-            <img
-              src="../images/profile/projectimage.png"
-              alt="header image"
+      <!-- Hero Section --> 
+       <div class="hero-section mb-12 text-center">
+        <!-- Title of the project --> 
+        <h1 class="mb-8">Currency exchange app</h1>
+            <!-- header image -->
+           <picture>
+            <source media="(min-width: 1920px)" srcset="../images/projects/project1/project-one-large.png 1x, ../images/projects/project1/project-one-xlarge.png 2x"/>
+            <source media="(min-width: 768px)" srcset="../images/projects/project1/project-one-medium.png 1x, ../images/projects/project1/project-one-large.png 2x"/>
+            <img src="path/image-name-small.png" srcset="../images/projects/project1/project-one-small.png 1x, ../images/projects/project1/project-one-medium.png 2x"
+              alt="Project one hero image"
               loading="lazy"
               class="w-full h-auto"
             />
           </picture>
-         <h4>Problem</h4>
-          <p>Design an app and a responsive website to help global travelers find the current exchange rates between two currencies. They can also use this information to quickly and easily exchange currencies.</p>
-          <blockquote class="bg-red-100 rounded-md p-6">👉 80% of the people I interviewed prefer to exchange currency at their destination.</blockquote>
-         <h4>Solution</h4>
-          <p>As part of the UX Design Course by Google I created an app that allows to find the best rates for currency exchange at home as well as calculate totals if the traveler wants to exchange currency on location. My role was all incompasing: plan and conducted user interviews, build empathy maps, a user persona, and a user flow.  </p>
-          <p></p>
-        
-         <h3>Process</h3>
-          <p>process explanation</p>
+        </div>
+
+        <!-- Main Content Container -->
+        <div class="max-w-7xl mx-auto px-4"> 
+         <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
+        <!-- Project Overview Section -->
+          <section class="project-overview space-y-6">
+            <h2>Project Overview</h2>
+            <p class="meta text-slate-500 text-sm">Mobile app | Solo project | 4 weeks | 2025</p>
+            <p class="role text-slate-600">Led end-to-end discovery and design for a mobile currency exchange app. Conducted research, defined user flows, created wireframes and high-fidelity prototypes, and iterated based on usability feedback.</p>
+            <div class="space-y-4">
+              <h4>Problem</h4>
+              <p>How might we help global travelers quickly understand and exchange currencies without cognitive overload, uncertainty, or hidden friction?</p>
+              <blockquote class="bg-red-100 rounded-md p-6 my-6">👉 80% of travelers I interviewed said they double-check exchange rates across multiple apps due to concerns about hidden fees.</blockquote>
+            </div> 
+            <div class="space-y-4">
+              <h4>Solution</h4>
+              <p>Designed a focused MVP centered on transparency and real-world usability.</p>
+              <p>The app includes two core experiences:</p>
+              <p><b>Convert</b> – For planning ahead</p>
+              <p>Displays the live mid-market rate with contextual education and refresh transparency. After entering currencies and amount, users see 4–5 ranked transfer options (lowest total cost first), including:</p>
+                <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
+                  <li>Exchange rate</li>
+                  <li>Transfer fee</li>
+                  <li>Total cost</li>
+                  <li>Final amount received after fees</li>
+                </ul>
+              <p><b>Calculate</b> – For in-the-moment decisions</p>
+              <p>A simplified calculator for use abroad. Users enter the exchange rate and optional service fee to instantly see the true final total.</p>
+              <p>By separating research from real-time calculation, the design reduces cognitive load and makes hidden costs immediately visible.</p>
+            </div>
+          </section>
+
+        <!-- Process Section -->
+         <section class="process-section space-y-8">
+          <h2>Process</h2>
+            <p>Followed a structured UX process — from research and synthesis to ideation, prototyping, and usability testing — with a focus on reducing financial complexity and increasing transparency.</p>
             <blockquote class="bg-blue-100 rounded-md p-6">👇 Click to jump to the corresponding section</blockquote>
-          <div class="project-one-nav my-4">
-            <a href="#user-research">User research →</a>
-            <a href="#sketches">Sketches →</a>
-            <a href="#wireframes">Wireframes & Prototypes →</a>
-            <a href="#usability-study">Usability Study →</a>
-          </div>
-            
-          <h4 id="user-research">User Research</h4>
-            <p>I conducted supervised user research during low fidelity and hi fidelity phases of the design process. I did user interviews with 4 participants and based my user persona based on these four individuals. In this phase I found that most users exchange currency while at the destination location and only use Google to look up an approximate exchange rate before they leave to have an idea about their budget. </p>
-            <img src="" alt="">
-            <p>I created a user journey to better illustrate the difficulty many people face when they are budgeting for their trips abroad. </p>
-            <picture>
-              <source media="(min-width: 1920px)" srcset="../images/projects/project1/user-persona-large.png">
-              <source media="(min-width: 768px)" srcset="../images/projects/project1/user-persona-medium.png">
-              <img src="../images/projects/project1/user-persona-small.png" 
-                  alt="Empathy map showing user needs and pain points" 
+            <div class="project-one-nav my-4">
+              <a href="#research-phase">Research →</a>
+              <a href="#design-phase">Design →</a>
+              <a href="#usability-study">Usability Study →</a>
+              <a href="#results">Results →</a>
+            </div>
+
+          <!-- Research Phase -->
+          <div class="research-phase mt-12 space-y-12">
+            <h3 id="research-phase">Research Phase</h3>
+            <div class="subsection space-y-4">
+              <h4 id="user-research">User Research</h4>
+              <p>Interviewed global travelers to uncover how they research and exchange currencies. Findings highlighted decision anxiety, rate comparison across multiple apps, and frustration with hidden fees — informing the development of the core persona.</p>
+                <picture class="lightbox-trigger">
+                  <source media="(min-width: 1920px)" srcset="../images/projects/project1/user-persona-large.png 1x, ../images/projects/project1/user-persona-xlarge.png 2x"/>
+                  <source media="(min-width: 768px)" srcset="../images/projects/project1/user-persona-medium.png 1x, ../images/projects/project1/user-persona-large.png 2x"/>
+                  <img src="../images/projects/project1/user-persona-small.png" srcset="../images/projects/project1/user-persona-small.png 1x, ../images/projects/project1/user-persona-medium.png 2x"
+                    alt="User persona"
+                    loading="lazy"
+                    class="w-full h-auto rounded-lg shadow-md"/>
+                </picture>
+              <p>Visualized the user journey across four stages: search, open, use, and decide. While users felt analytical and focused, skepticism remained high — highlighting opportunities to make fees visible, rank exchange methods by cost, and clearly explain the mid-market rate.</p>
+                <picture class="lightbox-trigger">
+                  <source media="(min-width: 1920px)" srcset="../images/projects/project1/user-journey-large.png 1x, ../images/projects/project1/user-journey-xlarge.png 2x"/>
+                  <source media="(min-width: 768px)" srcset="../images/projects/project1/user-journey-medium.png 1x, ../images/projects/project1/user-journey-large.png 2x"/>
+                  <img src="../images/projects/project1/user-journey-small.png" srcset="../images/projects/project1/user-journey-small.png 1x, ../images/projects/project1/user-journey-medium.png 2x"
+                    alt="User journey"
+                    loading="lazy"
+                    class="w-full h-auto rounded-lg shadow-md"/>
+                </picture>
+            </div>
+
+          <div class="subsection space-y-4">
+            <h4>Empathy Map</h4>
+            <p>One of the ways I tried to understand...</p>
+              <picture class="lightbox-trigger">
+                <source media="(min-width: 1920px)" srcset="../images/projects/project1/empathy-map-large.png 1x, ../images/projects/project1/empathy-map-xlarge.png 2x"/>
+                <source media="(min-width: 768px)" srcset="../images/projects/project1/empathy-map-medium.png 1x, ../images/projects/project1/empathy-map-large.png 2x"/>
+                <img src="../images/projects/project1/empathy-map-small.png" srcset="../images/projects/project1/empathy-map-small.png 1x, ../images/projects/project1/empathy-map-medium.png 2x"
+                  alt="Empathy map"
                   loading="lazy"
-                  class="w-full h-auto rounded-lg shadow-md">
-            </picture>
-          <h4>Empathy Map</h4>
-            <p>One of the ways I tried to understand the user’s perspective was by creating an empathy map based on my interviews. I recorded and transcribed my interviews using Notes App on my computer. Then I manually added where I was speaking versus where the user was speaking. I then input the data into ChatGPT using a prompt to classify Says, Feels, Thinks, and Does for each user. ChatGPT was fairly accurate, but it made some errors. For example, it categorizes some of feelings in the Thinks section. </p>
-            <img src="" alt="">
-          <h4>User Flow</h4>
-            <p>Upon opening the app the user will be met with a calculator page. They will want to find the currency they have if it’s not the one already set be default. Then they will search for their destination currency and input the amount they are wanting to exchange. At this point they can review the mid-market rate or input their rate of the exchange kiosk they’re at. </p>
-            <img src="" alt="">
-          <h4 id="sketches">Sketches</h4>
-            <p>The process below begins with my initial ideas for wireframes then moves to mockups and finally to high fidelity prototype. In this simple version, you can see how I approach solving the user needs. </p>
-            <img src="" alt="">
-          <h4 id="wireframes">Wireframes & Prototypes</h3>
-            <p>I brought my idea to an interactive digital low-fidelity prototype and tested it with five potential users to collect feedback. </p>
-            <img src="" alt="">
-            <img src="" alt="">
-          <h4 id="usability-study">Usability Study</h3>
-            <p>I conducted a user texting session with 10 participants. I then took their responses through a card sorting exercise to find common themes. </p>
-               <img src="" alt="">
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>
+          </div>
+          <div class="subsection space-y-4">
+            <h4>User Flow</h4>
+            <p>Upon opening the app...</p>
+              <picture class="lightbox-trigger">
+                <source media="(min-width: 1920px)" srcset="../images/projects/project1/user-flow-large.png 1x, ../images/projects/project1/user-flow-xlarge.png 2x"/>
+                <source media="(min-width: 768px)" srcset="../images/projects/project1/user-flow-medium.png 1x, ../images/projects/project1/user-flow-large.png 2x"/>
+                <img src="../images/projects/project1/user-flow-small.png" srcset="../images/projects/project1/user-flow-small.png 1x, ../images/projects/project1/user-flow-medium.png 2x"
+                  alt="User flow"
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>
+            </div>
+          </div>
+
+        <!-- Design Phase -->
+        <div class="design-phase mt-12 space-y-12">
+          <h3 id="design-phase">Design Phase</h3>
+          <div class="subsection space-y-4">
+            <h4 id="sketches">Sketches</h4>
+            <p>The process below begins...</p>
+              <picture class="lightbox-trigger">
+                <source media="(min-width: 1920px)" srcset="../images/projects/project1/sketches-large.png 1x, ../images/projects/project1/sketches-xlarge.png 2x"/>
+                <source media="(min-width: 768px)" srcset="../images/projects/project1/sketches-medium.png 1x, ../images/projects/project1/sketches-large.png 2x"/>
+                <img src="../images/projects/project1/sketches-small.png" srcset="../images/projects/project1/sketches-small.png 1x, ../images/projects/project1/sketches-medium.png 2x"
+                  alt="Sketches"
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>
+          </div>
+
+          <div class="subsection space-y-4">
+            <h4 id="wireframes">Wireframes & Prototypes</h4>
+            <p>I brought my idea to an interactive...</p>
+              <picture class="lightbox-trigger">
+                <source media="(min-width: 1920px)" srcset="../images/projects/project1/convert-wireframe-large.png 1x, ../images/projects/project1/convert-wireframe-xlarge.png 2x"/>
+                <source media="(min-width: 768px)" srcset="../images/projects/project1/convert-wireframe-medium.png 1x, ../images/projects/project1/convert-wireframe-large.png 2x"/>
+                <img src="../images/projects/project1/convert-wireframe-small.png" srcset="../images/projects/project1/convert-wireframe-small.png 1x, ../images/projects/project1/convert-wireframe-medium.png 2x"
+                  alt="Wireframe of the convert page"
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>
+              <picture class="lightbox-trigger">
+                <source media="(min-width: 1920px)" srcset="../images/projects/project1/calculate-wireframe-large.png 1x, ../images/projects/project1/calculate-wireframe-xlarge.png 2x"/>
+                <source media="(min-width: 768px)" srcset="../images/projects/project1/calculate-wireframe-medium.png 1x, ../images/projects/project1/calculate-wireframe-large.png 2x"/>
+                <img src="../images/projects/project1/calculate-wireframe-small.png" srcset="../images/projects/project1/calculate-wireframe-small.png 1x, ../images/projects/project1/calculate-wireframe-medium.png 2x"
+                  alt="Wireframe of the calculate page"
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>
+          </div>
+          <div class="subsection space-y-4">
+            <h4 id="usability-study">Usability Study</h4>
+            <p>I conducted a user testing session...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Results Section -->
+      <section class="results space-y-8">
+        <h2 id="results">Results</h2>
+        
+        <div class="iterations mt-8 space-y-10">
           <h3>Major Design Iterations</h3>
-          <h4>Iteration 1. Choosing MVP over 'the perfect app'</h4>
-          <h4>Iteration 2. Progress bar</h4>
+          <div class="subsection space-y-4">
+            <h4>Iteration 1. Choosing MVP over 'the perfect app'</h4>
+            <p>Content here</p>
+          </div>
+          <div class="subsection space-y-4">
+            <h4>Iteration 2. Progress bar</h4>
+            <p>Content here</p>
+          </div>
+        </div>
+
+        <div class="final-design mt-12 space-y-4">
           <h3>Final Design</h3>
-            <img src="" alt="">
-            <img src="" alt="">
+          <p>Explore the interactive prototype to see the full user flow.</p>
+          <a href="..." target="_blank" class="inline-block mt-4 text-emerald-900 font-medium hover:underline">
+            View Interactive Prototype →
+          </a>
+        </div>
+
+        <div class="subsection space-y-4 mt-10">
           <h4>Product Successes</h4>
-            <p>text here</p>
-          <h4>What I learned</h4>
-            <p>Product feedback will always surprise and if one is open to it, it will also delight. </p>
-               </section>
-      </div>
+          <p>text here</p>
+        </div>
+
+        <div class="subsection space-y-4">
+          <h4>What I Learned</h4>
+          <p>Product feedback will always surprise...</p>
+        </div>
+      </section>
+    </div>
+  </div>
+   <!-- Project Navigation -->
       <div id="project-navigation"></div>
     </main>
-
     <script src="../js/includes.js" defer></script>
     <script src="../js/main.js" defer></script> 
     <script src="../js/projects.js" defer></script>
+    <script src="../js/lightbox.js" defer></script>
   </body>
   <!-- Footer section -->
 <footer class="bg-white">
