@@ -5,7 +5,7 @@ const projects = [
     title: "Currency exchange app",
     description:
       "An app that helps global travelers find the current exchange rates between two currencies.",
-    image: "images/profile/projectimage.png",
+    image: "images/profile/project-one.png",
     alt: "Project One case study preview",
     url: "projects/project-one.html",
   },

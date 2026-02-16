@@ -41,7 +41,7 @@
            <picture>
             <source media="(min-width: 1920px)" srcset="../images/projects/project1/project-one-large.png 1x, ../images/projects/project1/project-one-xlarge.png 2x"/>
             <source media="(min-width: 768px)" srcset="../images/projects/project1/project-one-medium.png 1x, ../images/projects/project1/project-one-large.png 2x"/>
-            <img src="path/image-name-small.png" srcset="../images/projects/project1/project-one-small.png 1x, ../images/projects/project1/project-one-medium.png 2x"
+            <img src="../images/projects/project1/project-one-small.png" srcset="../images/projects/project1/project-one-small.png 1x, ../images/projects/project1/project-one-medium.png 2x"
               alt="Project one hero image"
               loading="lazy"
               class="w-full h-auto"
@@ -119,7 +119,7 @@
 
           <div class="subsection space-y-4">
             <h4>Empathy Map</h4>
-            <p>One of the ways I tried to understand...</p>
+            <p>Created an empathy map to capture what users say, think, feel, and do when navigating currency exchange. Patterns of uncertainty, mental math frustration, and fear of hidden fees directly informed the app’s focus on clarity and cost transparency.</p>
               <picture class="lightbox-trigger">
                 <source media="(min-width: 1920px)" srcset="../images/projects/project1/empathy-map-large.png 1x, ../images/projects/project1/empathy-map-xlarge.png 2x"/>
                 <source media="(min-width: 768px)" srcset="../images/projects/project1/empathy-map-medium.png 1x, ../images/projects/project1/empathy-map-large.png 2x"/>
@@ -131,7 +131,7 @@
           </div>
           <div class="subsection space-y-4">
             <h4>User Flow</h4>
-            <p>Upon opening the app...</p>
+            <p>Mapped the core decision path from app entry to conversion completion. The flow addresses two critical questions: “Is my currency available?” and “Do I understand the mid-market rate?” — reducing friction and uncertainty before users proceed.</p>
               <picture class="lightbox-trigger">
                 <source media="(min-width: 1920px)" srcset="../images/projects/project1/user-flow-large.png 1x, ../images/projects/project1/user-flow-xlarge.png 2x"/>
                 <source media="(min-width: 768px)" srcset="../images/projects/project1/user-flow-medium.png 1x, ../images/projects/project1/user-flow-large.png 2x"/>
@@ -148,7 +148,7 @@
           <h3 id="design-phase">Design Phase</h3>
           <div class="subsection space-y-4">
             <h4 id="sketches">Sketches</h4>
-            <p>The process below begins...</p>
+            <p>Started with rapid hand-drawn sketches to map core screens and test information hierarchy. Early exploration allowed for fast iteration before committing to higher-fidelity designs.</p>
               <picture class="lightbox-trigger">
                 <source media="(min-width: 1920px)" srcset="../images/projects/project1/sketches-large.png 1x, ../images/projects/project1/sketches-xlarge.png 2x"/>
                 <source media="(min-width: 768px)" srcset="../images/projects/project1/sketches-medium.png 1x, ../images/projects/project1/sketches-large.png 2x"/>
@@ -161,7 +161,8 @@
 
           <div class="subsection space-y-4">
             <h4 id="wireframes">Wireframes & Prototypes</h4>
-            <p>I brought my idea to an interactive...</p>
+            <p>Developed interactive wireframes in Figma for both core experiences: Convert and Calculate. The prototypes included currency selection, fee inputs, mid-market rate education, and ranked transfer options.</p>
+            <p>These wireframes went through multiple iterations and were used in moderated usability testing sessions. The screens shown reflect the latest refined versions.</p>
               <picture class="lightbox-trigger">
                 <source media="(min-width: 1920px)" srcset="../images/projects/project1/convert-wireframe-large.png 1x, ../images/projects/project1/convert-wireframe-xlarge.png 2x"/>
                 <source media="(min-width: 768px)" srcset="../images/projects/project1/convert-wireframe-medium.png 1x, ../images/projects/project1/convert-wireframe-large.png 2x"/>
@@ -181,7 +182,10 @@
           </div>
           <div class="subsection space-y-4">
             <h4 id="usability-study">Usability Study</h4>
-            <p>I conducted a user testing session...</p>
+            <p>Conducted two rounds of moderated usability testing with four participants using interactive wireframe prototypes.</p>
+            <p>Participants were asked to complete two core tasks per flow while thinking aloud. I observed silently to understand their natural decision-making process, then followed up with targeted questions about moments of confusion or hesitation.</p>
+            <p>After the first round, I redesigned key screens and tested the revised versions with the same participants using identical tasks. Comparing reactions helped identify where clarity improved and where friction remained.</p>
+            <p>Final wireframes were completed only after validation — visual design was intentionally introduced last to ensure usability before aesthetics.</p>
           </div>
         </div>
       </section>
@@ -190,15 +194,36 @@
       <section class="results space-y-8">
         <h2 id="results">Results</h2>
         
-        <div class="iterations mt-8 space-y-10">
-          <h3>Major Design Iterations</h3>
+        <div class="decisions mt-8 space-y-10">
+          <h3>Key Product Decisions</h3>
           <div class="subsection space-y-4">
-            <h4>Iteration 1. Choosing MVP over 'the perfect app'</h4>
-            <p>Content here</p>
+            <h4>Decision 1: Prioritizing MVP Over Feature Expansion</h4>
+            <p>During interviews, users requested expanded features — such as safety ratings for exchange locations, translation support at kiosks, and nearby exchange maps.</p>
+            <p>While valuable, these ideas introduced significant scope complexity. Through synthesis, I identified the core unmet need: trust in exchange rates and final totals.</p>
+            <p>I intentionally narrowed the product to two essential experiences — Convert and Calculate — focusing on transparency and clarity first.</p>
+            <p>Rather than building a feature-heavy ecosystem, I prioritized solving one problem exceptionally well: making the true cost of currency exchange immediately understandable.</p>
+            <p>This MVP approach supports faster iteration, clearer positioning, and a stronger foundation for future expansion.</p>
           </div>
           <div class="subsection space-y-4">
-            <h4>Iteration 2. Progress bar</h4>
-            <p>Content here</p>
+            <h4>Decision 2: Replacing the Progress Bar with Stronger Defaults</h4>
+            <p>After initial testing, I introduced a progress bar to clarify how many steps remained in the conversion flow.</p>
+            <p>However, in the second round of testing, 3 out of 4 participants did not notice the progress indicator, and the fourth did not rely on it to complete tasks. The addition did not meaningfully improve confidence.</p>
+            <p>Instead of adding navigational cues, I shifted focus to improving input clarity.</p>
+            <p>Key refinements:</p>
+             <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
+              <li>Pre-selected default currencies with visible flags (replacing empty placeholders)</li>
+              <li>Pre-filled the amount field with a realistic default (1,000)</li>
+            </ul>
+            <p>Testing revealed that users respond more confidently to editable defaults than to empty inputs. A visible starting state signals what action to take next more effectively than instructional text.</p>
+            <p>The final design removed the progress bar entirely and relied on stronger visual affordances instead.</p>
+              <picture class="lightbox-trigger">
+                <source media="(min-width: 1920px)" srcset="../images/projects/project1/progress-bar-large.png 1x, ../images/projects/project1/progress-bar-xlarge.png 2x"/>
+                <source media="(min-width: 768px)" srcset="../images/projects/project1/progress-bar-medium.png 1x, ../images/projects/project1/progress-bar-large.png 2x"/>
+                <img src="../images/projects/project1/progress-bar-small.png" srcset="../images/projects/project1/progress-bar-small.png 1x, ../images/projects/project1/progress-bar-medium.png 2x"
+                  alt="Wireframe of the calculate page"
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>
           </div>
         </div>
 
@@ -212,12 +237,21 @@
 
         <div class="subsection space-y-4 mt-10">
           <h4>Product Successes</h4>
-          <p>text here</p>
+          <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
+            <li>Users clearly understood the distinction between mid-market rate and final amount after fees</li>
+            <li>Default currency and amount inputs improved task completion confidence</li>
+            <li>Ranking transfer methods by total cost reduced comparison friction</li>
+            <li>Transparent fee breakdown increased trust and reduced cross-checking behavior</li>
+            <li>The Calculate feature supported quick, in-the-moment decisions abroad</li>
+          </ul>
         </div>
 
         <div class="subsection space-y-4">
           <h4>What I Learned</h4>
-          <p>Product feedback will always surprise...</p>
+          <p>User feedback will always challenge your assumptions.</p>
+          <p>Features that seem helpful — like progress indicators or expanded functionality — don’t always solve the real problem. In this case, clarity improved not by adding more, but by simplifying inputs and strengthening default states.</p>
+          <p>Testing before adding visual polish reinforced an important principle: usability must be validated before aesthetics are layered on.</p>
+          <p>Most importantly, designing for financial decisions isn’t about providing more information — it’s about building trust through transparency, simplicity, and clear signals.</p>
         </div>
       </section>
     </div>

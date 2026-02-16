@@ -41,15 +41,25 @@
           <picture>
             <source
               media="(min-width: 1920px)"
-              srcset="./images/profile/header-img-large.png"
+              srcset="
+                ./images/profile/header-img-large.png  1x,
+                ./images/profile/header-img-xlarge.png 2x
+              "
             />
             <source
               media="(min-width: 768px)"
-              srcset="./images/profile/header-img-large.png"
+              srcset="
+                ./images/profile/header-img-medium.png 1x,
+                ./images/profile/header-img-large.png  2x
+              "
             />
             <img
               src="./images/profile/header-img-small.png"
-              alt="header image"
+              srcset="
+                ./images/profile/header-img-small.png  1x,
+                ./images/profile/header-img-medium.png 2x
+              "
+              alt="Header image"
               loading="lazy"
               class="w-full h-auto"
             />
