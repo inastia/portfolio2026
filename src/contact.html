@@ -57,10 +57,10 @@
                   <label
                     for="last-name"
                     class="block text-sm/6 font-medium text-gray-900"
-                    >Last name (required)</label
+                    >Last name</label
                   >
                   <div class="mt-2">
-                    <input required
+                    <input
                       id="last-name"
                       type="text"
                       name="last-name"
@@ -87,32 +87,33 @@
                   </div>
                 </div>
 
-                <div class="col-span-full">
-                  <label
-                    for="about"
-                    class="block text-sm/6 font-medium text-gray-900"
-                    >Message (required)</label
-                  >
-                  <div class="mt-2">
-                    <textarea
-                    required
-                    placeholder="Tell me a bit about your project or question…"
-                      id="about"
-                      name="about"
-                      rows="3"
-                      class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-emerald-900 sm:text-sm/6"
-                    ></textarea>
-                  </div>
+               <div class="col-span-full">
+                <label
+                  for="about"
+                  class="block text-sm/6 font-medium text-gray-900"
+                  >Message (required)</label
+                >
+                <div class="mt-2">
+                  <textarea
+                  required
+                  placeholder="Tell me a bit about your project or question…"
+                    id="about"
+                    name="about"
+                    rows="3"
+                    maxlength="500"
+                    class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-emerald-900 sm:text-sm/6"
+                  ></textarea>
+                  <p id="char-counter" class="text-xs text-gray-400 mt-1 text-right">0 / 500</p>
                 </div>
               </div>
+              </div>
               <!-- button -->
-               <div class="mt-10">
+               <div class="mt-10 flex items-center gap-4">
                 <button type="button" id="submit-btn"
                   class="cursor-pointer bg-emerald-700 hover:bg-emerald-900 text-white py-2 px-4 rounded"
-                >
-                  Submit
-                </button>
-               </div>
+                >Submit</button>
+                <span id="success-msg" class="text-emerald-700 font-medium" style="opacity:0; transition: opacity 0.4s ease;">👍 Success</span>
+                </div>
             </div>
           </div>
          

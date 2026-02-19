@@ -33,45 +33,153 @@
     <!-- Header section -->
     <div id="site-header"></div>
     <main>
-      <!-- Main image of the project -->
-      <div><img src="" alt="" /></div>
+      <!-- Hero Section -->
+      <div class="hero-section mb-12 text-center">
+        <!-- Title of the project -->
+        <h1 class="mb-8">Chani</h1>
+        <!-- header image -->
+        <picture>
+          <source
+            media="(min-width: 1920px)"
+            srcset="
+              ../images/projects/project2/project-two-large.png  1x,
+              ../images/projects/project2/project-two-xlarge.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../images/projects/project2/project-two-medium.png 1x,
+              ../images/projects/project2/project-two-large.png  2x
+            "
+          />
+          <img
+            src="../images/projects/project2/project-two-small.png"
+            srcset="
+              ../images/projects/project2/project-two-small.png  1x,
+              ../images/projects/project2/project-two-medium.png 2x
+            "
+            alt="Project two hero image"
+            loading="lazy"
+            class="w-full h-auto"
+          />
+        </picture>
+      </div>
 
+      <!-- Main Content Container -->
       <div class="max-w-7xl mx-auto px-4">
         <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
-          <!-- Title of the project -->
-          <h2>Chani</h2>
-          <!-- Project details: role, timeline, tools -->
-          <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="../images/profile/projectimagetwo.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="../images/profile/projectimagetwo.png"
-            />
-            <img
-              src="../images/profile/projectimagetwo.png"
-              alt="header image"
-              loading="lazy"
-              class="w-full h-auto"
-            />
-          </picture>
-          <h4>Problem</h4>
-          <p>
-            The beloved Chani app was missing a way to save favorite audio
-            recordings.
-          </p>
-          <blockquote class="bg-red-100 rounded-md p-6">
-            👉 I stopped using meditation feature because I could not easily
-            find my favorite meditations again.
-          </blockquote>
+          <!-- Project Overview Section -->
 
-          <h4>Solution</h4>
-          <p>
-            I added a heart to the auido player and pushed the saved recording
-            to the top of the Listen tab.
-          </p>
+          <!-- Project Overview Section -->
+          <section class="project-overview space-y-6">
+            <h2>Project Overview</h2>
+            <p class="meta text-slate-500 text-sm">
+              Mobile app | Solo project | 2 weeks | 2025
+            </p>
+            <p class="role text-slate-600">short project description.</p>
+            <div class="space-y-4">
+              <h4>Problem</h4>
+              <p>
+                The Chani app offers a rich library of meditations,
+                affirmations, and sleep stories, but had no way to save or
+                resurface audio files a user loved. Returning to a favorite
+                meditation required manually searching through the entire Audio
+                Library — making the experience feel more like a chore than a
+                ritual.
+              </p>
+              <blockquote class="bg-red-100 rounded-md p-6 my-6">
+                👉 I stopped using the meditation feature because I had no way
+                to save the meditations that resonated with me and easily find
+                them again..
+              </blockquote>
+            </div>
+            <div class="space-y-4">
+              <h4>My Solution</h4>
+              <picture class="lightbox-trigger">
+                <source
+                  media="(min-width: 1920px)"
+                  srcset="
+                    ../images/projects/project2/nastia-solution-large.png  1x,
+                    ../images/projects/project2/nastia-solution-xlarge.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/projects/project2/nastia-solution-medium.png 1x,
+                    ../images/projects/project2/nastia-solution-large.png  2x
+                  "
+                />
+                <img
+                  src="../images/projects/project2/nastia-solution-small.png"
+                  srcset="
+                    ../images/projects/project2/nastia-solution-small.png  1x,
+                    ../images/projects/project2/nastia-solution-medium.png 2x
+                  "
+                  alt="My solution image"
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"
+                />
+              </picture>
+              <p>
+                Show your screens, explain the two design decisions: the heart
+                on the Play screen and the favorites surfaced at the top of the
+                Audio Library using the tab pattern consistent with the Home
+                page.
+              </p>
+            </div>
+
+            <h4>How Chani Solved It</h4>
+            <picture class="lightbox-trigger">
+              <source
+                media="(min-width: 1920px)"
+                srcset="
+                  ../images/projects/project2/chani-solution-large.png  1x,
+                  ../images/projects/project2/chani-solution-xlarge.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../images/projects/project2/chani-solution-medium.png 1x,
+                  ../images/projects/project2/chani-solution-large.png  2x
+                "
+              />
+              <img
+                src="../images/projects/project2/chani-solution-small.png"
+                srcset="
+                  ../images/projects/project2/chani-solution-small.png  1x,
+                  ../images/projects/project2/chani-solution-medium.png 2x
+                "
+                alt="Chani's team solution image"
+                loading="lazy"
+                class="w-full h-auto rounded-lg shadow-md"
+              />
+            </picture>
+            <p>
+              show their before/after screens side by side. Keep it neutral and
+              factual, just two or three sentences describing what they shipped.
+            </p>
+            <h4>Design Tradeoffs</h4>
+            <p>
+              They optimized for saving (heart on the tile, no need to open the
+              file)
+            </p>
+            <p>
+              You optimized for retrieval (favorites automatically surface at
+              top)
+            </p>
+            <p>
+              They introduced a new UI pattern (widgets); you extended an
+              existing one (tabs)
+            </p>
+            <p>
+              The two approaches aren't mutually exclusive — an ideal iteration
+              could combine both
+            </p>
+          </section>
+
           <h3>Process</h3>
           <p>process explanation</p>
           <blockquote class="bg-blue-100 rounded-md p-6">
@@ -83,14 +191,46 @@
             <a href="#wireframes">Wireframes & Prototypes →</a>
             <a href="#usability-study">Usability Study →</a>
           </div>
+          <div class="subsection space-y-4">
+            <h4 id="wireframes">Wireframes & Prototypes</h4>
+            <p>Developed interactive wireframes in Figma</p>
+            <picture class="lightbox-trigger">
+              <source
+                media="(min-width: 1920px)"
+                srcset="
+                  ../images/projects/project2/wireframe-large.png  1x,
+                  ../images/projects/project2/wireframe-xlarge.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../images/projects/project2/wireframe-medium.png 1x,
+                  ../images/projects/project2/wireframe-large.png  2x
+                "
+              />
+              <img
+                src="../images/projects/project2/wireframe-small.png"
+                srcset="
+                  ../images/projects/project2/wireframe-small.png  1x,
+                  ../images/projects/project2/wireframe-medium.png 2x
+                "
+                alt="Wireframe"
+                loading="lazy"
+                class="w-full h-auto rounded-lg shadow-md"
+              />
+            </picture>
+          </div>
         </section>
       </div>
+      <!-- Project Navigation -->
       <div id="project-navigation"></div>
     </main>
 
     <script src="../js/includes.js" defer></script>
     <script src="../js/main.js" defer></script>
     <script src="../js/projects.js" defer></script>
+    <script src="../js/lightbox.js" defer></script>
   </body>
   <!-- Footer section -->
   <footer class="bg-white">

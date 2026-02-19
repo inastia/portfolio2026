@@ -40,12 +40,32 @@
         <section class="flex flex-col md:flex-row items-center gap-8 px-4 py-6">
           <!-- Image Column -->
           <div class="flex-1 flex justify-center md:justify-end">
-            <img
-              src="images/profile/about-me-avatar-800.png"
-              srcset="images/profile/about-me-avatar-1024.png 2x"
-              alt="Illustrated avatar of Anastasia, UX/UI designer"
-              class="w-full max-w-lg h-auto"
-            />
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="
+                  ./images/profile/about-me-avatar-large.png  1x,
+                  ./images/profile/about-me-avatar-xlarge.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/profile/about-me-avatar-medium.png 1x,
+                  ./images/profile/about-me-avatar-large.png  2x
+                "
+              />
+              <img
+                src="./images/profile/about-me-avatar-small.png"
+                srcset="
+                  ./images/profile/about-me-avatar-small.png  1x,
+                  ./images/profile/about-me-avatar-medium.png 2x
+                "
+                alt="About me avatar image"
+                loading="lazy"
+                class="w-full h-auto"
+              />
+            </picture>
           </div>
           <!-- Text Column -->
           <div
@@ -69,7 +89,7 @@
         </section>
       </div>
 
-      <section class="flex justify-center px-4 py-10">
+      <section class="flex justify-center px-4 py-6">
         <blockquote
           class="w-full max-w-2xl border rounded-lg text-emerald-900 p-8 text-center"
         >
@@ -81,40 +101,16 @@
 
       <section class="max-w-2xl mx-auto px-4 items-center text-left">
         <div class="pt-8">
-          <h3 class="">Think</h3>
-          <p class="leading-6 pt-4">
-            I journal daily as a way to reflect, notice patterns, and make sense
-            of complex ideas. I started journaling at ten, and it has remained
-            my most reliable way of processing information over time. Writing
-            helps me slow down, connect dots, and turn experience into
-            understanding.
-          </p>
-        </div>
-
-        <div class="pt-8">
-          <h3>Connect</h3>
+          <h3>Community-Driven Projects</h3>
           <p class="leading-6 pt-4">
             Outside of work, I’m drawn to projects that turn individual effort
-            into shared benefit. Recently, I started a small composting system
-            in my apartment building after realizing I didn’t generate enough
-            food waste on my own. I partnered with a restaurant downstairs to
-            collect their scraps, manage a weekly exchange, and process
-            everything through my home compost system. The finished compost goes
-            back into the community—shared with friends, neighbors who grow food
-            or tend gardens, and local farms.
-          </p>
-        </div>
-
-        <div class="pt-8">
-          <h3>Grow</h3>
-          <p class="leading-6 pt-4">
-            In 2026, I want to explore woodworking, as learning a tactile craft
-            feels like a natural extension of how I think about design. My
-            grandfather was a brilliant furniture-maker, known for pieces with
-            intricate carved details, and I like to think some of that curiosity
-            for craft lives on in me. More than anything, this goal is about
-            stepping into creative spaces with openness, trying things that once
-            felt out of reach and letting new skills shape how I see and make.
+            into shared benefit. Recently, I started a composting program in my
+            apartment building after realizing I didn’t generate enough food
+            waste on my own. I partnered with a restaurant downstairs to collect
+            their scraps, manage a weekly exchange, and process everything
+            through my home compost system. The finished compost goes back into
+            the community—shared with friends, neighbors who grow food or tend
+            gardens, and local farms.
           </p>
         </div>
       </section>
