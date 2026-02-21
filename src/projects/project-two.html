@@ -77,7 +77,11 @@
             <p class="meta text-slate-500 text-sm">
               Mobile app | Solo project | 2 weeks | 2025
             </p>
-            <p class="role text-slate-600">short project description.</p>
+            <p class="role text-slate-600">
+              A feature addition to the Chani astrology app that lets users save
+              and quickly resurface their favorite meditations, affirmations,
+              and sleep stories.
+            </p>
             <div class="space-y-4">
               <h4>Problem</h4>
               <p>
@@ -91,136 +95,366 @@
               <blockquote class="bg-red-100 rounded-md p-6 my-6">
                 👉 I stopped using the meditation feature because I had no way
                 to save the meditations that resonated with me and easily find
-                them again..
+                them again.
               </blockquote>
             </div>
             <div class="space-y-4">
               <h4>My Solution</h4>
+              <p>
+                I added two small but connected changes to the existing app.
+                First, a heart icon on the Play Audio screen lets a user save
+                any meditation while listening to it. Second, the Listen page
+                was restructured using a tab pattern — Sleep Stories,
+                Affirmations, Meditations — already familiar from the app's Home
+                page. Any saved audio automatically surfaces at the top of its
+                category, so the user never has to scan a full list to find what
+                they loved.
+              </p>
+              <figure>
+                <picture class="lightbox-trigger">
+                  <source
+                    media="(min-width: 1920px)"
+                    srcset="
+                      ../images/projects/project2/nastia-solution-large.png  1x,
+                      ../images/projects/project2/nastia-solution-xlarge.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ../images/projects/project2/nastia-solution-medium.png 1x,
+                      ../images/projects/project2/nastia-solution-large.png  2x
+                    "
+                  />
+                  <img
+                    src="../images/projects/project2/nastia-solution-small.png"
+                    srcset="
+                      ../images/projects/project2/nastia-solution-small.png  1x,
+                      ../images/projects/project2/nastia-solution-medium.png 2x
+                    "
+                    alt="Before and after screens showing the addition of a heart icon on the Play Audio screen and a redesigned Listen page with category tabs and favorited audio surfaced at the top"
+                    loading="lazy"
+                    class="w-full h-auto rounded-lg shadow-md"
+                  />
+                </picture>
+                <figcaption class="text-sm text-slate-500 mt-2">
+                  Before: no way to save audio. After: heart icon on Play screen
+                  (left), redesigned Listen page with tabs (center), favorited
+                  audio surfaced at top of category (right).
+                </figcaption>
+              </figure>
+            </div>
+
+            <h4>How Chani Solved It</h4>
+            <p>
+              The Chani team restructured the Listen page with two new controls
+              in the header: a filter icon for browsing by category
+              (Meditations, Affirmations, Sleep Stories) and a heart icon that
+              leads directly to a saved-only view. Below the header, the page
+              now opens with a horizontally scrolling row of favorited audio — a
+              new scroll pattern in the app — followed by three category cards.
+              Tapping a card leads to the full list of audio files in that
+              category, where each file displays a heart icon. Favorited files
+              show a filled heart; all others show an outline heart, allowing
+              users to save any file directly from the list without opening it.
+            </p>
+            <figure>
               <picture class="lightbox-trigger">
                 <source
                   media="(min-width: 1920px)"
                   srcset="
-                    ../images/projects/project2/nastia-solution-large.png  1x,
-                    ../images/projects/project2/nastia-solution-xlarge.png 2x
+                    ../images/projects/project2/chani-solution-large.png  1x,
+                    ../images/projects/project2/chani-solution-xlarge.png 2x
                   "
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ../images/projects/project2/nastia-solution-medium.png 1x,
-                    ../images/projects/project2/nastia-solution-large.png  2x
+                    ../images/projects/project2/chani-solution-medium.png 1x,
+                    ../images/projects/project2/chani-solution-large.png  2x
                   "
                 />
                 <img
-                  src="../images/projects/project2/nastia-solution-small.png"
+                  src="../images/projects/project2/chani-solution-small.png"
                   srcset="
-                    ../images/projects/project2/nastia-solution-small.png  1x,
-                    ../images/projects/project2/nastia-solution-medium.png 2x
+                    ../images/projects/project2/chani-solution-small.png  1x,
+                    ../images/projects/project2/chani-solution-medium.png 2x
                   "
-                  alt="My solution image"
+                  alt="Before and after screens showing Chani's updated Listen page with filter and heart icons in the header, a horizontally scrolling favorites row, category cards, and heart icons on individual audio files"
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"
                 />
               </picture>
-              <p>
-                Show your screens, explain the two design decisions: the heart
-                on the Play screen and the favorites surfaced at the top of the
-                Audio Library using the tab pattern consistent with the Home
-                page.
-              </p>
-            </div>
-
-            <h4>How Chani Solved It</h4>
-            <picture class="lightbox-trigger">
-              <source
-                media="(min-width: 1920px)"
-                srcset="
-                  ../images/projects/project2/chani-solution-large.png  1x,
-                  ../images/projects/project2/chani-solution-xlarge.png 2x
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ../images/projects/project2/chani-solution-medium.png 1x,
-                  ../images/projects/project2/chani-solution-large.png  2x
-                "
-              />
-              <img
-                src="../images/projects/project2/chani-solution-small.png"
-                srcset="
-                  ../images/projects/project2/chani-solution-small.png  1x,
-                  ../images/projects/project2/chani-solution-medium.png 2x
-                "
-                alt="Chani's team solution image"
-                loading="lazy"
-                class="w-full h-auto rounded-lg shadow-md"
-              />
-            </picture>
-            <p>
-              show their before/after screens side by side. Keep it neutral and
-              factual, just two or three sentences describing what they shipped.
-            </p>
-            <h4>Design Tradeoffs</h4>
-            <p>
-              They optimized for saving (heart on the tile, no need to open the
-              file)
-            </p>
-            <p>
-              You optimized for retrieval (favorites automatically surface at
-              top)
-            </p>
-            <p>
-              They introduced a new UI pattern (widgets); you extended an
-              existing one (tabs)
-            </p>
-            <p>
-              The two approaches aren't mutually exclusive — an ideal iteration
-              could combine both
-            </p>
+              <figcaption class="text-sm text-slate-500 mt-2">
+                Before: original Listen page built to scroll. After: filter
+                controls and My Favorites cards (left), category cards (center),
+                audio list with per-file heart icons (right).
+              </figcaption>
+            </figure>
           </section>
 
-          <h3>Process</h3>
-          <p>process explanation</p>
-          <blockquote class="bg-blue-100 rounded-md p-6">
-            👇 Click to jump to the corresponding section
-          </blockquote>
-          <div class="project-one-nav my-4">
-            <a href="#user-research">User research →</a>
-            <a href="#sketches">Sketches →</a>
-            <a href="#wireframes">Wireframes & Prototypes →</a>
-            <a href="#usability-study">Usability Study →</a>
-          </div>
-          <div class="subsection space-y-4">
-            <h4 id="wireframes">Wireframes & Prototypes</h4>
-            <p>Developed interactive wireframes in Figma</p>
-            <picture class="lightbox-trigger">
-              <source
-                media="(min-width: 1920px)"
-                srcset="
-                  ../images/projects/project2/wireframe-large.png  1x,
-                  ../images/projects/project2/wireframe-xlarge.png 2x
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ../images/projects/project2/wireframe-medium.png 1x,
-                  ../images/projects/project2/wireframe-large.png  2x
-                "
-              />
-              <img
-                src="../images/projects/project2/wireframe-small.png"
-                srcset="
-                  ../images/projects/project2/wireframe-small.png  1x,
-                  ../images/projects/project2/wireframe-medium.png 2x
-                "
-                alt="Wireframe"
-                loading="lazy"
-                class="w-full h-auto rounded-lg shadow-md"
-              />
-            </picture>
-          </div>
+          <!-- Process Section -->
+          <section class="process-section space-y-8">
+            <h2 class="mt-8">Process</h2>
+            <p>
+              Worked within an existing design system to identify and solve two
+              connected user problems — saving a favorite audio file and finding
+              it again — by extending a UI pattern already familiar to Chani
+              users rather than introducing a new one.
+            </p>
+            <blockquote class="bg-blue-100 rounded-md p-6">
+              👇 Click to jump to the corresponding section
+            </blockquote>
+            <div class="project-one-nav my-4">
+              <a href="#user-research">Research →</a>
+              <a href="#wireframes">Design →</a>
+              <a href="#usability-study">Usability Study →</a>
+              <a href="#usability-study">Results →</a>
+            </div>
+
+            <!-- Research Phase -->
+            <div class="research-phase mt-12 space-y-12">
+              <h3 id="research-phase">Research Phase</h3>
+              <div class="subsection space-y-4">
+                <h4 id="user-research">User Research</h4>
+                <p>
+                  Visualized the user journey across four stages: open app,
+                  listen to meditation, return to app, and give up searching.
+                </p>
+                <picture class="lightbox-trigger">
+                  <source
+                    media="(min-width: 1920px)"
+                    srcset="
+                      ../images/projects/project2/user-journey-large.png  1x,
+                      ../images/projects/project2/user-journey-xlarge.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ../images/projects/project2/user-journey-medium.png 1x,
+                      ../images/projects/project2/user-journey-large.png  2x
+                    "
+                  />
+                  <img
+                    src="../images/projects/project2/user-journey-small.png"
+                    srcset="
+                      ../images/projects/project2/user-journey-small.png  1x,
+                      ../images/projects/project2/user-journey-medium.png 2x
+                    "
+                    alt="User journey"
+                    loading="lazy"
+                    class="w-full h-auto rounded-lg shadow-md"
+                  />
+                </picture>
+              </div>
+              <div class="subsection space-y-4">
+                <h4>Empathy Map</h4>
+                <p>Created an empathy map...</p>
+                <picture class="lightbox-trigger">
+                  <source
+                    media="(min-width: 1920px)"
+                    srcset="
+                      ../images/projects/project2/empathy-map-large.png  1x,
+                      ../images/projects/project2/empathy-map-xlarge.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ../images/projects/project2/empathy-map-medium.png 1x,
+                      ../images/projects/project2/empathy-map-large.png  2x
+                    "
+                  />
+                  <img
+                    src="../images/projects/project2/empathy-map-small.png"
+                    srcset="
+                      ../images/projects/project2/empathy-map-small.png  1x,
+                      ../images/projects/project2/empathy-map-medium.png 2x
+                    "
+                    alt="Empathy map"
+                    loading="lazy"
+                    class="w-full h-auto rounded-lg shadow-md"
+                  />
+                </picture>
+              </div>
+
+              <div class="subsection space-y-4">
+                <h4>User Flow</h4>
+                <p>Mapped the core decision path</p>
+              </div>
+
+              <!-- Design Phase -->
+              <div class="design-phase mt-12 space-y-12">
+                <h3 id="design-phase">Design Phase</h3>
+
+                <div class="subsection space-y-4">
+                  <h4 id="wireframes">Wireframes & Prototypes</h4>
+                  <p>
+                    With a clear problem and an existing design system to work
+                    within, I moved directly to wireframes in Figma. Four
+                    screens capture the core of the solution: the Home page
+                    establishing the tab pattern I would carry into the Listen
+                    page, the Play screen before and after saving a file, and
+                    the redesigned Listen page showing category tabs with a
+                    favorited audio file surfaced at the top.
+                  </p>
+                  <picture class="lightbox-trigger">
+                    <source
+                      media="(min-width: 1920px)"
+                      srcset="
+                        ../images/projects/project2/wireframe-large.png  1x,
+                        ../images/projects/project2/wireframe-xlarge.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../images/projects/project2/wireframe-medium.png 1x,
+                        ../images/projects/project2/wireframe-large.png  2x
+                      "
+                    />
+                    <img
+                      src="../images/projects/project2/wireframe-small.png"
+                      srcset="
+                        ../images/projects/project2/wireframe-small.png  1x,
+                        ../images/projects/project2/wireframe-medium.png 2x
+                      "
+                      alt="Wireframe"
+                      loading="lazy"
+                      class="w-full h-auto rounded-lg shadow-md"
+                    />
+                  </picture>
+                </div>
+                <div class="subsection space-y-4">
+                  <h4 id="usability-study">Usability Study</h4>
+                  <p>Explanation here.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Process Section Ends -->
+
+          <!-- Results Section -->
+          <section class="results space-y-8">
+            <h2 id="results">Results</h2>
+            <div class="decisions mt-8 space-y-10">
+              <h3>Key Product Decisions</h3>
+              <div class="subsection space-y-4">
+                <h4>Decision 1: Solve for discoverability, not just saving</h4>
+                <p>
+                  The original problem was simple: users had no way to bookmark
+                  an audio file. But as I mapped the user flow, a second problem
+                  surfaced. Even if a user could save a file, finding it again
+                  meant scrolling through three separate categories —
+                  Meditations, Affirmations, and Sleep Stories — to locate it.
+                  Saving without surfacing would only partially solve the
+                  problem.
+                </p>
+                <p>
+                  The solution to both came from the app's existing design. The
+                  tab pattern already appeared in two places: the Home screen
+                  (Today, This Week, This Year) and the Play screen (Audio,
+                  Transcript). Extending that same pattern to the Listen page
+                  let users switch between the three audio categories without
+                  scrolling, reduced the amount of content visible at once, and
+                  created a natural home for favorited files to surface at the
+                  top of whichever category they belonged to. A familiar pattern
+                  — no new interaction to learn, two problems resolved.
+                </p>
+              </div>
+              <div class="subsection space-y-4">
+                <h4>Decision 2: Scope down to ship faster</h4>
+                <p>
+                  While designing the Listen page, I identified a broader
+                  opportunity: the same tab pattern could simplify the Me and
+                  Transits pages, which both rely on a user's birth chart and
+                  would benefit from living under one umbrella — "Your Birth
+                  Chart" and "Your Transits" as tabs rather than two separate
+                  menu items. I developed this concept through most of the
+                  design phase before pausing it deliberately.
+                </p>
+                <p>
+                  Shipping two interconnected changes at once would delay the
+                  core improvement and introduce more learning for the user at
+                  the same time. A focused release — just the Listen page — gets
+                  the bookmark feature into users' hands faster, lets them build
+                  familiarity with the tab pattern, and creates a foundation
+                  that makes future changes feel like a natural extension rather
+                  than a redesign. The navigation simplification became a
+                  "What's Next" rather than part of this release.
+                </p>
+              </div>
+            </div>
+            <div class="final-design mt-12 space-y-4">
+              <h3>Final Design</h3>
+              <p>
+                Explore the interactive prototype to see the full user flow.
+              </p>
+              <a
+                href="..."
+                target="_blank"
+                class="inline-block mt-4 text-emerald-900 font-medium hover:underline"
+              >
+                View Interactive Prototype →
+              </a>
+            </div>
+            <div class="subsection space-y-4 mt-10">
+              <h4>Product Successes</h4>
+              <ul
+                class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
+              >
+                <li>
+                  Retrieval in 2 taps. From the Listen page, a saved meditation
+                  is reachable in two taps — selecting the Meditations tab and
+                  tapping the file at the top of the list. No scrolling, no
+                  scanning for a filled heart icon.
+                </li>
+                <li>
+                  Zero new interaction patterns introduced. The solution
+                  extended the tab pattern already present on the Home and Play
+                  screens rather than introducing a new UI convention. A user
+                  who knows the app already knows how to use the feature.
+                </li>
+                <li>
+                  Two problems solved with one design decision. The tab
+                  structure on the Listen page simultaneously solved category
+                  navigation and favorites discoverability — two distinct
+                  friction points addressed through a single, consistent
+                  pattern.
+                </li>
+                <li>
+                  Validated by the product team. The Chani team independently
+                  shipped a solution to the same problem, confirming the problem
+                  was real and worth prioritizing — not an edge case or personal
+                  preference.
+                </li>
+              </ul>
+            </div>
+            <div class="subsection space-y-4">
+              <h4>What I Learned</h4>
+              <p>
+                Solving for the obvious problem often reveals a more important
+                one underneath — and the better solution usually addresses both.
+              </p>
+            </div>
+            <div class="subsection space-y-4">
+              <h4>What's Next</h4>
+              <p>
+                The tab pattern introduced in the Listen page opens a broader
+                opportunity to simplify the app's main navigation. The Me and
+                Transits pages are the only two pages in the app that draw on a
+                user's birth chart specifically. Combining them under a single
+                page — with "Your Birth Chart" and "Your Transits" as tabs —
+                would reduce the main menu from five items to four, create a
+                more intuitive home for personalized content, and extend a
+                pattern users are already learning. Each release builds the
+                foundation for the next one to feel native rather than new.
+              </p>
+            </div>
+          </section>
+          <!-- Results Section Ends -->
+          <!-- Main Section Ends -->
         </section>
       </div>
       <!-- Project Navigation -->

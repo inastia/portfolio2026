@@ -10,28 +10,20 @@ const projects = [
     url: "projects/project-one.html",
   },
   {
-    title: "Coming soon",
+    title: "Chani",
     description:
-      "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
-    image: "images/profile/projectimagetwo.png",
+      "A feature addition to the Chani astrology app that lets users save and quickly resurface their favorite meditations, affirmations,and sleep stories.",
+    image: "images/profile/project-two.png",
     alt: "Project Two case study preview",
     url: "projects/project-two.html",
   },
   {
-    title: "Coming soon",
+    title: "Astrology Journal",
     description:
       "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
     image: "images/profile/projectimagethree.png",
     alt: "Project Three case study preview",
     url: "projects/project-three.html",
-  },
-  {
-    title: "Coming soon",
-    description:
-      "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
-    image: "images/profile/projectimagefour.png",
-    alt: "Project Four case study preview",
-    url: "projects/project-four.html",
   },
 ];
 
