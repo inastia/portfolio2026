@@ -1,3 +1,8 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [
+    { "source": "/", "destination": "/src/index.html" },
+    { "source": "/about", "destination": "/src/about.html" },
+    { "source": "/contact", "destination": "/src/contact.html" },
+    { "source": "/project/:name", "destination": "/src/project/:name" }
+  ]
 }
