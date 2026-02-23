@@ -1,3 +1,4 @@
+// PROJECT NAVIGATION (NEXT/PREV)
 async function loadHTML(selector, url) {
   const el = document.querySelector(selector);
   if (!el) return;
@@ -42,13 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
   loadHTML("#site-header", "/src/partials/header.html");
 
   if (window.location.pathname.includes("/project/")) {
-    loadHTML("#project-navigation", "/src/partials/project-nav.html").then(() =>
+    loadHTML("#project-nav", "/src/partials/project-nav.html").then(() =>
       initProjectNav(),
     );
   }
 
   const currentPage = window.location.pathname.split("/").pop();
   if (currentPage === "about.html" || currentPage === "contact.html") {
-    loadHTML("#secondary-navigation", "/src/partials/secondary-nav.html");
+    loadHTML("#secondary-nav", "/src/partials/secondary-nav.html");
   }
 });
