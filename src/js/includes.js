@@ -25,7 +25,9 @@ function initProjectNav() {
     "project-three.html",
   ];
 
-  const currentPage = window.location.pathname.split("/").pop();
+  // Handle both "/project/project-one" and "/project/project-one.html"
+  const rawPage = window.location.pathname.split("/").pop();
+  const currentPage = rawPage.replace(".html", "");
   const currentIndex = projects.indexOf(currentPage);
 
   if (currentIndex === -1) return;

@@ -1,12 +1,20 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/src/index.html" },
-    { "source": "/about", "destination": "/src/about.html" },
-    { "source": "/contact", "destination": "/src/contact.html" },
-    { "source": "/project/:name", "destination": "/src/projects/:name" },
-    { "source": "/src/partials/:file", "destination": "/src/partials/:file" },
-    { "source": "/src/js/:file", "destination": "/src/js/:file" },
-    { "source": "/src/styles/:file", "destination": "/src/styles/:file" },
-    { "source": "/src/images/:path*", "destination": "/src/images/:path*" }
+    {
+      "source": "/",
+      "destination": "/src/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/src/about.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/src/contact.html"
+    },
+    {
+      "source": "/project/:name",
+      "destination": "/src/projects/:name"
+    }
   ]
 }
