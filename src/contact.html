@@ -19,16 +19,83 @@
 
   <body>
     <!-- Header section -->
-<div id="site-header"></div>
+<header class="site-header">
+  <div
+    id="site-header"
+    class="site-header-inner max-w-7xl mx-auto px-4 md:px-6 pt-6"
+  >
+    <nav class="site-nav">
+      <!-- Logo -->
+      <div>
+        <a href="/" class="logo">
+          <img
+            src="/src/images/logo/logo.png"
+            alt="Anastasia Bigun — UX/UI Designer"
+            width="60"
+            height="60"
+          />
+        </a>
+      </div>
 
+      <div>
+        <!-- Hamburger / X -->
+        <label class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </label>
+
+        <div class="nav-overlay"></div>
+
+        <ul class="nav-menu">
+          <li><a href="/">projects</a></li>
+          <li><a href="/about">about</a></li>
+          <li><a href="/contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- Main section -->
     <main>
       <div class="px-4 max-w-7xl mx-auto">
         <section class="flex flex-col items-center gap-2 px-4 py-6">
           <h1 class="mt-12 mb-4 font-semibold text-6xl text-emerald-900">Get In Touch</h1>
-          <!-- Secondary nav -->
-          <div class="justify-items-center">
-            <div id="secondary-nav"></div>
-          </div>
+      
+ <!-- secondary navigation -->
+            <div id="secondary-navigation" class="mt-10 justify-items-center">
+              <nav class="secondary-nav text-emerald-900">
+                <ul>
+                  <li>
+                    <a
+                      href="documents/resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Resume</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/anastasiabigun"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >LinkedIn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:nastia.bigun@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Email</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- secondary nav ends -->
+
           <!-- Form -->
         <form id="contact-form" class="w-full mt-10">
           <div class="w-full lg:w-2/3 mx-auto space-y-12">

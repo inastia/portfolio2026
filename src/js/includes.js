@@ -39,17 +39,10 @@ function initProjectNav() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // All paths are now root-relative — no pathPrefix needed
-  loadHTML("#site-header", "/src/partials/header.html");
+  // Dispatch partialsLoaded so main.js nav init still fires
+  document.dispatchEvent(new Event("partialsLoaded"));
 
   if (window.location.pathname.includes("/project/")) {
-    loadHTML("#project-nav", "/src/partials/project-nav.html").then(() =>
-      initProjectNav(),
-    );
-  }
-
-  const currentPage = window.location.pathname.split("/").pop();
-  if (currentPage === "about.html" || currentPage === "contact.html") {
-    loadHTML("#secondary-nav", "/src/partials/secondary-nav.html");
+    initProjectNav();
   }
 });
