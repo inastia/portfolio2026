@@ -36,8 +36,8 @@ function initProjectNav() {
   const nextIndex = (currentIndex + 1) % projects.length;
 
   // Root-relative so it works regardless of nesting
-  prevLink.href = `/src/project/${projects[prevIndex]}`;
-  nextLink.href = `/src/project/${projects[nextIndex]}`;
+  prevLink.href = `/project/${projects[prevIndex]}`;
+  nextLink.href = `/project/${projects[nextIndex]}`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
