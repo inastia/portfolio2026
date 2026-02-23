@@ -6,6 +6,8 @@ export default defineConfig({
   build: { outDir: "src/dist" },
   plugins: [react()],
   resolve: {
-    alias: { "@": "/src" },
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
 });
