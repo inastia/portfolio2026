@@ -2,19 +2,19 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/src/index.html"
+      "destination": "/index.html"
     },
     {
       "source": "/about",
-      "destination": "/src/about.html"
+      "destination": "/about.html"
     },
     {
       "source": "/contact",
-      "destination": "/src/contact.html"
+      "destination": "/contact.html"
     },
     {
       "source": "/project/:name",
-      "destination": "/src/projects/:name"
+      "destination": "/projects/:name"
     }
   ]
 }
