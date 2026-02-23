@@ -7,7 +7,7 @@ const projects = [
       "An app that helps global travelers find the current exchange rates between two currencies.",
     image: "images/profile/project-one.png",
     alt: "Project One case study preview",
-    url: "/src/projects/project-one.html",
+    url: "projects/project-one.html",
   },
   {
     title: "Chani",
@@ -15,7 +15,7 @@ const projects = [
       "A feature addition to the Chani astrology app that lets users save and quickly resurface their favorite meditations, affirmations,and sleep stories.",
     image: "images/profile/project-two.png",
     alt: "Project Two case study preview",
-    url: "/src/projects/project-two.html",
+    url: "projects/project-two.html",
   },
   {
     title: "Astrology Journal",
@@ -23,7 +23,7 @@ const projects = [
       "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
     image: "images/profile/projectimagethree.png",
     alt: "Project Three case study preview",
-    url: "/src/projects/project-three.html",
+    url: "projects/project-three.html",
   },
 ];
 
