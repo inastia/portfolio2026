@@ -5,25 +5,25 @@ const projects = [
     title: "Currency exchange app",
     description:
       "An app that helps global travelers find the current exchange rates between two currencies.",
-    image: "images/profile/project-one.png",
+    image: "/src/images/profile/project-one.png",
     alt: "Project One case study preview",
-    url: "projects/project-one.html",
+    url: "/src/projects/project-one.html",
   },
   {
     title: "Chani",
     description:
       "A feature addition to the Chani astrology app that lets users save and quickly resurface their favorite meditations, affirmations,and sleep stories.",
-    image: "images/profile/project-two.png",
+    image: "/src/images/profile/project-two.png",
     alt: "Project Two case study preview",
-    url: "projects/project-two.html",
+    url: "/src/projects/project-two.html",
   },
   {
     title: "Astrology Journal",
     description:
       "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
-    image: "images/profile/projectimagethree.png",
+    image: "/src/images/profile/project-three.png",
     alt: "Project Three case study preview",
-    url: "projects/project-three.html",
+    url: "/src/projects/project-three.html",
   },
 ];
 
