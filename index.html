@@ -10,24 +10,28 @@
     <link rel="stylesheet" href="/src/output.css" />
 
     <!-- Favicons -->
-    <link rel="icon" href="/src/favicons/favicon.ico" />
+    <link rel="icon" href="/favicons/favicon.ico" />
+
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="/src/favicons/favicon-96x96.png"
+      href="/favicons/favicon-96x96.png"
     />
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/src/favicons/apple-touch-icon.png"
+      href="/favicons/apple-touch-icon.png"
     />
+
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/src/favicons/android-chrome-192x192.png"
+      href="/favicons/android-chrome-192x192.png"
     />
+    <!-- Favicons End -->
   </head>
 
   <body>
@@ -90,12 +94,12 @@
                 /src/images/profile/header-img-large.png  2x
               "
             />
+            <source
+              media="(max-width: 767px)"
+              srcset="/src/images/profile/header-img-small.png"
+            />
             <img
               src="/src/images/profile/header-img-small.png"
-              srcset="
-                /src/images/profile/header-img-small.png  1x,
-                /src/images/profile/header-img-medium.png 2x
-              "
               alt="Header image"
               loading="lazy"
               class="w-full h-auto"
@@ -112,7 +116,6 @@
         </section>
       </div>
     </main>
-    <script type="module" src="/src/js/includes.js"></script>
     <script type="module" src="/src/js/projects.js"></script>
     <script type="module" src="/src/js/main.js"></script>
   </body>
