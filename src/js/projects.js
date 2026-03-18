@@ -1,11 +1,15 @@
 // Page-specific logic - projects
 
+import projectOneImg from "../images/profile/project-one.png";
+import projectTwoImg from "../images/profile/project-two.png";
+import projectThreeImg from "../images/profile/project-three.png";
+
 const projects = [
   {
     title: "Currency exchange app",
     description:
       "An app that helps global travelers find the current exchange rates between two currencies.",
-    image: "/src/images/profile/project-one.png",
+    image: projectOneImg,
     alt: "Project One case study preview",
     url: "/src/projects/project-one.html",
   },
@@ -13,7 +17,7 @@ const projects = [
     title: "Chani",
     description:
       "A feature addition to the Chani astrology app that lets users save and quickly resurface their favorite meditations, affirmations,and sleep stories.",
-    image: "/src/images/profile/project-two.png",
+    image: projectTwoImg,
     alt: "Project Two case study preview",
     url: "/src/projects/project-two.html",
   },
@@ -21,7 +25,7 @@ const projects = [
     title: "Astrology Journal",
     description:
       "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
-    image: "/src/images/profile/project-three.png",
+    image: projectThreeImg,
     alt: "Project Three case study preview",
     url: "/src/projects/project-three.html",
   },
