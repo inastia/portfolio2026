@@ -217,7 +217,7 @@ svg {
 
 /* Secondary navigation */
 .secondary-nav {
-  text-align: start;
+  text-align: center;
 }
 
 .secondary-nav ul {
@@ -225,6 +225,13 @@ svg {
   padding: 0;
   display: inline-flex;
   gap: 2rem;
+}
+
+/* Left align on tablet/desktop */
+@media (min-width: 768px) {
+  .secondary-nav {
+    text-align: start;
+  }
 }
 
 .secondary-nav a {
