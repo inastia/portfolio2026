@@ -6,15 +6,15 @@
 }
 @layer base {
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-emerald-900;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-semibold text-emerald-800;
+    @apply text-3xl md:text-4xl font-semibold;
   }
 
   h3 {
-    @apply text-xl md:text-2xl font-semibold text-emerald-900;
+    @apply text-xl md:text-2xl font-semibold;
   }
 
   h4 {

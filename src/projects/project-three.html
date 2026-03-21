@@ -62,58 +62,374 @@
         </nav>
       </div>
     </header>
-    <main>
-      <!-- Main image of the project -->
-      <div><img src="" alt="" /></div>
 
+    <main>
+      <!-- Hero Section -->
+      <div class="hero-section mb-12 text-center">
+        <!-- Title of the project -->
+        <h1 class="mb-8 text-blue-900">Project Overview</h1>
+        <!-- header image -->
+        <picture>
+          <source
+            media="(min-width: 1920px)"
+            srcset="
+              ../images/projects/project3/project-three-large.png  1x,
+              ../images/projects/project3/project-three-xlarge.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../images/projects/project3/project-three-medium.png 1x,
+              ../images/projects/project3/project-three-large.png  2x
+            "
+          />
+          <img
+            src="../images/projects/project3/project-three-small.png"
+            srcset="
+              ../images/projects/project3/project-three-small.png  1x,
+              ../images/projects/project3/project-three-medium.png 2x
+            "
+            alt="Project one hero image"
+            loading="lazy"
+            class="w-full h-auto"
+          />
+        </picture>
+      </div>
+      <!-- Hero Section Ends -->
+
+      <!-- Main Content Container -->
       <div class="max-w-7xl mx-auto px-4">
         <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
           <!-- Title of the project -->
-          <h2>Astro Journal</h2>
-          <!-- Project details: role, timeline, tools -->
-          <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="/src/images/profile/project-three.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="/src/images/profile/project-three.png"
-            />
-            <img
-              src="/src/images/profile/project-three.png"
-              alt="header image"
-              loading="lazy"
-              class="w-full h-auto"
-            />
-          </picture>
-          <h4>Problem</h4>
-          <p>
-            The software that would allow me to track, study, record, and review
-            personal transits doesn't exist.
-          </p>
-          <blockquote class="bg-red-100 rounded-md p-6">
-            👉 There is no way for me to easily go back to the previous time a
-            certain astrological configuration was in the sky and know what were
-            the main themes in my life at the time.
-          </blockquote>
-          <h4>Solution</h4>
-          <p>
-            Create a journaling app that can show me my native chart and my
-            transit chart at a glance.
-          </p>
-          <h3>Process</h3>
-          <p>process explanation</p>
-          <blockquote class="bg-blue-100 rounded-md p-6">
-            👇 Click to jump to the corresponding section
-          </blockquote>
-          <div class="project-one-nav my-4">
-            <a href="#user-research">User research →</a>
-            <a href="#sketches">Sketches →</a>
-            <a href="#wireframes">Wireframes & Prototypes →</a>
-            <a href="#usability-study">Usability Study →</a>
-          </div>
+          <h2 class="text-blue-800">Camelot Vet Services</h2>
+
+          <!-- Project Overview Section -->
+          <section class="project-overview space-y-6">
+            <h2 class="text-blue-800">Project Overview</h2>
+            <p class="meta text-slate-500 text-sm">
+              Website | Collaborative project | Ongoing | 2026
+            </p>
+            <p class="role text-slate-600">
+              Led strategy, UX direction, and 10DLC compliance for a small
+              veterinary practice launching its first professional website —
+              collaborating with a web designer to deliver a mobile-friendly,
+              visually consistent Squarespace site across four pages.
+            </p>
+
+            <div class="space-y-4">
+              <h4>Problem</h4>
+              <p>
+                Camelot Vet Clinic, a long-established private practice in
+                Eantown, PA, had no active website and no formal digital
+                presence. The immediate trigger was compliance: the clinic was
+                onboarding to a 10DLC texting system — a carrier-level
+                regulation requiring businesses to register their messaging
+                campaigns — and that registration requires a live, compliant
+                website to be approved. Without it, the clinic could not reach
+                patients by text at all.
+              </p>
+              <blockquote class="bg-red-100 rounded-md p-6 my-6">
+                👉 Patients can't be reached by text until a live compliance
+                site exists.
+              </blockquote>
+              <p>
+                Beyond the regulatory urgency, the clinic had a deeper
+                discoverability problem. Their Google Business profile —
+                carrying 4.7 stars and 252 reviews — was unclaimed. New patients
+                couldn't verify the practice online, and the clinic had no way
+                to convert that trust into appointments.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <h4>Solution</h4>
+              <p>
+                A simple, fast, and low-maintenance website built on Squarespace
+                — designed to go live within a week and serve as the foundation
+                for future growth. The site covers four pages: Home, About,
+                Services, and Terms &amp; Conditions (required for 10DLC
+                compliance).
+              </p>
+              <p>
+                The design priority was clarity and consistency: a mobile-first
+                layout that reflects the warmth and personal character of the
+                clinic, with a visual system that holds together across all
+                pages without requiring ongoing maintenance from the client.
+              </p>
+            </div>
+          </section>
+
+          <!-- Process Section -->
+          <section class="process-section space-y-8">
+            <h3 class="text-blue-700">Process</h3>
+            <p>
+              Led strategy, compliance guidance, and design direction — working
+              collaboratively with a web designer to move from a cold discovery
+              call to a near-complete site in under two weeks.
+            </p>
+            <blockquote class="bg-blue-100 rounded-md p-6">
+              👇 Click to jump to the corresponding section
+            </blockquote>
+            <div class="project-one-nav my-4">
+              <a href="#discovery">Discovery →</a>
+              <a href="#strategy">Strategy →</a>
+              <a href="#design-direction">Design Direction →</a>
+              <a href="#results">Results →</a>
+            </div>
+            <!-- Discovery Phase -->
+            <div class="research-phase mt-12 space-y-12">
+              <h3 id="discovery">Discovery</h3>
+              <div class="subsection space-y-4">
+                <h4 id="discovery-call">Discovery Call</h4>
+                <p>
+                  Joined the initial client call to understand the clinic's
+                  needs, constraints, and goals. The client — the Office Manager
+                  of a small, privately owned practice — was clear: she wanted
+                  something fast, simple, and low-maintenance. She didn't have a
+                  logo or polished brand assets, just a Google Business profile,
+                  a few old ads, and a phone number.
+                </p>
+                <p>Key information gathered during the call:</p>
+                <ul
+                  class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
+                >
+                  <li>
+                    Services offered: wellness exams, vaccinations, digital
+                    X-ray, dentals, soft tissue surgeries, emergency care, and
+                    care for cats, dogs, and small exotics
+                  </li>
+                  <li>Most important service: surgery</li>
+                  <li>
+                    Differentiator: small, private practice with a personalized
+                    approach — patients travel from West Virginia, Pittsburgh,
+                    and Ohio specifically to see Dr. Shepherd
+                  </li>
+                  <li>Design preference: simple and clean</li>
+                  <li>
+                    No existing website; domain to be purchased through
+                    Squarespace
+                  </li>
+                </ul>
+                <p>
+                  I also flagged the Google Business profile issue during the
+                  call and pushed for the client to re-attempt claiming it — the
+                  4.7-star rating and existing review volume were too valuable
+                  to leave unmanaged.
+                </p>
+              </div>
+            </div>
+
+            <!-- Strategy Phase -->
+            <div class="mt-12 space-y-12">
+              <h3 id="strategy">Strategy</h3>
+              <div class="subsection space-y-4">
+                <h4>Compliance First</h4>
+                <p>
+                  The 10DLC registration process requires a publicly accessible
+                  website that includes, at minimum, a Terms &amp; Conditions
+                  page with explicit language about SMS messaging consent and
+                  opt-out instructions. This wasn't optional — without it, the
+                  carrier registration would be rejected and the clinic would
+                  remain unable to contact patients by text.
+                </p>
+                <p>
+                  I structured the site scope around this requirement: four
+                  pages that satisfy both the compliance requirement and the
+                  client's real-world need for a professional, informative web
+                  presence.
+                </p>
+              </div>
+              <div class="subsection space-y-4">
+                <h4>Scope Definition</h4>
+                <p>
+                  Defined a focused MVP rather than a feature-heavy launch. The
+                  first version intentionally excludes online booking and
+                  click-to-text functionality — not because those aren't
+                  valuable, but because they introduce complexity that would
+                  delay the go-live date and require ongoing client involvement
+                  to maintain. A lean, accurate, compliant site that goes live
+                  this week is more useful than a feature-rich site that
+                  launches in a month.
+                </p>
+                <p>Page structure:</p>
+                <ul
+                  class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
+                >
+                  <li>
+                    <b>Home</b> — Overview of the clinic, services summary, and
+                    contact information
+                  </li>
+                  <li>
+                    <b>About</b> — Short introduction to Dr. Shepherd and the
+                    clinic's approach
+                  </li>
+                  <li>
+                    <b>Services</b> — Organized list of what the clinic offers
+                  </li>
+                  <li>
+                    <b>Terms &amp; Conditions</b> — 10DLC-compliant SMS consent
+                    and privacy language
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Design Direction Phase -->
+            <div class="design-phase mt-12 space-y-12">
+              <h3 id="design-direction">Design Direction</h3>
+              <div class="subsection space-y-4">
+                <h4>Visual Consistency Across Pages</h4>
+                <p>
+                  After the web designer built the initial Squarespace
+                  structure, I spent a focused working session reviewing the
+                  site end-to-end — going through colors, imagery, spacing
+                  between elements, call-to-action behavior, and how the design
+                  held together across all four pages on mobile.
+                </p>
+                <p>
+                  The guiding principle was consistency: a visitor landing on
+                  the Services page should feel the same visual language as one
+                  landing on the Home page. Small practices often end up with
+                  sites that feel assembled rather than designed — different
+                  font weights on different pages, inconsistent button styles,
+                  imagery that doesn't match the tone. My direction was to close
+                  those gaps before launch.
+                </p>
+              </div>
+              <div class="subsection space-y-4">
+                <h4>Mobile-First Review</h4>
+                <p>
+                  The client's patient base spans a wide age range, and many
+                  will find the site by searching on a phone. I prioritized the
+                  mobile experience throughout the design review — checking that
+                  CTAs were tappable, contact information was immediately
+                  visible, and the layout didn't break on smaller screens.
+                  Desktop was secondary.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Process Section Ends -->
+          <!-- Results Section -->
+          <section class="results space-y-8">
+            <h2 id="results">Results</h2>
+
+            <div class="decisions mt-8 space-y-10">
+              <h3>Key Product Decisions</h3>
+
+              <div class="subsection space-y-4">
+                <h4>Decision 1: Lead with compliance, not aesthetics</h4>
+                <p>
+                  The temptation with any client who has no existing site is to
+                  treat it as a blank-canvas design opportunity. But the real
+                  constraint here was regulatory — the site needed to exist and
+                  be compliant before anything else mattered.
+                </p>
+                <p>
+                  Framing the project around the 10DLC deadline gave the work a
+                  clear, non-negotiable go-live target and prevented scope creep
+                  from features that sounded nice but weren't required. It also
+                  helped the client understand why certain pages — especially
+                  Terms &amp; Conditions — weren't optional add-ons but
+                  load-bearing parts of the build.
+                </p>
+              </div>
+
+              <div class="subsection space-y-4">
+                <h4>
+                  Decision 2: Preserve the clinic's existing trust signals
+                </h4>
+                <p>
+                  The clinic's strongest asset wasn't its brand — it was its
+                  reputation. Dr. Shepherd is, by the client's own description,
+                  something of a local icon. Patients drive from neighboring
+                  states specifically to see him. The Google Business profile,
+                  even unclaimed, carried 4.7 stars across 252 reviews with
+                  consistent mentions of him and the office manager by name.
+                </p>
+                <p>
+                  Rather than treating the website as the primary trust-builder,
+                  I directed the content and design to reinforce what already
+                  existed: a warm, personalized practice with a doctor patients
+                  are loyal to. The About page and homepage copy were shaped
+                  around that character — not generic clinic language, but the
+                  specificity that makes a small practice feel worth driving two
+                  hours to reach.
+                </p>
+              </div>
+            </div>
+
+            <div class="final-design mt-12 space-y-4">
+              <h3>Final Design</h3>
+              <p>
+                The site is pending final review and launch. This entry will be
+                updated with a live link once the site goes live.
+              </p>
+            </div>
+
+            <div class="subsection space-y-4 mt-10">
+              <h4>Project Successes</h4>
+              <ul
+                class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
+              >
+                <li>
+                  Moved from zero web presence to a near-complete, compliant
+                  website in under two weeks
+                </li>
+                <li>
+                  10DLC Terms &amp; Conditions page structured and in place
+                  ahead of carrier registration
+                </li>
+                <li>
+                  Consistent visual system across all four pages, optimized for
+                  mobile
+                </li>
+                <li>
+                  Content strategy grounded in the clinic's real differentiator
+                  — its people — rather than generic veterinary copy
+                </li>
+                <li>
+                  Scope held to MVP, keeping the path to launch fast and the
+                  maintenance burden low for the client
+                </li>
+              </ul>
+            </div>
+
+            <div class="subsection space-y-4">
+              <h4>What I Learned</h4>
+              <p>
+                Not every website project starts with a design brief — sometimes
+                it starts with a regulatory deadline and a client who feeds
+                tigers after lunch.
+              </p>
+              <p>
+                Working within a real business constraint (10DLC compliance)
+                sharpened every decision. There was no room to over-design or
+                over-scope, and that pressure produced a cleaner, more
+                purposeful outcome than an open-ended brief often does. The
+                strongest design direction came not from inventing a brand
+                identity but from listening carefully in a 20-minute discovery
+                call and building around what was already true about the
+                practice.
+              </p>
+            </div>
+
+            <div class="subsection space-y-4">
+              <h4>What's Next</h4>
+              <p>
+                Once the site is live and the 10DLC registration is approved,
+                the foundation is in place for incremental improvements: online
+                appointment requests, a click-to-text button, and — when the
+                client is ready — a separate site for the wild animal orphanage
+                she manages, which will need donation functionality and its own
+                identity.
+              </p>
+            </div>
+          </section>
+          <!-- Results Section Ends -->
         </section>
+        <!-- Main Content Section Ends -->
       </div>
       <!-- PROJECT NAVIGATION -->
       <nav class="max-w-7xl mx-auto px-4 py-16" id="project-nav">

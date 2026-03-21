@@ -22,11 +22,11 @@ const projects = [
     url: "/src/projects/project-two.html",
   },
   {
-    title: "Astrology Journal",
+    title: "Camelot Vet Services",
     description:
-      "Thank you for your interest. I'm in the process of staging this project. Come back in March, 2026.",
+      "A website rebuild for a small veterinary practice that lost its digital infrastructure — launched to meet 10DLC compliance and restore their online presence.",
     image: projectThreeImg,
-    alt: "Project Three case study preview",
+    alt: "Camelot Vet Clinic website case study preview",
     url: "/src/projects/project-three.html",
   },
 ];
@@ -42,7 +42,7 @@ function createProjectCard(project) {
         class="card bg-base-100 shadow-sm w-full rounded-lg cursor-pointer transition hover:shadow-md hover:-translate-y-1"
       >
         <div class="card-body p-4 space-y-3">
-          <h3 class="card-title text-2xl">${project.title}</h3>
+          <h3 class="card-title text-2xl text-emerald-900">${project.title}</h3>
           <p class="pt-2">${project.description}</p>
         </div>
 
