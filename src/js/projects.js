@@ -12,6 +12,7 @@ const projects = [
     image: projectOneImg,
     alt: "Project One case study preview",
     url: "/src/projects/project-one.html",
+    titleColor: "text-emerald-900",
   },
   {
     title: "Chani",
@@ -20,6 +21,7 @@ const projects = [
     image: projectTwoImg,
     alt: "Project Two case study preview",
     url: "/src/projects/project-two.html",
+    titleColor: "text-purple-900",
   },
   {
     title: "Camelot Vet Services",
@@ -28,6 +30,7 @@ const projects = [
     image: projectThreeImg,
     alt: "Camelot Vet Clinic website case study preview",
     url: "/src/projects/project-three.html",
+    titleColor: "text-blue-900",
   },
 ];
 
@@ -42,7 +45,7 @@ function createProjectCard(project) {
         class="card bg-base-100 shadow-sm w-full rounded-lg cursor-pointer transition hover:shadow-md hover:-translate-y-1"
       >
         <div class="card-body p-4 space-y-3">
-          <h3 class="card-title text-2xl text-emerald-900">${project.title}</h3>
+          <h3 class="card-title text-2xl ${project.titleColor}">${project.title}</h3>
           <p class="pt-2">${project.description}</p>
         </div>
 
@@ -65,5 +68,4 @@ function createProjectCard(project) {
 }
 
 const grid = document.getElementById("projects-grid");
-
 grid.innerHTML = projects.map((project) => createProjectCard(project)).join("");

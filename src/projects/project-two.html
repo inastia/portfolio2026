@@ -24,7 +24,7 @@
     />
     <!-- Favicons End -->
   </head>
-  <body>
+  <body class="theme-purple">
     <!-- Header section -->
     <header class="site-header">
       <div
@@ -98,23 +98,25 @@
           />
         </picture>
       </div>
+      <!-- Hero Section Ends -->
 
       <!-- Main Content Container -->
       <div class="max-w-7xl mx-auto px-4">
         <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
           <!-- Project Overview Section -->
+          <h2>Project Overview</h2>
+          <section class="project-overview space-y-4">
+            <div class="space-y-4">
+              <p class="meta text-slate-500 text-sm">
+                Mobile app | Solo project | 2 weeks | 2025
+              </p>
+              <p class="role text-slate-600">
+                A feature addition to the Chani astrology app that lets users
+                save and quickly resurface their favorite meditations,
+                affirmations, and sleep stories.
+              </p>
+            </div>
 
-          <!-- Project Overview Section -->
-          <section class="project-overview space-y-6">
-            <h2>Project Overview</h2>
-            <p class="meta text-slate-500 text-sm">
-              Mobile app | Solo project | 2 weeks | 2025
-            </p>
-            <p class="role text-slate-600">
-              A feature addition to the Chani astrology app that lets users save
-              and quickly resurface their favorite meditations, affirmations,
-              and sleep stories.
-            </p>
             <div class="space-y-4">
               <h4>Problem</h4>
               <p>
@@ -131,6 +133,7 @@
                 them again.
               </blockquote>
             </div>
+
             <div class="space-y-4">
               <h4>My Solution</h4>
               <p>
@@ -139,9 +142,7 @@
                 any meditation while listening to it. Second, the Listen page
                 was restructured using a tab pattern — Sleep Stories,
                 Affirmations, Meditations — already familiar from the app's Home
-                page. Any saved audio automatically surfaces at the top of its
-                category, so the user never has to scan a full list to find what
-                they loved.
+                page.
               </p>
               <figure>
                 <picture class="lightbox-trigger">
@@ -177,82 +178,110 @@
                 </figcaption>
               </figure>
             </div>
-
-            <h4>How Chani Solved It</h4>
-            <p>
-              The Chani team restructured the Listen page with two new controls
-              in the header: a filter icon for browsing by category
-              (Meditations, Affirmations, Sleep Stories) and a heart icon that
-              leads directly to a saved-only view. Below the header, the page
-              now opens with a horizontally scrolling row of favorited audio — a
-              new scroll pattern in the app — followed by three category cards.
-              Tapping a card leads to the full list of audio files in that
-              category, where each file displays a heart icon. Favorited files
-              show a filled heart; all others show an outline heart, allowing
-              users to save any file directly from the list without opening it.
-            </p>
-            <figure>
-              <picture class="lightbox-trigger">
-                <source
-                  media="(min-width: 1920px)"
-                  srcset="
-                    ../images/projects/project2/chani-solution-large.png  1x,
-                    ../images/projects/project2/chani-solution-xlarge.png 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ../images/projects/project2/chani-solution-medium.png 1x,
-                    ../images/projects/project2/chani-solution-large.png  2x
-                  "
-                />
-                <img
-                  src="../images/projects/project2/chani-solution-small.png"
-                  srcset="
-                    ../images/projects/project2/chani-solution-small.png  1x,
-                    ../images/projects/project2/chani-solution-medium.png 2x
-                  "
-                  alt="Before and after screens showing Chani's updated Listen page with filter and heart icons in the header, a horizontally scrolling favorites row, category cards, and heart icons on individual audio files"
-                  loading="lazy"
-                  class="w-full h-auto rounded-lg shadow-md"
-                />
-              </picture>
-              <figcaption class="text-sm text-slate-500 mt-2">
-                Before: original Listen page built to scroll. After: filter
-                controls and My Favorites cards (left), category cards (center),
-                audio list with per-file heart icons (right).
-              </figcaption>
-            </figure>
+            <div class="space-y-4">
+              <h4>How Chani Solved It</h4>
+              <p>
+                The Chani team restructured the Listen page with two new
+                controls in the header: a filter icon for browsing by category
+                (Meditations, Affirmations, Sleep Stories) and a heart icon that
+                leads directly to a saved-only view. Below the header, the page
+                now opens with a horizontally scrolling row of favorited audio —
+                a new scroll pattern in the app — followed by three category
+                cards. Tapping a card leads to the full list of audio files in
+                that category, where each file displays a heart icon. Favorited
+                files show a filled heart; all others show an outline heart,
+                allowing users to save any file directly from the list without
+                opening it.
+              </p>
+              <figure>
+                <picture class="lightbox-trigger">
+                  <source
+                    media="(min-width: 1920px)"
+                    srcset="
+                      ../images/projects/project2/chani-solution-large.png  1x,
+                      ../images/projects/project2/chani-solution-xlarge.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ../images/projects/project2/chani-solution-medium.png 1x,
+                      ../images/projects/project2/chani-solution-large.png  2x
+                    "
+                  />
+                  <img
+                    src="../images/projects/project2/chani-solution-small.png"
+                    srcset="
+                      ../images/projects/project2/chani-solution-small.png  1x,
+                      ../images/projects/project2/chani-solution-medium.png 2x
+                    "
+                    alt="Before and after screens showing Chani's updated Listen page with filter and heart icons in the header, a horizontally scrolling favorites row, category cards, and heart icons on individual audio files"
+                    loading="lazy"
+                    class="w-full h-auto rounded-lg shadow-md"
+                  />
+                </picture>
+                <figcaption class="text-sm text-slate-500 mt-2">
+                  Before: original Listen page built to scroll. After: filter
+                  controls and My Favorites cards (left), category cards
+                  (center), audio list with per-file heart icons (right).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="space-y-4">
+              <div class="subsection space-y-4">
+                <h4>Comparing Approaches</h4>
+                <p>
+                  Chani optimized for saving — a heart on every audio tile means
+                  users can favorite without opening a file. My solution
+                  optimized for retrieval — saved files surface automatically at
+                  the top, no scanning required. The two approaches aren't
+                  mutually exclusive; an ideal iteration would combine both.
+                </p>
+              </div>
+            </div>
           </section>
 
           <!-- Process Section -->
           <section class="process-section space-y-8">
-            <h2 class="mt-8">Process</h2>
-            <p>
-              Worked within an existing design system to identify and solve two
-              connected user problems — saving a favorite audio file and finding
-              it again — by extending a UI pattern already familiar to Chani
-              users rather than introducing a new one.
-            </p>
-            <blockquote class="bg-blue-100 rounded-md p-6">
-              👇 Click to jump to the corresponding section
-            </blockquote>
-            <div class="project-one-nav my-4">
-              <a href="#user-research">Research →</a>
-              <a href="#wireframes">Design →</a>
-              <a href="#usability-study">Usability Study →</a>
-              <a href="#usability-study">Results →</a>
+            <div class="space-y-4">
+              <h2 class="mt-8">Process</h2>
+              <p>
+                Worked within an existing design system to identify and solve
+                two connected user problems — saving a favorite audio file and
+                finding it again — by extending a UI pattern already familiar to
+                Chani users rather than introducing a new one.
+              </p>
+              <blockquote class="bg-blue-100 rounded-md p-6">
+                👇 Click to jump to the corresponding section
+              </blockquote>
+              <div class="project-one-nav my-4">
+                <a href="#user-research">Research →</a>
+                <a href="#wireframes">Design →</a>
+                <a href="#usability-study">Usability Study →</a>
+                <a href="#usability-study">Results →</a>
+              </div>
             </div>
 
             <!-- Research Phase -->
-            <div class="research-phase mt-12 space-y-12">
+            <div class="research-phase space-y-4">
               <h3 id="research-phase">Research Phase</h3>
               <div class="subsection space-y-4">
                 <h4 id="user-research">User Research</h4>
                 <p>
-                  Visualized the user journey across four stages: open app,
-                  listen to meditation, return to app, and give up searching.
+                  As a Chani user myself, I had direct experience with the
+                  problem. Rather than building a persona, I used a user
+                  journey, empathy map, and user flow to pressure-test my
+                  assumptions and stay open to solutions I hadn't considered
+                  yet.
+                </p>
+              </div>
+              <div class="space-y-4">
+                <h4 id="user-research">User Journey</h4>
+                <p>
+                  Mapping the user journey across four stages, from discovering
+                  a meditation to giving up searching for it, made the breaking
+                  point visible: the app loses the user not during the
+                  experience but after it.
                 </p>
                 <picture class="lightbox-trigger">
                   <source
@@ -281,9 +310,16 @@
                   />
                 </picture>
               </div>
-              <div class="subsection space-y-4">
+
+              <div class="space-y-4">
                 <h4>Empathy Map</h4>
-                <p>Created an empathy map...</p>
+                <p>
+                  Mapping what a user says, thinks, feels, and does when trying
+                  to return to a favorite meditation revealed a clear pattern:
+                  the frustration isn't with the content — it's with the effort
+                  required to find it again. The habit loop breaks not at the
+                  listening moment but at the retrieval moment.
+                </p>
                 <picture class="lightbox-trigger">
                   <source
                     media="(min-width: 1920px)"
@@ -311,14 +347,46 @@
                   />
                 </picture>
               </div>
-
-              <div class="subsection space-y-4">
+              <div class="space-y-4">
                 <h4>User Flow</h4>
-                <p>Mapped the core decision path</p>
+                <p>
+                  Two paths, one connected experience. The first follows a user
+                  discovering and saving a meditation — finding it, pressing
+                  play, and tapping the heart if it resonates. The second
+                  captures the return visit — tapping Listen, selecting the
+                  Meditations tab, and finding the saved file waiting at the
+                  top.
+                </p>
+                <picture class="lightbox-trigger">
+                  <source
+                    media="(min-width: 1920px)"
+                    srcset="
+                      ../images/projects/project2/user-flow-large.png  1x,
+                      ../images/projects/project2/user-flow-xlarge.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ../images/projects/project2/user-flow-medium.png 1x,
+                      ../images/projects/project2/user-flow-large.png  2x
+                    "
+                  />
+                  <img
+                    src="../images/projects/project2/user-flow-small.png"
+                    srcset="
+                      ../images/projects/project2/user-flow-small.png  1x,
+                      ../images/projects/project2/user-flow-medium.png 2x
+                    "
+                    alt="User flow"
+                    loading="lazy"
+                    class="w-full h-auto rounded-lg shadow-md"
+                  />
+                </picture>
               </div>
 
               <!-- Design Phase -->
-              <div class="design-phase mt-12 space-y-12">
+              <div class="design-phase space-y-4">
                 <h3 id="design-phase">Design Phase</h3>
 
                 <div class="subsection space-y-4">
@@ -359,22 +427,18 @@
                     />
                   </picture>
                 </div>
-                <div class="subsection space-y-4">
-                  <h4 id="usability-study">Usability Study</h4>
-                  <p>Explanation here.</p>
-                </div>
               </div>
             </div>
           </section>
           <!-- Process Section Ends -->
 
           <!-- Results Section -->
-          <section class="results space-y-8">
-            <h2 id="results">Results</h2>
-            <div class="decisions mt-8 space-y-10">
-              <h3>Key Product Decisions</h3>
+          <section class="results space-y-4">
+            <h3 id="results">Results</h3>
+            <div class="decisions space-y-4">
+              <h4>Key Product Decisions</h4>
               <div class="subsection space-y-4">
-                <h4>Decision 1: Solve for discoverability, not just saving</h4>
+                <h5>Decision 1: Solve for discoverability, not just saving</h5>
                 <p>
                   The original problem was simple: users had no way to bookmark
                   an audio file. But as I mapped the user flow, a second problem
@@ -395,9 +459,18 @@
                   top of whichever category they belonged to. A familiar pattern
                   — no new interaction to learn, two problems resolved.
                 </p>
+                <p>
+                  One deliberate choice within that solution: favorited files
+                  are identified by a filled heart icon and automatically
+                  positioned at the top of their category — no additional
+                  heading needed. Adding a "Favorites" label would require a
+                  corresponding label for the remaining files and would appear
+                  on every tab regardless of whether anything had been saved,
+                  introducing visual noise on a screen designed to reduce it.
+                </p>
               </div>
               <div class="subsection space-y-4">
-                <h4>Decision 2: Scope down to ship faster</h4>
+                <h5>Decision 2: Scope down to ship faster</h5>
                 <p>
                   While designing the Listen page, I identified a broader
                   opportunity: the same tab pattern could simplify the Me and
@@ -419,7 +492,7 @@
                 </p>
               </div>
             </div>
-            <div class="final-design mt-12 space-y-4">
+            <div class="final-design space-y-4">
               <h3>Final Design</h3>
               <p>
                 Explore the interactive prototype to see the full user flow.
@@ -427,12 +500,12 @@
               <a
                 href="..."
                 target="_blank"
-                class="inline-block mt-4 text-emerald-900 font-medium hover:underline"
+                class="inline-block mt-4 text-purple-900 font-medium hover:underline"
               >
                 View Interactive Prototype →
               </a>
             </div>
-            <div class="subsection space-y-4 mt-10">
+            <div class="subsection space-y-4">
               <h4>Product Successes</h4>
               <ul
                 class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
@@ -487,8 +560,8 @@
             </div>
           </section>
           <!-- Results Section Ends -->
-          <!-- Main Section Ends -->
         </section>
+        <!-- Main Section Ends -->
       </div>
       <!-- PROJECT NAVIGATION -->
       <nav class="max-w-7xl mx-auto px-4 py-16" id="project-nav">

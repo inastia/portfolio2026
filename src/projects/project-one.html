@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="../../favicons/apple-touch-icon.png" />
 <!-- Favicons End -->
   </head>
-  <body>
+  <body class="theme-emerald">
     <!-- Header section -->
     <header class="site-header">
   <div
@@ -63,7 +63,8 @@
            <picture>
             <source media="(min-width: 1920px)" srcset="../images/projects/project1/project-one-large.png 1x, ../images/projects/project1/project-one-xlarge.png 2x"/>
             <source media="(min-width: 768px)" srcset="../images/projects/project1/project-one-medium.png 1x, ../images/projects/project1/project-one-large.png 2x"/>
-            <img src="../images/projects/project1/project-one-small.png" srcset="../images/projects/project1/project-one-small.png 1x, ../images/projects/project1/project-one-medium.png 2x"
+            <img 
+              src="../images/projects/project1/project-one-small.png" srcset="../images/projects/project1/project-one-small.png 1x, ../images/projects/project1/project-one-medium.png 2x"
               alt="Project one hero image"
               loading="lazy"
               class="w-full h-auto"
@@ -75,15 +76,21 @@
         <div class="max-w-7xl mx-auto px-4"> 
          <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
         <!-- Project Overview Section -->
-          <section class="project-overview space-y-6">
-            <h2>Project Overview</h2>
-            <p class="meta text-slate-500 text-sm">Mobile app | Solo project | 4 weeks | 2025</p>
-            <p class="role text-slate-600">Led end-to-end discovery and design for a mobile currency exchange app. Conducted research, defined user flows, created wireframes and high-fidelity prototypes, and iterated based on usability feedback.</p>
+         <h2>Project Overview</h2>
+          <section class="project-overview space-y-4">
+            <div class="space-y-4">
+              <p class="meta text-slate-500 text-sm">Mobile app | Solo project | 4 weeks | 2025</p>
+              <p class="role text-slate-600">Led end-to-end discovery and design for a mobile currency exchange app. Conducted research, defined user flows, created wireframes and high-fidelity prototypes, and iterated based on usability feedback.</p>
+            </div>
+              
             <div class="space-y-4">
               <h4>Problem</h4>
-              <p>How might we help global travelers quickly understand and exchange currencies without cognitive overload, uncertainty, or hidden friction?</p>
+              <p>
+                How might we help global travelers quickly understand and exchange currencies without cognitive overload, uncertainty, or hidden friction?
+              </p>
               <blockquote class="bg-red-100 rounded-md p-6 my-6">👉 80% of travelers I interviewed said they double-check exchange rates across multiple apps due to concerns about hidden fees.</blockquote>
             </div> 
+
             <div class="space-y-4">
               <h4>Solution</h4>
               <p>Designed a focused MVP centered on transparency and real-world usability.</p>
@@ -103,7 +110,8 @@
           </section>
 
         <!-- Process Section -->
-         <section class="process-section space-y-8">
+         <section class="process-section space-y-4">
+          <div class="space-y-4">
           <h2>Process</h2>
             <p>Followed a structured UX process — from research and synthesis to ideation, prototyping, and usability testing — with a focus on reducing financial complexity and increasing transparency.</p>
             <blockquote class="bg-blue-100 rounded-md p-6">👇 Click to jump to the corresponding section</blockquote>
@@ -113,9 +121,11 @@
               <a href="#usability-study">Usability Study →</a>
               <a href="#results">Results →</a>
             </div>
+          </div>
+         
 
           <!-- Research Phase -->
-          <div class="research-phase mt-12 space-y-12">
+          <div class="research-phase space-y-4">
             <h3 id="research-phase">Research Phase</h3>
             <div class="subsection space-y-4">
               <h4 id="user-research">User Research</h4>
@@ -151,6 +161,7 @@
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
           </div>
+
           <div class="subsection space-y-4">
             <h4>User Flow</h4>
             <p>Mapped the core decision path from app entry to conversion completion. The flow addresses two critical questions: “Is my currency available?” and “Do I understand the mid-market rate?” — reducing friction and uncertainty before users proceed.</p>
@@ -166,7 +177,7 @@
           </div>
 
         <!-- Design Phase -->
-        <div class="design-phase mt-12 space-y-12">
+        <div class="design-phase space-y-4">
           <h3 id="design-phase">Design Phase</h3>
           <div class="subsection space-y-4">
             <h4 id="sketches">Sketches</h4>
@@ -213,13 +224,12 @@
       </section>
 
       <!-- Results Section -->
-      <section class="results space-y-8">
-        <h2 id="results">Results</h2>
-        
-        <div class="decisions mt-8 space-y-10">
-          <h3>Key Product Decisions</h3>
+      <section class="results space-y-4">
+        <h3 id="results">Results</h3>
+        <div class="decisions space-y-4">
+          <h4>Key Product Decisions</h4>
           <div class="subsection space-y-4">
-            <h4>Decision 1: Prioritizing MVP Over Feature Expansion</h4>
+            <h5>Decision 1: Prioritizing MVP Over Feature Expansion</h5>
             <p>During interviews, users requested expanded features — such as safety ratings for exchange locations, translation support at kiosks, and nearby exchange maps.</p>
             <p>While valuable, these ideas introduced significant scope complexity. Through synthesis, I identified the core unmet need: trust in exchange rates and final totals.</p>
             <p>I intentionally narrowed the product to two essential experiences — Convert and Calculate — focusing on transparency and clarity first.</p>
@@ -227,7 +237,7 @@
             <p>This MVP approach supports faster iteration, clearer positioning, and a stronger foundation for future expansion.</p>
           </div>
           <div class="subsection space-y-4">
-            <h4>Decision 2: Replacing the Progress Bar with Stronger Defaults</h4>
+            <h5>Decision 2: Replacing the Progress Bar with Stronger Defaults</h5>
             <p>After initial testing, I introduced a progress bar to clarify how many steps remained in the conversion flow.</p>
             <p>However, in the second round of testing, 3 out of 4 participants did not notice the progress indicator, and the fourth did not rely on it to complete tasks. The addition did not meaningfully improve confidence.</p>
             <p>Instead of adding navigational cues, I shifted focus to improving input clarity.</p>
@@ -249,7 +259,7 @@
           </div>
         </div>
 
-        <div class="final-design mt-12 space-y-4">
+        <div class="final-design space-y-4">
           <h3>Final Design</h3>
           <p>Explore the interactive prototype to see the full user flow.</p>
           <a href="..." target="_blank" class="inline-block mt-4 text-emerald-900 font-medium hover:underline">
@@ -257,7 +267,7 @@
           </a>
         </div>
 
-        <div class="subsection space-y-4 mt-10">
+        <div class="subsection space-y-4">
           <h4>Product Successes</h4>
           <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
             <li>Users clearly understood the distinction between mid-market rate and final amount after fees</li>
