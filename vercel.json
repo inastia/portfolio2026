@@ -1,9 +1,20 @@
 {
   "outputDirectory": "dist",
   "rewrites": [
+    {
+      "source": "/currency-exchange",
+      "destination": "/src/projects/project-one.html"
+    },
+    { "source": "/chani", "destination": "/src/projects/project-two.html" },
+    {
+      "source": "/camelot-vet",
+      "destination": "/src/projects/project-three.html"
+    },
+
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
+
     { "source": "/projects/:name", "destination": "/projects/:name" }
   ]
 }
