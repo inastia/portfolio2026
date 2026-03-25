@@ -11,7 +11,7 @@ const projects = [
       "An app that helps global travelers find the current exchange rates between two currencies.",
     image: projectOneImg,
     alt: "Project One case study preview",
-    url: "/src/projects/project-one.html",
+    url: "/currency-exchange",
     titleColor: "text-emerald-900",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
       "A feature addition to the Chani astrology app that lets users save and quickly resurface their favorite meditations, affirmations,and sleep stories.",
     image: projectTwoImg,
     alt: "Project Two case study preview",
-    url: "/src/projects/project-two.html",
+    url: "/chani",
     titleColor: "text-purple-900",
   },
   {
@@ -29,7 +29,7 @@ const projects = [
       "A website rebuild for a small veterinary practice that lost its digital infrastructure — launched to meet 10DLC compliance and restore their online presence.",
     image: projectThreeImg,
     alt: "Camelot Vet Clinic website case study preview",
-    url: "/src/projects/project-three.html",
+    url: "/camelot-vet",
     titleColor: "text-blue-900",
   },
 ];

@@ -5,11 +5,7 @@ function initProjectNav() {
 
   if (!prevLink || !nextLink) return;
 
-  const projects = [
-    "project-one.html",
-    "project-two.html",
-    "project-three.html",
-  ];
+  const projects = ["/currency-exchange", "/chani", "/camelot-vet"];
 
   const currentPage = window.location.pathname.split("/").pop();
   const currentIndex = projects.indexOf(currentPage);
