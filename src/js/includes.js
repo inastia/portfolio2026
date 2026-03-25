@@ -7,7 +7,7 @@ function initProjectNav() {
 
   const projects = ["/currency-exchange", "/chani", "/camelot-vet"];
 
-  const currentPage = window.location.pathname.split("/").pop();
+  const currentPage = window.location.pathname;
   const currentIndex = projects.indexOf(currentPage);
 
   if (currentIndex === -1) return;
