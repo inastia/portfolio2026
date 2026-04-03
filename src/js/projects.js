@@ -26,7 +26,7 @@ const projects = [
   {
     title: "Camelot Vet Services",
     description:
-      "A website rebuild for a small veterinary practice that lost its digital infrastructure — launched to meet 10DLC compliance and restore their online presence.",
+      "A website rebuild for a small veterinary practice that lost its digital infrastructure, launched to meet 10DLC compliance and restore their online presence.",
     image: projectThreeImg,
     alt: "Camelot Vet Clinic website case study preview",
     url: "/camelot-vet",

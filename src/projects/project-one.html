@@ -61,12 +61,23 @@
         <h1 class="mb-8">Currency exchange app</h1>
             <!-- header image -->
            <picture>
-            <source media="(min-width: 1920px)" srcset="../images/projects/project1/project-one-large.png 1x, ../images/projects/project1/project-one-xlarge.png 2x"/>
-            <source media="(min-width: 768px)" srcset="../images/projects/project1/project-one-medium.png 1x, ../images/projects/project1/project-one-large.png 2x"/>
+            <source media="(min-width: 1920px)" 
+            srcset="
+            ../images/projects/project1/project-one-large.png 1x, 
+            ../images/projects/project1/project-one-xlarge.png 2x"
+            />
+            <source 
+              media="(min-width: 768px)" 
+              srcset="
+              ../images/projects/project1/project-one-medium.png 1x, 
+              ../images/projects/project1/project-one-large.png 2x"
+              />
             <img 
-              src="../images/projects/project1/project-one-small.png" srcset="../images/projects/project1/project-one-small.png 1x, ../images/projects/project1/project-one-medium.png 2x"
+              src="../images/projects/project1/project-one-small.png" 
+              srcset="
+              ../images/projects/project1/project-one-small.png 1x, 
+              ../images/projects/project1/project-one-medium.png 2x"
               alt="Project one hero image. Three mobile app screens showing the currency exchange calculator, including currency selection, keypad input for rates and fees, and the final total after fees"
-              loading="lazy"
               class="w-full h-auto"
             />
           </picture>
@@ -113,7 +124,7 @@
          <section class="process-section space-y-4">
           <div class="space-y-4">
           <h2>Process</h2>
-            <p>Followed a structured UX process — from research and synthesis to ideation, prototyping, and usability testing — with a focus on reducing financial complexity and increasing transparency.</p>
+            <p>Followed a structured UX process: from research and synthesis to ideation, prototyping, and usability testing, with a focus on reducing financial complexity and increasing transparency.</p>
             <blockquote class="bg-blue-100 rounded-md p-6">👇 Click to jump to the corresponding section</blockquote>
             <div class="project-one-nav my-4">
               <a href="#research-phase">Research →</a>
@@ -129,20 +140,50 @@
             <h3 id="research-phase">Research Phase</h3>
             <div class="subsection space-y-4">
               <h4 id="user-research">User Research</h4>
-              <p>Interviewed global travelers to uncover how they research and exchange currencies. Findings highlighted decision anxiety, rate comparison across multiple apps, and frustration with hidden fees — informing the development of the core persona.</p>
+              <p>Interviewed global travelers to uncover how they research and exchange currencies. Findings highlighted decision anxiety, rate comparison across multiple apps, and frustration with hidden fees, informing the development of the core persona.</p>
                 <picture class="lightbox-trigger">
-                  <source media="(min-width: 1920px)" srcset="../images/projects/project1/user-persona-large.png 1x, ../images/projects/project1/user-persona-xlarge.png 2x"/>
-                  <source media="(min-width: 768px)" srcset="../images/projects/project1/user-persona-medium.png 1x, ../images/projects/project1/user-persona-large.png 2x"/>
-                  <img src="../images/projects/project1/user-persona-small.png" srcset="../images/projects/project1/user-persona-small.png 1x, ../images/projects/project1/user-persona-medium.png 2x"
-                    alt="User persona of a frequent international traveler concerned about exchange fees, unclear rates, and finding trustworthy currency exchange options"
-                    loading="lazy"
-                    class="w-full h-auto rounded-lg shadow-md"/>
+                  <source 
+                    media="(min-width: 1920px)" 
+                    srcset="
+                    ../images/projects/project1/user-persona-large.png"
+                  />
+                  <source 
+                    media="(min-width: 768px)" 
+                    srcset="
+                    ../images/projects/project1/user-persona-medium.png"
+                  />
+                  <img 
+                  src="../images/projects/project1/user-persona-small.png" 
+                  srcset="
+                    ../images/projects/project1/user-persona-small.png 800w, 
+                    ../images/projects/project1/user-persona-medium.png 1400w,
+                    ../images/projects/project1/user-persona-large.png 2160w
+                    "
+                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
+                  alt="User persona of a frequent international traveler concerned about exchange fees, unclear rates, and finding trustworthy currency exchange options"
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
                 </picture>
-              <p>Visualized the user journey across four stages: search, open, use, and decide. While users felt analytical and focused, skepticism remained high — highlighting opportunities to make fees visible, rank exchange methods by cost, and clearly explain the mid-market rate.</p>
+              <p>Visualized the user journey across four stages: search, open, use, and decide. While users felt analytical and focused, skepticism remained high. It highlighted opportunities to make fees visible, rank exchange methods by cost, and clearly explain the mid-market rate.</p>
                 <picture class="lightbox-trigger">
-                  <source media="(min-width: 1920px)" srcset="../images/projects/project1/user-journey-large.png 1x, ../images/projects/project1/user-journey-xlarge.png 2x"/>
-                  <source media="(min-width: 768px)" srcset="../images/projects/project1/user-journey-medium.png 1x, ../images/projects/project1/user-journey-large.png 2x"/>
-                  <img src="../images/projects/project1/user-journey-small.png" srcset="../images/projects/project1/user-journey-small.png 1x, ../images/projects/project1/user-journey-medium.png 2x"
+                  <source 
+                  media="(min-width: 1920px)" 
+                  srcset="
+                  ../images/projects/project1/user-journey-large.png"
+                  />
+                  <source 
+                    media="(min-width: 768px)" 
+                    srcset="
+                      ../images/projects/project1/user-journey-medium.png"
+                  />
+                  <img 
+                    src="../images/projects/project1/user-journey-small.png" 
+                    srcset="
+                      ../images/projects/project1/user-journey-small.png 800w, 
+                      ../images/projects/project1/user-journey-medium.png 1400w,
+                      ../images/projects/project1/user-journey-large.png 2160w
+                    "
+                    sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
                     alt="User journey map showing stages: search, open, use, decide"
                     loading="lazy"
                     class="w-full h-auto rounded-lg shadow-md"/>
@@ -153,9 +194,23 @@
             <h4>Empathy Map</h4>
             <p>Created an empathy map to capture what users say, think, feel, and do when navigating currency exchange. Patterns of uncertainty, mental math frustration, and fear of hidden fees directly informed the app’s focus on clarity and cost transparency.</p>
               <picture class="lightbox-trigger">
-                <source media="(min-width: 1920px)" srcset="../images/projects/project1/empathy-map-large.png 1x, ../images/projects/project1/empathy-map-xlarge.png 2x"/>
-                <source media="(min-width: 768px)" srcset="../images/projects/project1/empathy-map-medium.png 1x, ../images/projects/project1/empathy-map-large.png 2x"/>
-                <img src="../images/projects/project1/empathy-map-small.png" srcset="../images/projects/project1/empathy-map-small.png 1x, ../images/projects/project1/empathy-map-medium.png 2x"
+                <source 
+                  media="(min-width: 1920px)" 
+                  srcset="../images/projects/project1/empathy-map-large.png"
+                />
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="
+                  ../images/projects/project1/empathy-map-medium.png"
+                />
+                <img 
+                src="../images/projects/project1/empathy-map-small.png" 
+                srcset="
+                  ../images/projects/project1/empathy-map-small.png 800w, 
+                  ../images/projects/project1/empathy-map-medium.png 1400w,
+                  ./images/projects/project1/empathy-map-large.png 2160w
+                  "
+                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
                   alt="Empathy map showing what travelers say, think, feel, and do when exchanging currency, highlighting confusion about exchange rates, concern about hidden fees, and the need for a transparent conversion experience"
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
@@ -166,10 +221,25 @@
             <h4>User Flow</h4>
             <p>Mapped the core decision path from app entry to conversion completion. The flow addresses two critical questions: “Is my currency available?” and “Do I understand the mid-market rate?” — reducing friction and uncertainty before users proceed.</p>
               <picture class="lightbox-trigger">
-                <source media="(min-width: 1920px)" srcset="../images/projects/project1/user-flow-large.png 1x, ../images/projects/project1/user-flow-xlarge.png 2x"/>
-                <source media="(min-width: 768px)" srcset="../images/projects/project1/user-flow-medium.png 1x, ../images/projects/project1/user-flow-large.png 2x"/>
-                <img src="../images/projects/project1/user-flow-small.png" srcset="../images/projects/project1/user-flow-small.png 1x, ../images/projects/project1/user-flow-medium.png 2x"
-                  alt="User flow diagram showing the path from opening the currency app to completing a conversion, including currency selection and mid-market rate explanation decision points"
+                <source 
+                media="(min-width: 1920px)" 
+                srcset="
+                ../images/projects/project1/user-flow-large.png"
+                />
+                <source 
+                media="(min-width: 768px)" 
+                srcset="
+                ../images/projects/project1/user-flow-medium.png"
+                />
+                <img 
+                src="../images/projects/project1/user-flow-small.png" 
+                srcset="
+                ../images/projects/project1/user-flow-small.png 800w, 
+                ../images/projects/project1/user-flow-medium.png 1400w, 
+                ../images/projects/project1/user-flow-large.png 2160w
+                "
+                sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
+                alt="User flow diagram showing the path from opening the currency app to completing a conversion, including currency selection and mid-market rate explanation decision points"
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
@@ -183,9 +253,23 @@
             <h4 id="sketches">Sketches</h4>
             <p>Started with rapid hand-drawn sketches to map core screens and test information hierarchy. Early exploration allowed for fast iteration before committing to higher-fidelity designs.</p>
               <picture class="lightbox-trigger">
-                <source media="(min-width: 1920px)" srcset="../images/projects/project1/sketches-large.png 1x, ../images/projects/project1/sketches-xlarge.png 2x"/>
-                <source media="(min-width: 768px)" srcset="../images/projects/project1/sketches-medium.png 1x, ../images/projects/project1/sketches-large.png 2x"/>
-                <img src="../images/projects/project1/sketches-small.png" srcset="../images/projects/project1/sketches-small.png 1x, ../images/projects/project1/sketches-medium.png 2x"
+                <source 
+                media="(min-width: 1920px)" 
+                srcset="../images/projects/project1/sketches-large.png"
+                />
+                <source 
+                media="(min-width: 768px)" 
+                srcset="
+                ../images/projects/project1/sketches-medium.png"
+                />
+                <img 
+                  src="../images/projects/project1/sketches-small.png" 
+                  srcset="
+                    ../images/projects/project1/sketches-small.png 800w, 
+                    ../images/projects/project1/sketches-medium.png 1400w,
+                    ../images/projects/project1/sketches-large.png 2160w
+                  "
+                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
                   alt="Hand-drawn sketches exploring early layouts for the currency exchange app, outlining key screens such as conversion results, currency selection, and calculator input"
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
@@ -197,18 +281,44 @@
             <p>Developed interactive wireframes in Figma for both core experiences: Convert and Calculate. The prototypes included currency selection, fee inputs, mid-market rate education, and ranked transfer options.</p>
             <p>These wireframes went through multiple iterations and were used in moderated usability testing sessions. The screens shown reflect the latest refined versions.</p>
               <picture class="lightbox-trigger">
-                <source media="(min-width: 1920px)" srcset="../images/projects/project1/convert-wireframe-large.png 1x, ../images/projects/project1/convert-wireframe-xlarge.png 2x"/>
-                <source media="(min-width: 768px)" srcset="../images/projects/project1/convert-wireframe-medium.png 1x, ../images/projects/project1/convert-wireframe-large.png 2x"/>
-                <img src="../images/projects/project1/convert-wireframe-small.png" srcset="../images/projects/project1/convert-wireframe-small.png 1x, ../images/projects/project1/convert-wireframe-medium.png 2x"
+                <source 
+                media="(min-width: 1920px)" 
+                srcset="../images/projects/project1/convert-wireframe-large.png"
+                />
+                <source 
+                media="(min-width: 768px)" 
+                srcset="
+                 ../images/projects/project1/convert-wireframe-medium.png"
+                />
+                <img 
+                  src="../images/projects/project1/convert-wireframe-small.png" 
+                  srcset="
+                    ../images/projects/project1/convert-wireframe-small.png 800w, 
+                    ../images/projects/project1/convert-wireframe-medium.png 1400w,
+                    ../images/projects/project1/convert-wireframe-large.png 2160w
+                    "
+                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
                   alt="Wireframes of the Convert flow showing currency selection, mid-market rate information, ranked transfer methods, and supporting interface elements like the calculator and fee details"
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
               <picture class="lightbox-trigger">
-                <source media="(min-width: 1920px)" srcset="../images/projects/project1/calculate-wireframe-large.png 1x, ../images/projects/project1/calculate-wireframe-xlarge.png 2x"/>
-                <source media="(min-width: 768px)" srcset="../images/projects/project1/calculate-wireframe-medium.png 1x, ../images/projects/project1/calculate-wireframe-large.png 2x"/>
-                <img src="../images/projects/project1/calculate-wireframe-small.png" srcset="../images/projects/project1/calculate-wireframe-small.png 1x, ../images/projects/project1/calculate-wireframe-medium.png 2x"
-                  alt="Wireframes of the Calculate flow showing currency inputs, exchange rate and service fee fields, and the final total calculation with supporting input panels"
+                <source 
+                media="(min-width: 1920px)" 
+                srcset="../images/projects/project1/calculate-wireframe-large.png"
+                />
+                <source media="(min-width: 768px)" 
+                  srcset="../images/projects/project1/calculate-wireframe-medium.png"
+                  />
+                <img 
+                src="../images/projects/project1/calculate-wireframe-small.png" 
+                srcset="
+                ../images/projects/project1/calculate-wireframe-small.png 800w, 
+                ../images/projects/project1/calculate-wireframe-medium.png 1400w,
+                ../images/projects/project1/calculate-wireframe-large.png 2160w
+                "
+                sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
+                alt="Wireframes of the Calculate flow showing currency inputs, exchange rate and service fee fields, and the final total calculation with supporting input panels"
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
@@ -218,7 +328,7 @@
             <p>Conducted two rounds of moderated usability testing with four participants using interactive wireframe prototypes.</p>
             <p>Participants were asked to complete two core tasks per flow while thinking aloud. I observed silently to understand their natural decision-making process, then followed up with targeted questions about moments of confusion or hesitation.</p>
             <p>After the first round, I redesigned key screens and tested the revised versions with the same participants using identical tasks. Comparing reactions helped identify where clarity improved and where friction remained.</p>
-            <p>Final wireframes were completed only after validation — visual design was intentionally introduced last to ensure usability before aesthetics.</p>
+            <p>Final wireframes were completed only after validation. Visual design was intentionally introduced last to ensure usability before aesthetics.</p>
           </div>
         </div>
       </section>
@@ -230,9 +340,9 @@
           <h4>Key Product Decisions</h4>
           <div class="subsection space-y-4">
             <h5>Decision 1: Prioritizing MVP Over Feature Expansion</h5>
-            <p>During interviews, users requested expanded features — such as safety ratings for exchange locations, translation support at kiosks, and nearby exchange maps.</p>
+            <p>During interviews, users requested expanded features such as safety ratings for exchange locations, translation support at kiosks, and nearby exchange maps.</p>
             <p>While valuable, these ideas introduced significant scope complexity. Through synthesis, I identified the core unmet need: trust in exchange rates and final totals.</p>
-            <p>I intentionally narrowed the product to two essential experiences — Convert and Calculate — focusing on transparency and clarity first.</p>
+            <p>I intentionally narrowed the product to two essential experiences, Convert and Calculate, focusing on transparency and clarity first.</p>
             <p>Rather than building a feature-heavy ecosystem, I prioritized solving one problem exceptionally well: making the true cost of currency exchange immediately understandable.</p>
             <p>This MVP approach supports faster iteration, clearer positioning, and a stronger foundation for future expansion.</p>
           </div>
@@ -249,10 +359,23 @@
             <p>Testing revealed that users respond more confidently to editable defaults than to empty inputs. A visible starting state signals what action to take next more effectively than instructional text.</p>
             <p>The final design removed the progress bar entirely and relied on stronger visual affordances instead.</p>
               <picture class="lightbox-trigger">
-                <source media="(min-width: 1920px)" srcset="../images/projects/project1/progress-bar-large.png 1x, ../images/projects/project1/progress-bar-xlarge.png 2x"/>
-                <source media="(min-width: 768px)" srcset="../images/projects/project1/progress-bar-medium.png 1x, ../images/projects/project1/progress-bar-large.png 2x"/>
-                <img src="../images/projects/project1/progress-bar-small.png" srcset="../images/projects/project1/progress-bar-small.png 1x, ../images/projects/project1/progress-bar-medium.png 2x"
-                  alt="Wireframe comparison of the Convert flow showing early progress indicator and the final design with default currencies and a pre-filled amount to improve clarity and user confidence"
+                <source 
+                media="(min-width: 1920px)" 
+                srcset="../images/projects/project1/progress-bar-large.png"
+                />
+                <source 
+                media="(min-width: 768px)" 
+                srcset="../images/projects/project1/progress-bar-medium.png"
+                />
+                <img 
+                src="../images/projects/project1/progress-bar-small.png" 
+                srcset="
+                ../images/projects/project1/progress-bar-small.png 800w, 
+                ../images/projects/project1/progress-bar-medium.png 1400w,
+                ../images/projects/project1/progress-bar-large.png 2160w
+                "
+                sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
+                alt="Wireframe comparison of the Convert flow showing early progress indicator and the final design with default currencies and a pre-filled amount to improve clarity and user confidence"
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
@@ -261,11 +384,35 @@
 
         <div class="final-design space-y-4">
           <h3>Final Design</h3>
-          <p>Explore the interactive prototype to see the full user flow.</p>
-          <a href="..." target="_blank" class="inline-block mt-4 text-emerald-900 font-medium hover:underline">
-            View Interactive Prototype →
-          </a>
-        </div>
+          <p>The prototype captures the calculate user flow.</p>
+            <div class="w-72 md:w-80 rounded-3xl overflow-hidden shadow-md">
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                class="block h-auto rounded-2xl"
+              >
+                <source
+                  src="../videos/calculate-prototype.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="../videos/calculate-prototype.webm"
+                  type="video/webm"
+                />
+                Your browser does not support this video tag.
+              </video>
+            </div>
+            <a
+              href="https://www.figma.com/proto/u39jbwjJKbceI6lQCkgcVP/Currency-App?node-id=454-1983&t=vtmKniYaFZrKNi8V-1"
+              target="_blank"
+              class="inline-block mt-4 text-purple-900 font-medium hover:underline"
+            >
+              Explore Interactive Prototype →
+            </a>
+          </div>
 
         <div class="subsection space-y-4">
           <h4>Product Successes</h4>
