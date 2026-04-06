@@ -131,6 +131,7 @@
               <a href="#design-phase">Design →</a>
               <a href="#usability-study">Usability Study →</a>
               <a href="#results">Results →</a>
+              <a href="#final-design">Final Design →</a>
             </div>
           </div>
          
@@ -140,7 +141,18 @@
             <h3 id="research-phase">Research Phase</h3>
             <div class="subsection space-y-4">
               <h4 id="user-research">User Research</h4>
-              <p>Interviewed global travelers to uncover how they research and exchange currencies. Findings highlighted decision anxiety, rate comparison across multiple apps, and frustration with hidden fees, informing the development of the core persona.</p>
+              <p>
+              I interviewed four global travelers about how they prepare for and manage money while traveling abroad. The goal was to understand real behaviors, decision points, and moments of uncertainty during currency exchange.
+              </p>
+              <p>Examples of questions I asked:</p>
+              <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
+                <li>"How do you usually plan and prepare for managing money before a trip?"</li>
+                <li>"Where do you typically exchange currency and how do you decide which place to use?"</li>
+                <li>"What tools do you use to check exchange rates or fees?"</li>
+              </ul>
+              <p>
+              Across interviews, participants described comparing rates across multiple sources, worrying about hidden fees, and struggling to understand the true cost of exchange. These patterns informed the development of the core persona.
+              </p>
                 <picture class="lightbox-trigger">
                   <source 
                     media="(min-width: 1920px)" 
@@ -219,7 +231,7 @@
 
           <div class="subsection space-y-4">
             <h4>User Flow</h4>
-            <p>Mapped the core decision path from app entry to conversion completion. The flow addresses two critical questions: “Is my currency available?” and “Do I understand the mid-market rate?” — reducing friction and uncertainty before users proceed.</p>
+            <p>Mapped the core decision path from app entry to conversion completion. The flow addresses two critical questions: “Is my currency available?” and “Do I understand the mid-market rate?”</p>
               <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
@@ -325,40 +337,21 @@
           </div>
           <div class="subsection space-y-4">
             <h4 id="usability-study">Usability Study</h4>
-            <p>Conducted two rounds of moderated usability testing with four participants using interactive wireframe prototypes.</p>
-            <p>Participants were asked to complete two core tasks per flow while thinking aloud. I observed silently to understand their natural decision-making process, then followed up with targeted questions about moments of confusion or hesitation.</p>
-            <p>After the first round, I redesigned key screens and tested the revised versions with the same participants using identical tasks. Comparing reactions helped identify where clarity improved and where friction remained.</p>
-            <p>Final wireframes were completed only after validation. Visual design was intentionally introduced last to ensure usability before aesthetics.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Results Section -->
-      <section class="results space-y-4">
-        <h3 id="results">Results</h3>
-        <div class="decisions space-y-4">
-          <h4>Key Product Decisions</h4>
-          <div class="subsection space-y-4">
-            <h5>Decision 1: Prioritizing MVP Over Feature Expansion</h5>
-            <p>During interviews, users requested expanded features such as safety ratings for exchange locations, translation support at kiosks, and nearby exchange maps.</p>
-            <p>While valuable, these ideas introduced significant scope complexity. Through synthesis, I identified the core unmet need: trust in exchange rates and final totals.</p>
-            <p>I intentionally narrowed the product to two essential experiences, Convert and Calculate, focusing on transparency and clarity first.</p>
-            <p>Rather than building a feature-heavy ecosystem, I prioritized solving one problem exceptionally well: making the true cost of currency exchange immediately understandable.</p>
-            <p>This MVP approach supports faster iteration, clearer positioning, and a stronger foundation for future expansion.</p>
-          </div>
-          <div class="subsection space-y-4">
-            <h5>Decision 2: Replacing the Progress Bar with Stronger Defaults</h5>
-            <p>After initial testing, I introduced a progress bar to clarify how many steps remained in the conversion flow.</p>
-            <p>However, in the second round of testing, 3 out of 4 participants did not notice the progress indicator, and the fourth did not rely on it to complete tasks. The addition did not meaningfully improve confidence.</p>
-            <p>Instead of adding navigational cues, I shifted focus to improving input clarity.</p>
-            <p>Key refinements:</p>
-             <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
-              <li>Pre-selected default currencies with visible flags (replacing empty placeholders)</li>
-              <li>Pre-filled the amount field with a realistic default (1,000)</li>
+            <p>I tested interactive wireframe prototypes with four participants across two rounds to validate core flows before moving to visual design.</p>
+            <p class="font-semibold text-slate-900">Test tasks</p>
+            <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
+              <li>Convert $1,000 USD to NZD, locate the mid-market rate, and calculate bank transfer fees</li>
+              <li>Use the kiosk calculator to manually enter a custom exchange rate and service fee</li>
             </ul>
-            <p>Testing revealed that users respond more confidently to editable defaults than to empty inputs. A visible starting state signals what action to take next more effectively than instructional text.</p>
-            <p>The final design removed the progress bar entirely and relied on stronger visual affordances instead.</p>
-              <picture class="lightbox-trigger">
+            <p>In the first round, participants paused at empty input fields, uncertain where to begin. Testing the revised design in round two confirmed that pre-selected defaults resolved this friction more effectively than progress indicators.</p>
+            <h5>Key Finding</h5>
+            <p>In the first round of testing, several participants paused when encountering the empty input fields. The interface required users to first select a currency before entering an amount, but this step was not obvious. Participants hesitated, unsure where to begin.</p>
+            <p>To address this, I introduced a labeled progress bar that highlighted the first step as <strong>Currency</strong>.</p>
+            <h5>Iteration</h5>
+            <p>A second round of testing showed that the progress bar did not meaningfully improve task completion. Participants still hesitated before interacting with the inputs.</p>
+            <p>Instead, the most effective solution was to introduce <strong>pre-selected defaults</strong>: default currencies and a starting amount. With an existing value visible, participants immediately understood what the fields represented and began editing them without hesitation.</p>
+            <p>This iteration reinforced an important usability principle: <strong>modifying an existing value is often easier for users than creating one from an empty state.</strong></p>
+            <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
                 srcset="../images/projects/project1/progress-bar-large.png"
@@ -381,9 +374,30 @@
               </picture>
           </div>
         </div>
+      </section>
+
+      <!-- Results Section -->
+      <section class="results space-y-4">
+        <h3 id="results">Results</h3>
+        <div class="decisions space-y-4">
+          <h4>Key Product Decisions</h4>
+          <div class="subsection space-y-4">
+            <h5>Decision 1: Prioritizing MVP Over Feature Expansion</h5>
+            <p>During interviews, users requested expanded features such as safety ratings for exchange locations, translation support at kiosks, and nearby exchange maps.</p>
+            <p>While valuable, these ideas introduced significant scope complexity. Through synthesis, I identified the core unmet need: trust in exchange rates and final totals.</p>
+            <p>I intentionally narrowed the product to two essential experiences, Convert and Calculate, focusing on transparency and clarity first.</p>
+            <p>This MVP approach supports faster iteration, clearer positioning, and a stronger foundation for future expansion.</p>
+          </div>
+          <div class="subsection space-y-4">
+            <h5>Decision 2: Replacing the Progress Bar with Stronger Defaults</h5>
+            <p>Usability testing revealed that a progress bar did not meaningfully help users begin the conversion task. Most participants either missed the indicator or ignored it.</p>
+            <p>Instead, the final design introduced pre-selected currencies and a default amount, creating a visible starting state that users could immediately modify.</p> 
+            <p>Testing revealed that users respond more confidently to editable defaults than to empty inputs. A visible starting state signals what action to take next more effectively than instructional text.</p>       
+          </div>
+        </div>
 
         <div class="final-design space-y-4">
-          <h3>Final Design</h3>
+          <h3 id="#final-design">Final Design</h3>
           <p>The prototype captures the calculate user flow.</p>
             <div class="w-72 md:w-80 rounded-3xl overflow-hidden shadow-md">
               <video
@@ -427,10 +441,9 @@
 
         <div class="subsection space-y-4">
           <h4>What I Learned</h4>
-          <p>User feedback will always challenge your assumptions.</p>
-          <p>Features that seem helpful — like progress indicators or expanded functionality — don’t always solve the real problem. In this case, clarity improved not by adding more, but by simplifying inputs and strengthening default states.</p>
-          <p>Testing before adding visual polish reinforced an important principle: usability must be validated before aesthetics are layered on.</p>
-          <p>Most importantly, designing for financial decisions isn’t about providing more information — it’s about building trust through transparency, simplicity, and clear signals.</p>
+          <p>This project reinforced a simple lesson that clarity often comes from removing friction rather than adding features.</p>
+          <p>Testing early helped me simplify the inputs, strengthen the defaults, and focus the design on what matters most in financial decisions - trust.</p>
+          
         </div>
       </section>
     </div>

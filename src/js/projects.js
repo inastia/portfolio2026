@@ -39,10 +39,10 @@ function createProjectCard(project) {
     <a
       href="${project.url}"
       aria-label="View ${project.title} case study"
-      class="block rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
+      class="block w-full md:w-[calc(50%-0.75rem)] rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-900"
     >
       <div
-        class="card bg-base-100 shadow-sm w-full rounded-lg cursor-pointer transition hover:shadow-md hover:-translate-y-1"
+        class="card bg-base-100 shadow-md w-full rounded-lg cursor-pointer transition hover:shadow-md hover:-translate-y-1"
       >
         <div class="card-body p-4 space-y-3">
           <h3 class="card-title text-2xl ${project.titleColor}">${project.title}</h3>

@@ -4,27 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UX Design Portfolio</title>
-
     <!-- Styles -->
     <link rel="stylesheet" href="/src/styles/style.css" />
     <link rel="stylesheet" href="/src/output.css" />
-
     <!-- Favicons -->
     <link rel="icon" href="/favicons/favicon.ico" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
       href="/favicons/favicon-96x96.png"
     />
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/favicons/apple-touch-icon.png"
     />
-
     <link
       rel="icon"
       type="image/png"
@@ -78,40 +73,48 @@
     <!-- Main content section -->
     <main>
       <div class="max-w-7xl mx-auto px-4">
-        <section class="gap-8 max-w-7xl mx-auto px-4">
-          <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="
-                /src/images/profile/header-img-large.png  1x,
-                /src/images/profile/header-img-xlarge.png 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                /src/images/profile/header-img-medium.png 1x,
-                /src/images/profile/header-img-large.png  2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="/src/images/profile/header-img-small.png"
-            />
-            <img
-              src="/src/images/profile/header-img-small.png"
-              alt="Header image"
-              loading="lazy"
-              class="w-full h-auto"
-            />
-          </picture>
+        <section class="flex flex-col md:flex-row items-center gap-8 px-4 py-4">
+          <!-- HEADER TEXT COLUMN -->
+          <div
+            class="flex-1 flex flex-col py-8 md:py-0 text-center md:text-left"
+          >
+            <h2 class="text-6xl mb-8 text-emerald-900 font-bold">
+              UX/UI Designer
+            </h2>
+            <h2 class="text-2xl font-light">
+              Designing with insight, empathy, and a deep respect for how people
+              actually work.
+            </h2>
+          </div>
+          <!-- HEADER IMG COLUMN -->
+          <div class="hidden md:flex flex-1 justify-end">
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="/src/images/profile/header-large.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/src/images/profile/header-medium.png"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/src/images/profile/header-medium.png"
+              />
+              <img
+                src="/src/images/profile/header-medium.png"
+                alt="Header half-image"
+                class="w-full h-auto"
+              />
+            </picture>
+          </div>
         </section>
 
         <section>
           <!-- Cards section -->
           <div
             id="projects-grid"
-            class="grid grid-cols-1 gap-6 sm:grid-cols-2"
+            class="flex flex-col gap-6 md:flex-row md:flex-wrap"
           ></div>
         </section>
       </div>
