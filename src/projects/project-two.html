@@ -123,7 +123,7 @@
                 affirmations, and sleep stories, but had no way to save or
                 resurface audio files a user loved. Returning to a favorite
                 meditation required manually searching through the entire Audio
-                Library — making the experience feel more like a chore than a
+                Library, making the experience feel more like a chore than a
                 ritual.
               </p>
               <blockquote class="bg-red-100 rounded-md p-6 my-6">
@@ -229,11 +229,18 @@
               <div class="subsection space-y-4">
                 <h4>Comparing Approaches</h4>
                 <p>
-                  Chani optimized for saving — a heart on every audio tile means
-                  users can favorite without opening a file. My solution
-                  optimized for retrieval — saved files surface automatically at
-                  the top, no scanning required. The two approaches aren't
-                  mutually exclusive; an ideal iteration would combine both.
+                  Both solutions address the same problem but prioritize
+                  different moments in the user journey.
+                </p>
+                <p>
+                  Chani’s approach prioritizes saving. A heart icon appears on
+                  every audio tile, allowing users to bookmark content directly
+                  from the list without opening the file.
+                </p>
+                <p>
+                  My approach prioritizes retrieval. Saved files surface
+                  automatically at the top of their category, making previously
+                  favorited content easy to locate later.
                 </p>
               </div>
             </div>
@@ -245,9 +252,8 @@
               <h2 class="mt-8">Process</h2>
               <p>
                 Worked within an existing design system to identify and solve
-                two connected user problems — saving a favorite audio file and
-                finding it again — by extending a UI pattern already familiar to
-                Chani users rather than introducing a new one.
+                two connected user problems by extending a UI pattern already
+                familiar to Chani users rather than introducing a new one.
               </p>
               <blockquote class="bg-blue-100 rounded-md p-6">
                 👇 Click to jump to the corresponding section
@@ -308,11 +314,11 @@
               <div class="space-y-4">
                 <h4>Empathy Map</h4>
                 <p>
-                  Mapping what a user says, thinks, feels, and does when trying
-                  to return to a favorite meditation revealed a clear pattern:
-                  the frustration isn't with the content — it's with the effort
-                  required to find it again. The habit loop breaks not at the
-                  listening moment but at the retrieval moment.
+                  Mapping the return to a favorite meditation revealed a clear
+                  pattern. Users were not frustrated with the content but with
+                  the effort required to find it again. The listening experience
+                  works well, but returning becomes a journey of searching and
+                  scrolling instead of clarity and focus.
                 </p>
                 <picture class="lightbox-trigger">
                   <source
@@ -497,9 +503,9 @@
               >
                 <li>
                   <strong>Retrieval in 2 taps.</strong> From the Listen page, a
-                  saved meditation is reachable in two taps — selecting the
+                  saved meditation is reachable in two taps by selecting the
                   Meditations tab and tapping the file at the top of the list.
-                  No scrolling, no scanning for a filled heart icon.
+                  No scrolling and no scanning for a filled heart icon.
                 </li>
                 <li>
                   <strong>Zero new interaction patterns introduced.</strong> The
@@ -509,16 +515,15 @@
                 </li>
                 <li>
                   <strong>Two problems solved with one design decision.</strong>
-                  The tab structure on the Listen page simultaneously solved
-                  category navigation and favorites discoverability — two
-                  distinct friction points addressed through a single,
-                  consistent pattern.
+                  The tab structure on the Listen page solved two distinct
+                  friction points - category navigation and the discoverability
+                  of favorites.
                 </li>
                 <li>
                   <strong>Validated by the product team.</strong> The Chani team
                   independently shipped a solution to the same problem,
-                  confirming the problem was real and worth prioritizing — not
-                  an edge case or personal preference.
+                  confirming the problem was real and worth prioritizing, not an
+                  edge case or personal preference.
                 </li>
               </ul>
             </div>
@@ -526,7 +531,7 @@
               <h4>What I Learned</h4>
               <p>
                 Solving for the obvious problem often reveals a more important
-                one underneath — and the better solution usually addresses both.
+                one underneath and the better solution usually addresses both.
               </p>
             </div>
             <div class="subsection space-y-4">
