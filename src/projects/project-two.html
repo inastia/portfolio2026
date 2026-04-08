@@ -422,55 +422,37 @@
               <div class="subsection space-y-4">
                 <h5>Decision 1: Solve for discoverability, not just saving</h5>
                 <p>
-                  The original problem was simple: users had no way to bookmark
-                  an audio file. But as I mapped the user flow, a second problem
-                  surfaced. Even if a user could save a file, finding it again
-                  meant scrolling through three separate categories —
-                  Meditations, Affirmations, and Sleep Stories — to locate it.
-                  Saving without surfacing would only partially solve the
-                  problem.
+                  Adding bookmarking solved only half the problem. Users also
+                  needed an easy way to find saved audio again without scrolling
+                  through multiple lists.
                 </p>
                 <p>
-                  The solution to both came from the app's existing design. The
-                  tab pattern already appeared in two places: the Home screen
-                  (Today, This Week, This Year) and the Play screen (Audio,
-                  Transcript). Extending that same pattern to the Listen page
-                  let users switch between the three audio categories without
-                  scrolling, reduced the amount of content visible at once, and
-                  created a natural home for favorited files to surface at the
-                  top of whichever category they belonged to. A familiar pattern
-                  — no new interaction to learn, two problems resolved.
+                  I decided to extend the app’s existing tab pattern to the
+                  Listen page. Favorited items appear at the top of their
+                  category and are marked with a filled heart icon.
                 </p>
                 <p>
-                  One deliberate choice within that solution: favorited files
-                  are identified by a filled heart icon and automatically
-                  positioned at the top of their category — no additional
-                  heading needed. Adding a "Favorites" label would require a
-                  corresponding label for the remaining files and would appear
-                  on every tab regardless of whether anything had been saved,
-                  introducing visual noise on a screen designed to reduce it.
+                  This keeps the interaction familiar, reduces scrolling, and
+                  makes saved content immediately visible without adding new UI
+                  elements.
                 </p>
               </div>
               <div class="subsection space-y-4">
                 <h5>Decision 2: Scope down to ship faster</h5>
                 <p>
-                  While designing the Listen page, I identified a broader
-                  opportunity: the same tab pattern could simplify the Me and
-                  Transits pages, which both rely on a user's birth chart and
-                  would benefit from living under one umbrella — "Your Birth
-                  Chart" and "Your Transits" as tabs rather than two separate
-                  menu items. I developed this concept through most of the
-                  design phase before pausing it deliberately.
+                  During design I identified a larger opportunity to simplify
+                  navigation by combining the Me and Transits pages into a
+                  tabbed experience.
                 </p>
                 <p>
-                  Shipping two interconnected changes at once would delay the
-                  core improvement and introduce more learning for the user at
-                  the same time. A focused release — just the Listen page — gets
-                  the bookmark feature into users' hands faster, lets them build
-                  familiarity with the tab pattern, and creates a foundation
-                  that makes future changes feel like a natural extension rather
-                  than a redesign. The navigation simplification became a
-                  "What's Next" rather than part of this release.
+                  I decided to skip the change until a future release and focus
+                  this iteration on improving the Listen page.
+                </p>
+                <p>
+                  Shipping the bookmarking feature first delivers immediate
+                  value, reduces the amount of change users must learn at once,
+                  and establishes the tab pattern as a familiar interaction
+                  before expanding it elsewhere.
                 </p>
               </div>
             </div>
@@ -550,15 +532,14 @@
             <div class="subsection space-y-4">
               <h4>What's Next</h4>
               <p>
-                The tab pattern introduced in the Listen page opens a broader
-                opportunity to simplify the app's main navigation. The Me and
-                Transits pages are the only two pages in the app that draw on a
-                user's birth chart specifically. Combining them under a single
-                page — with "Your Birth Chart" and "Your Transits" as tabs —
-                would reduce the main menu from five items to four, create a
-                more intuitive home for personalized content, and extend a
-                pattern users are already learning. Each release builds the
-                foundation for the next one to feel native rather than new.
+                The tab pattern introduced on the Listen page opens an
+                opportunity to simplify the app’s navigation.
+              </p>
+              <p>
+                The Me and Transits pages both rely on a user’s birth chart and
+                could live under a single page with tabs: Your Birth Chart and
+                Your Transits. This would reduce the main menu from five items
+                to four and extend a pattern users are already learning.
               </p>
               <picture class="lightbox-trigger">
                 <source
