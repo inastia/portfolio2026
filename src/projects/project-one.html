@@ -21,36 +21,46 @@
     class="site-header-inner max-w-7xl mx-auto px-4 md:px-6 pt-6"
   >
     <nav class="site-nav">
-      <!-- Logo -->
-      <div>
-        <a href="/" class="logo">
-          <img
-            src="/src/images/logo/logo.png"
-            alt="Anastasia Bigun — UX/UI Designer"
-            width="60"
-            height="60"
-          />
-        </a>
-      </div>
+          <!-- Logo -->
+          <div>
+            <a href="/" class="logo">
+              <img
+                src="/src/images/logo/logo-em.png"
+                alt="Anastasia Bigun — UX/UI Designer"
+                width="60"
+                height="60"
+              />
+            </a>
+          </div>
+          <!-- MAIN MENU -->
+          <div>
+            <!-- Hamburger / X -->
+            <label class="nav-toggle-label">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="sr-only">Toggle navigation</span>
+            </label>
 
-      <div>
-        <!-- Hamburger / X -->
-        <label class="nav-toggle-label">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="sr-only">Toggle navigation</span>
-        </label>
+            <div class="nav-overlay"></div>
 
-        <div class="nav-overlay"></div>
-
-        <ul class="nav-menu">
-          <li><a href="/">projects</a></li>
-          <li><a href="/about">about</a></li>
-          <li><a href="/contact">contact</a></li>
-        </ul>
-      </div>
-    </nav>
+            <ul class="nav-menu">
+              <li>
+                <a href="/" class="text-base font-semibold text-emerald-900"
+                  >projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  class="text-base font-semibold text-emerald-900"
+                  >about</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- MAIN MENU ENDS -->
+        </nav>
   </div>
 </header>
 
@@ -126,7 +136,7 @@
           <h2>Process</h2>
             <p>Followed a structured UX process: from research and synthesis to ideation, prototyping, and usability testing, with a focus on reducing financial complexity and increasing transparency.</p>
             <blockquote class="bg-blue-100 rounded-md p-6">👇 Click to jump to the corresponding section</blockquote>
-            <div class="project-one-nav my-4">
+            <div class="project-nav my-4">
               <a href="#research-phase">Research →</a>
               <a href="#design-phase">Design →</a>
               <a href="#usability-study">Usability Study →</a>
@@ -500,16 +510,47 @@
     <script type="module" src="../js/lightbox.js"></script>
   </body>
   <!-- Footer section -->
-<footer class="bg-white">
-    <div
-      class="max-w-7xl mx-auto px-4 py-12 mt-40 grid grid-cols-1 md:grid-cols-2 items-center gap-6 text-center md:text-left"
-    >
-      <h5>
-        2026 ©  Anastasia Bigun. All Rights Reserved.
-      </h5>
-      <h5 class="md:text-right">
-        Designed & built by me · HTML · Tailwind · JavaScript
-      </h5>
+  <footer class="bg-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+      <nav class="secondary-nav">
+        <ul>
+          <li>
+            <a
+              href="/documents/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/anastasiabigun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:nastia.bigun@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="pt-10">
+        <h5>Designed & built by me · HTML · Tailwind · JavaScript</h5>
+      </div>
+
+      <div class="pt-4">
+        <h5>2026 © Anastasia Bigun. All Rights Reserved.</h5>
+      </div>
     </div>
   </footer>
 </html>

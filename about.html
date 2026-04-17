@@ -46,14 +46,14 @@
           <div>
             <a href="/" class="logo">
               <img
-                src="/src/images/logo/logo.png"
+                src="/src/images/logo/logo-em.png"
                 alt="Anastasia Bigun — UX/UI Designer"
                 width="60"
                 height="60"
               />
             </a>
           </div>
-
+          <!-- MAIN MENU -->
           <div>
             <!-- Hamburger / X -->
             <label class="nav-toggle-label">
@@ -66,21 +66,31 @@
             <div class="nav-overlay"></div>
 
             <ul class="nav-menu">
-              <li><a href="/">projects</a></li>
-              <li><a href="/about">about</a></li>
-              <li><a href="/contact">contact</a></li>
+              <li>
+                <a href="/" class="text-base font-semibold text-emerald-900"
+                  >projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  class="text-base font-semibold text-emerald-900"
+                  >about</a
+                >
+              </li>
             </ul>
           </div>
+          <!-- MAIN MENU ENDS -->
         </nav>
       </div>
     </header>
 
     <!-- Main content section -->
     <main>
-      <div class="px-4 max-w-7xl mx-auto">
-        <section class="flex flex-col md:flex-row items-center gap-8 px-4 py-6">
-          <!-- Image Column -->
-          <div class="flex-1 flex justify-center md:justify-end">
+      <div class="max-w-7xl mx-auto px-4">
+        <section class="flex flex-col md:flex-row items-center gap-8 px-4 py-4">
+          <!-- Header Image Column -->
+          <div class="md:flex flex-1 justify-end">
             <picture>
               <source
                 media="(min-width: 1920px)"
@@ -108,111 +118,76 @@
               />
             </picture>
           </div>
-          <!-- Text Column -->
+          <!-- Header Image Column Ends -->
+          <!-- HEADER TEXT COLUMN-->
           <div
-            class="flex-1 flex flex-col justify-center text-center md:text-left"
+            class="flex-1 flex flex-col py-8 md:py-0 text-center md:text-left"
           >
-            <h2 class="font-semibold text-6xl text-emerald-900">About Me</h2>
+            <h2 class="text-4xl mb-8 text-emerald-900 font-semibold">
+              hello, i'm anastasia
+            </h2>
+            <h2 class="text-2xl font-light">
+              I design interfaces and systems that lower cognitive load through
+              clarity, consistency, and thoughtful use of existing design
+              frameworks.
+            </h2>
             <p class="pt-6">
-              I have spent my career at the intersection of language,
-              aesthetics, and function. It started with a linguistics degree and
-              a fascination with how communication shapes experience. Most
-              recently I spent three years in corporate as a project manager,
-              where I learned how to lead complex work, manage stakeholders, and
-              ship on time without losing sight of the creative vision. That
-              combination is what defines how I work today. I am not just a
-              designer and I am not just a manager. I am someone who can walk
-              into an undefined situation, shape it into a clear creative
-              direction, and see it through to execution.
+              I spent three years in corporate as a project manager, leading
+              complex work, managing stakeholders, and shipping on time without
+              losing sight of the creative vision. I am not just a designer or a
+              manager. I step into undefined situations, shape clear direction,
+              and see it through to execution.
             </p>
-
-            <!-- secondary navigation -->
-            <div id="secondary-navigation" class="mt-10">
-              <nav class="secondary-nav text-emerald-900">
-                <ul>
-                  <li>
-                    <a
-                      href="/documents/resume.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Resume</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/anastasiabigun"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >LinkedIn</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:nastia.bigun@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Email</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <!-- secondary nav ends -->
           </div>
+          <!-- HEADER TEXT COLUMN Ends -->
         </section>
       </div>
-
-      <section class="flex justify-center px-4 py-6">
-        <blockquote
-          class="w-full max-w-2xl border rounded-lg text-emerald-900 p-8 text-center"
-        >
-          I design interfaces and systems that lower cognitive load through
-          clarity, consistency, and thoughtful use of existing design
-          frameworks.
-        </blockquote>
-      </section>
-
-      <section class="max-w-2xl mx-auto px-4 items-center text-left">
-        <div class="pt-8">
-          <h3>Community-Driven Projects</h3>
-          <p class="leading-6 pt-4">
-            Outside of work, I am drawn to building systems that turn individual
-            effort into shared benefit. In 2025 I started a neighborhood
-            composting project after realizing I did not produce enough food
-            waste on my own to run my Mill recycler consistently. What began as
-            a simple exchange with a restaurant in my building has grown into an
-            ongoing community system where food scraps are collected, processed
-            at home, and returned to the neighborhood through local businesses
-            and people who grow food or tend gardens. I built the project from
-            the ground up and continue to run it today, creating clear ways for
-            people to understand it, access it, and participate.
-          </p>
-
-          <p class="leading-6 pt-4">
-            <strong
-              ><a
-                href="https://medium.com/@anastasiabigun/how-i-started-a-small-community-compost-program-with-a-mill-food-recycler-2f45100aca07"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="underline hover:opacity-70 transition-opacity duration-200"
-                >The full story →</a
-              ></strong
-            >
-          </p>
-        </div>
-      </section>
     </main>
     <script type="module" src="/src/js/main.js"></script>
   </body>
   <!-- Footer section -->
-  <footer class="bg-white">
-    <div
-      class="max-w-7xl mx-auto px-4 py-12 mt-40 grid grid-cols-1 md:grid-cols-2 items-center gap-6 text-center md:text-left"
-    >
-      <h5>2026 ©  Anastasia Bigun. All Rights Reserved.</h5>
-      <h5 class="md:text-right">
-        Designed & built by me · HTML · Tailwind · JavaScript
-      </h5>
+  <!-- Footer section -->
+  <footer class="bg-white mt-40">
+    <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+      <nav class="secondary-nav mt-10">
+        <ul>
+          <li>
+            <a
+              href="/documents/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/anastasiabigun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:nastia.bigun@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="pt-10">
+        <h5>Designed & built by me · HTML · Tailwind · JavaScript</h5>
+      </div>
+
+      <div class="pt-4">
+        <h5>2026 © Anastasia Bigun. All Rights Reserved.</h5>
+      </div>
     </div>
   </footer>
 </html>

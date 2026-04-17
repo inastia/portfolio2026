@@ -41,14 +41,14 @@
           <div>
             <a href="/" class="logo">
               <img
-                src="/src/images/logo/logo.png"
+                src="/src/images/logo/logo-em.png"
                 alt="Anastasia Bigun — UX/UI Designer"
                 width="60"
                 height="60"
               />
             </a>
           </div>
-
+          <!-- MAIN MENU -->
           <div>
             <!-- Hamburger / X -->
             <label class="nav-toggle-label">
@@ -61,11 +61,21 @@
             <div class="nav-overlay"></div>
 
             <ul class="nav-menu">
-              <li><a href="/">projects</a></li>
-              <li><a href="/about">about</a></li>
-              <li><a href="/contact">contact</a></li>
+              <li>
+                <a href="/" class="text-base font-semibold text-emerald-900"
+                  >projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  class="text-base font-semibold text-emerald-900"
+                  >about</a
+                >
+              </li>
             </ul>
           </div>
+          <!-- MAIN MENU ENDS -->
         </nav>
       </div>
     </header>
@@ -73,41 +83,55 @@
     <!-- Main content section -->
     <main>
       <div class="max-w-7xl mx-auto px-4">
-        <section class="flex flex-col md:flex-row items-center gap-8 px-4 py-4">
-          <!-- HEADER TEXT COLUMN -->
+        <section class="flex md:flex-row items-center gap-8 px-4 py-4">
+          <!-- HEADER TEXT -->
           <div
             class="flex-1 flex flex-col py-8 md:py-0 text-center md:text-left"
           >
-            <h2 class="text-6xl mb-8 text-emerald-900 font-bold">
+            <h3>anastasia bigun</h3>
+            <h2 class="text-5xl mb-6 text-emerald-900 font-bold">
               UX/UI Designer
             </h2>
-            <h2 class="text-2xl font-light">
-              Designing with insight, empathy, and a deep respect for how people
-              actually work.
-            </h2>
+            <div class="max-w-xl">
+              <h3 class="text-2xl font-light">
+                Onboarding Project Manager with 3+ years working directly with
+                user pain points, designing with a deep respect for how people
+                actually work.
+              </h3>
+            </div>
           </div>
-          <!-- HEADER IMG COLUMN -->
+          <!-- HEADER TEXT ENDS -->
+
+          <!-- Header Image Column -->
           <div class="hidden md:flex flex-1 justify-end">
             <picture>
               <source
                 media="(min-width: 1920px)"
-                srcset="/src/images/profile/header-large.png"
+                srcset="
+                  /src/images/profile/home-page-avatar-large.png  1x,
+                  /src/images/profile/home-page-avatar-xlarge.png 2x
+                "
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/images/profile/header-medium.png"
-              />
-              <source
-                media="(max-width: 767px)"
-                srcset="/src/images/profile/header-medium.png"
+                srcset="
+                  /src/images/profile/home-page-avatar-medium.png 1x,
+                  /src/images/profile/home-page-avatar-large.png  2x
+                "
               />
               <img
-                src="/src/images/profile/header-medium.png"
-                alt="Header half-image"
+                src="/src/images/profile/home-page-avatar-small.png"
+                srcset="
+                  /src/images/profile/home-page-avatar-small.png  1x,
+                  /src/images/profile/home-page-avatar-medium.png 2x
+                "
+                alt="About me avatar image"
+                loading="lazy"
                 class="w-full h-auto"
               />
             </picture>
           </div>
+          <!-- Header Image Column Ends -->
         </section>
 
         <section>
@@ -123,14 +147,47 @@
     <script type="module" src="/src/js/main.js"></script>
   </body>
   <!-- Footer section -->
-  <footer class="bg-white">
-    <div
-      class="max-w-7xl mx-auto px-4 py-12 mt-40 grid grid-cols-1 md:grid-cols-2 items-center gap-6 text-center md:text-left"
-    >
-      <h5>2026 ©  Anastasia Bigun. All Rights Reserved.</h5>
-      <h5 class="md:text-right">
-        Designed & built by me · HTML · Tailwind · JavaScript
-      </h5>
+  <footer class="bg-white mt-40">
+    <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+      <nav class="secondary-nav mt-10">
+        <ul>
+          <li>
+            <a
+              href="/documents/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/anastasiabigun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:nastia.bigun@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="pt-10">
+        <h5>Designed & built by me · HTML · Tailwind · JavaScript</h5>
+      </div>
+
+      <div class="pt-4">
+        <h5>2026 © Anastasia Bigun. All Rights Reserved.</h5>
+      </div>
     </div>
   </footer>
 </html>

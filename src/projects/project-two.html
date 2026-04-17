@@ -36,14 +36,14 @@
           <div>
             <a href="/" class="logo">
               <img
-                src="/src/images/logo/logo.png"
+                src="/src/images/logo/logo-em.png"
                 alt="Anastasia Bigun — UX/UI Designer"
                 width="60"
                 height="60"
               />
             </a>
           </div>
-
+          <!-- MAIN MENU -->
           <div>
             <!-- Hamburger / X -->
             <label class="nav-toggle-label">
@@ -56,11 +56,21 @@
             <div class="nav-overlay"></div>
 
             <ul class="nav-menu">
-              <li><a href="/">projects</a></li>
-              <li><a href="/about">about</a></li>
-              <li><a href="/contact">contact</a></li>
+              <li>
+                <a href="/" class="text-base font-semibold text-emerald-900"
+                  >projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  class="text-base font-semibold text-emerald-900"
+                  >about</a
+                >
+              </li>
             </ul>
           </div>
+          <!-- MAIN MENU ENDS -->
         </nav>
       </div>
     </header>
@@ -258,7 +268,7 @@
               <blockquote class="bg-blue-100 rounded-md p-6">
                 👇 Click to jump to the corresponding section
               </blockquote>
-              <div class="project-one-nav my-4">
+              <div class="project-nav my-4">
                 <a href="#user-research">Research →</a>
                 <a href="#wireframes">Design →</a>
                 <a href="#usability-study">Usability Study →</a>
@@ -628,14 +638,47 @@
     <script type="module" src="../js/lightbox.js"></script>
   </body>
   <!-- Footer section -->
-  <footer class="bg-white">
-    <div
-      class="max-w-7xl mx-auto px-4 py-12 mt-40 grid grid-cols-1 md:grid-cols-2 items-center gap-6 text-center md:text-left"
-    >
-      <h5>2026 ©  Anastasia Bigun. All Rights Reserved.</h5>
-      <h5 class="md:text-right">
-        Designed & built by me · HTML · Tailwind · JavaScript
-      </h5>
+  <footer class="bg-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+      <nav class="secondary-nav">
+        <ul>
+          <li>
+            <a
+              href="/documents/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/anastasiabigun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:nastia.bigun@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="pt-10">
+        <h5>Designed & built by me · HTML · Tailwind · JavaScript</h5>
+      </div>
+
+      <div class="pt-4">
+        <h5>2026 © Anastasia Bigun. All Rights Reserved.</h5>
+      </div>
     </div>
   </footer>
 </html>
