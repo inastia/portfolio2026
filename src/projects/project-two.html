@@ -111,49 +111,154 @@
 
       <!-- Main Content Container -->
       <div class="max-w-7xl mx-auto px-4">
+        <!-- Main Section Starts -->
         <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
           <!-- Project Overview Section -->
-          <h2>Project Overview</h2>
-          <section class="project-overview space-y-4">
+          <section class="space-y-8">
             <div class="space-y-4">
               <p class="meta text-slate-500 text-sm">
                 Mobile app | Solo project | 2 weeks | 2025
               </p>
               <p class="role text-slate-600">
-                A feature addition to the Chani astrology app that lets users
-                save and quickly resurface their favorite meditations,
-                affirmations, and sleep stories.
+                A feature addition to the Chani app that lets users save and
+                quickly return to favorite Meditations, Affirmations, and Sleep
+                Stories. The goal was to fix the drop-off after listening, where
+                users couldn’t easily find content they loved again. By
+                combining in-place saving with a restructured Listen page, the
+                experience shifted from searching and scrolling to immediate
+                retrieval.
               </p>
             </div>
-
             <div class="space-y-4">
               <h4>Problem</h4>
-              <p>
-                The Chani app offers a rich library of meditations,
-                affirmations, and sleep stories, but had no way to save or
-                resurface audio files a user loved. Returning to a favorite
-                meditation required manually searching through the entire Audio
-                Library, making the experience feel more like a chore than a
-                ritual.
-              </p>
               <blockquote class="bg-red-100 rounded-md p-6 my-6">
-                👉 I stopped using the meditation feature because I had no way
-                to save the meditations that resonated with me and easily find
-                them again.
+                👉 I can’t find the meditation I liked yesterday without
+                scrolling and trying to recognize it from memory.
               </blockquote>
-            </div>
-
-            <div class="space-y-4">
-              <h4>My Solution</h4>
               <p>
-                I added two small but connected changes to the existing app.
-                First, a heart icon on the Play Audio screen lets a user save
-                any meditation while listening to it. Second, the Listen page
-                was restructured using a tab pattern — Sleep Stories,
-                Affirmations, Meditations — already familiar from the app's Home
-                page.
+                Finding a meditation I liked later took effort. I had to scroll
+                through multiple categories and try to recognize it from memory,
+                or rely on screenshots to find it again.
               </p>
-              <figure>
+            </div>
+            <div class="space-y-4">
+              <h4>Solution</h4>
+              <p>
+                Add an outlined heart icon on the Play screen to signal saving.
+                Organize the Listen page using category tabs and push saved
+                content to the top of each list.
+              </p>
+            </div>
+          </section>
+          <!-- Project Overview Section Ends -->
+          <!-- Strategy Section -->
+          <section class="space-y-8">
+            <div class="space-y-4">
+              <h3 class="mt-6">Strategy</h3>
+              <div class="space-y-4">
+                <div>
+                  <h4>Decision: Solve for retrieval, not just saving</h4>
+                  <blockquote class="bg-green-100 rounded-md p-6 my-6">
+                    👉 Consider how to find a saved file later.
+                  </blockquote>
+                  <p>
+                    Saving alone wouldn’t fix the problem. The experience needed
+                    to make previously favorited content immediately visible
+                    without requiring users to search again.
+                  </p>
+                </div>
+                <div class="space-y-4">
+                  <h4>Constraint: Work within an existing pattern</h4>
+                  <p>
+                    The solution had to fit into Chani’s current UI. I extended
+                    the tab pattern from the Home page to organize the Listen
+                    categories, keeping the experience familiar while supporting
+                    new functionality.
+                  </p>
+                  <picture class="lightbox-trigger">
+                    <source
+                      media="(min-width: 1920px)"
+                      srcset="../images/projects/project2/constraint-large.png"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="../images/projects/project2/constraint-medium.png"
+                    />
+                    <img
+                      src="../images/projects/project2/constraint-small.png"
+                      srcset="
+                        ../images/projects/project2/constraint-small.png   800w,
+                        ../images/projects/project2/constraint-medium.png 1400w,
+                        ../images/projects/project2/constraint-large      2160w
+                      "
+                      sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"
+                      alt="Comparison showing Chani’s existing Home screen with Today, This Week, and This Year tabs and a redesigned Listen page using the same tab pattern to organize Sleep Stories, Affirmations, and Meditations."
+                      loading="lazy"
+                      class="w-full h-auto rounded-lg shadow-md"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <h4>Research: What breaks after listening</h4>
+                <p>
+                  Creating a user journey helped me realize that the critical
+                  task was finding the meditation I liked the next day.
+                </p>
+                <blockquote class="bg-blue-100 rounded-md p-6 my-6">
+                  👉 Manually scroll through all three categories to find one
+                  specific file.
+                </blockquote>
+                <p>
+                  The app encourages meditation, but returning to a saved
+                  experience requires scanning, memory, or workarounds like
+                  screenshots. I focused on reducing effort after the initial
+                  interaction.
+                </p>
+                <picture class="lightbox-trigger">
+                  <source
+                    media="(min-width: 1920px)"
+                    srcset="../images/projects/project2/user-flow-large.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../images/projects/project2/user-flow-medium.png"
+                  />
+                  <img
+                    src="../images/projects/project2/user-flow-small.png"
+                    srcset="
+                      ../images/projects/project2/user-flow-small.png   800w,
+                      ../images/projects/project2/user-flow-medium.png 1400w,
+                      ../images/projects/project2/user-flow-large      2160w
+                    "
+                    sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"
+                    alt="User flow diagram showing two paths: discovering and saving a meditation by tapping a heart icon after listening, and later returning through the Listen page to quickly play the saved meditation"
+                    loading="lazy"
+                    class="w-full h-auto rounded-lg shadow-md"
+                  />
+                </picture>
+              </div>
+            </div>
+          </section>
+          <!-- Strategy Section Ends -->
+
+          <!-- Compare Approach Section -->
+          <section class="space-y-8">
+            <div class="space-y-4">
+              <h3 class="mt-6">Compare Approach</h3>
+              <p>
+                Two solutions to the same problem, starting from different
+                places — I extended patterns across the app, while Chani
+                restructured the Listen page as its own system.
+              </p>
+              <div class="space-y-4">
+                <h4>My approach: Retrieval first</h4>
+                <p>
+                  I started from the Audio Player screen and used a familiar tab
+                  pattern to organize the Listen page. This made it possible to
+                  add a full-width search input, keep the page description easy
+                  to scan, and place saved items at the top without scrolling.
+                </p>
                 <picture class="lightbox-trigger">
                   <source
                     media="(min-width: 1920px)"
@@ -180,29 +285,14 @@
                     class="w-full h-auto rounded-lg shadow-md"
                   />
                 </picture>
-                <figcaption class="text-sm text-slate-500 mt-2">
-                  Before: no way to save audio. After: heart icon on Play screen
-                  (left), redesigned Listen page with tabs (center), favorited
-                  audio surfaced at top of category (right).
-                </figcaption>
-              </figure>
-            </div>
-            <div class="space-y-4">
-              <h4>How Chani Solved It</h4>
-              <p>
-                The Chani team restructured the Listen page with two new
-                controls in the header: a filter icon for browsing by category
-                (Meditations, Affirmations, Sleep Stories) and a heart icon that
-                leads directly to a saved-only view. Below the header, the page
-                now opens with a horizontally scrolling row of favorited audio —
-                a new scroll pattern in the app — followed by three category
-                cards. Tapping a card leads to the full list of audio files in
-                that category, where each file displays a heart icon. Favorited
-                files show a filled heart; all others show an outline heart,
-                allowing users to save any file directly from the list without
-                opening it.
-              </p>
-              <figure>
+                <h4>Chani’s approach: Saving first</h4>
+                <p>
+                  It appears Chani started from the Listen page and reorganized
+                  it as its own system. This made it possible to introduce
+                  search and filter, add a favorites section, group content into
+                  categories, and mark saved items with a heart icon within the
+                  library.
+                </p>
                 <picture class="lightbox-trigger">
                   <source
                     media="(min-width: 1920px)"
@@ -228,256 +318,76 @@
                     class="w-full h-auto rounded-lg shadow-md"
                   />
                 </picture>
-                <figcaption class="text-sm text-slate-500 mt-2">
-                  Before: original Listen page built to scroll. After: filter
-                  controls and My Favorites cards (left), category cards
-                  (center), audio list with per-file heart icons (right).
-                </figcaption>
-              </figure>
-            </div>
-            <div class="space-y-4">
-              <div class="subsection space-y-4">
-                <h4>Comparing Approaches</h4>
-                <p>
-                  Both solutions address the same problem but prioritize
-                  different moments in the user journey.
-                </p>
-                <p>
-                  Chani’s approach prioritizes saving. A heart icon appears on
-                  every audio tile, allowing users to bookmark content directly
-                  from the list without opening the file.
-                </p>
-                <p>
-                  My approach prioritizes retrieval. Saved files surface
-                  automatically at the top of their category, making previously
-                  favorited content easy to locate later.
-                </p>
               </div>
             </div>
           </section>
+          <!-- Compare Approach Section Ends -->
 
-          <!-- Process Section -->
-          <section class="process-section space-y-8">
+          <!-- Design Section -->
+          <section class="space-y-8">
             <div class="space-y-4">
-              <h2 class="mt-8">Process</h2>
-              <p>
-                Worked within an existing design system to identify and solve
-                two connected user problems by extending a UI pattern already
-                familiar to Chani users rather than introducing a new one.
-              </p>
-              <blockquote class="bg-blue-100 rounded-md p-6">
-                👇 Click to jump to the corresponding section
-              </blockquote>
-              <div class="project-nav my-4">
-                <a href="#user-research">Research →</a>
-                <a href="#wireframes">Design →</a>
-                <a href="#usability-study">Usability Study →</a>
-                <a href="#usability-study">Results →</a>
-              </div>
-            </div>
-
-            <!-- Research Phase -->
-            <div class="research-phase space-y-4">
-              <h3 id="research-phase">Research Phase</h3>
+              <h3>Design: Wireframes</h3>
               <div class="subsection space-y-4">
-                <h4 id="user-research">User Research</h4>
                 <p>
-                  As a Chani user myself, I had direct experience with the
-                  problem. Rather than building a persona, I used a user
-                  journey, empathy map, and user flow to pressure-test my
-                  assumptions and stay open to solutions I hadn't considered
-                  yet.
-                </p>
-              </div>
-              <div class="space-y-4">
-                <h4 id="user-research">User Journey</h4>
-                <p>
-                  Mapping the user journey across four stages, from discovering
-                  a meditation to giving up searching for it, made the breaking
-                  point visible: the app loses the user not during the
-                  experience but after it.
+                  With a clear problem and an existing design system to work
+                  within, I moved directly to wireframes in Figma. Four screens
+                  capture the core of the solution: the Home page establishing
+                  the tab pattern I would carry into the Listen page, the Play
+                  screen before and after saving a file, and the redesigned
+                  Listen page showing category tabs with a favorited audio file
+                  surfaced at the top.
                 </p>
                 <picture class="lightbox-trigger">
                   <source
                     media="(min-width: 1920px)"
-                    srcset="../images/projects/project2/user-journey-large.png"
+                    srcset="../images/projects/project2/wireframe-large.png"
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="../images/projects/project2/user-journey-medium.png"
+                    srcset="../images/projects/project2/wireframe-medium.png"
                   />
                   <img
-                    src="../images/projects/project2/user-journey-small.png"
+                    src="../images/projects/project2/wireframe-small.png"
                     srcset="
-                      ../images/projects/project2/user-journey-small.png   800w,
-                      ../images/projects/project2/user-journey-medium.png 1400w,
-                      ../images/projects/project2/user-journey-medium.png 2160w
+                      ../images/projects/project2/wireframe-small.png   800w,
+                      ../images/projects/project2/wireframe-medium.png 1400w,
+                      ../images/projects/project2/wireframe-large.png  2160w
                     "
                     sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"
-                    alt="User journey map showing four stages: discovering a meditation, wanting to save it, returning later to find it, and eventually giving up due to difficulty locating the saved audio"
+                    alt="Low-fidelity wireframes of the Chani meditation feature showing the Home screen, the audio player before and after saving a meditation with a heart icon, and the redesigned Listen page with category tabs and a favorited meditation surfaced at the top"
                     loading="lazy"
                     class="w-full h-auto rounded-lg shadow-md"
                   />
                 </picture>
-              </div>
-
-              <div class="space-y-4">
-                <h4>Empathy Map</h4>
-                <p>
-                  Mapping the return to a favorite meditation revealed a clear
-                  pattern. Users were not frustrated with the content but with
-                  the effort required to find it again. The listening experience
-                  works well, but returning becomes a journey of searching and
-                  scrolling instead of clarity and focus.
-                </p>
-                <picture class="lightbox-trigger">
-                  <source
-                    media="(min-width: 1920px)"
-                    srcset="../images/projects/project2/empathy-map-large.png"
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="../images/projects/project2/empathy-map-medium.png"
-                  />
-                  <img
-                    src="../images/projects/project2/empathy-map-small.png"
-                    srcset="
-                      ../images/projects/project2/empathy-map-small.png   800w,
-                      ../images/projects/project2/empathy-map-medium.png 1400w,
-                      ../images/projects/project2/empathy-map-large.png  2160w
-                    "
-                    sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"
-                    alt="Empathy map showing what a meditation app user says, thinks, feels, and does when trying to return to a favorite meditation, highlighting frustration with not being able to easily save or find it again"
-                    loading="lazy"
-                    class="w-full h-auto rounded-lg shadow-md"
-                  />
-                </picture>
-              </div>
-              <div class="space-y-4">
-                <h4>User Flow</h4>
-                <p>
-                  Two paths, one connected experience. The first follows a user
-                  discovering and saving a meditation — finding it, pressing
-                  play, and tapping the heart if it resonates. The second
-                  captures the return visit — tapping Listen, selecting the
-                  Meditations tab, and finding the saved file waiting at the
-                  top.
-                </p>
-                <picture class="lightbox-trigger">
-                  <source
-                    media="(min-width: 1920px)"
-                    srcset="../images/projects/project2/user-flow-large.png"
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="../images/projects/project2/user-flow-medium.png"
-                  />
-                  <img
-                    src="../images/projects/project2/user-flow-small.png"
-                    srcset="
-                      ../images/projects/project2/user-flow-small.png   800w,
-                      ../images/projects/project2/user-flow-medium.png 1400w,
-                      ../images/projects/project2/user-flow-large      2160w
-                    "
-                    sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"
-                    alt="User flow diagram showing two paths: discovering and saving a meditation by tapping a heart icon after listening, and later returning through the Listen page to quickly play the saved meditation"
-                    loading="lazy"
-                    class="w-full h-auto rounded-lg shadow-md"
-                  />
-                </picture>
-              </div>
-
-              <!-- Design Phase -->
-              <div class="design-phase space-y-4">
-                <h3 id="design-phase">Design Phase</h3>
-
-                <div class="subsection space-y-4">
-                  <h4 id="wireframes">Wireframes & Prototypes</h4>
-                  <p>
-                    With a clear problem and an existing design system to work
-                    within, I moved directly to wireframes in Figma. Four
-                    screens capture the core of the solution: the Home page
-                    establishing the tab pattern I would carry into the Listen
-                    page, the Play screen before and after saving a file, and
-                    the redesigned Listen page showing category tabs with a
-                    favorited audio file surfaced at the top.
-                  </p>
-                  <picture class="lightbox-trigger">
-                    <source
-                      media="(min-width: 1920px)"
-                      srcset="../images/projects/project2/wireframe-large.png"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="../images/projects/project2/wireframe-medium.png"
-                    />
-                    <img
-                      src="../images/projects/project2/wireframe-small.png"
-                      srcset="
-                        ../images/projects/project2/wireframe-small.png   800w,
-                        ../images/projects/project2/wireframe-medium.png 1400w,
-                        ../images/projects/project2/wireframe-large.png  2160w
-                      "
-                      sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"
-                      alt="Low-fidelity wireframes of the Chani meditation feature showing the Home screen, the audio player before and after saving a meditation with a heart icon, and the redesigned Listen page with category tabs and a favorited meditation surfaced at the top"
-                      loading="lazy"
-                      class="w-full h-auto rounded-lg shadow-md"
-                    />
-                  </picture>
-                </div>
               </div>
             </div>
           </section>
-          <!-- Process Section Ends -->
+          <!-- Design Section Ends -->
 
           <!-- Results Section -->
-          <section class="results space-y-4">
-            <h3 id="results">Results</h3>
-            <div class="decisions space-y-4">
-              <h4>Key Product Decisions</h4>
-              <div class="subsection space-y-4">
-                <h5>Decision 1: Solve for discoverability, not just saving</h5>
-                <p>
-                  Adding bookmarking solved only half the problem. Users also
-                  needed an easy way to find saved audio again without scrolling
-                  through multiple lists.
-                </p>
-                <p>
-                  I decided to extend the app’s existing tab pattern to the
-                  Listen page. Favorited items appear at the top of their
-                  category and are marked with a filled heart icon.
-                </p>
-                <p>
-                  This keeps the interaction familiar, reduces scrolling, and
-                  makes saved content immediately visible without adding new UI
-                  elements.
-                </p>
-              </div>
-              <div class="subsection space-y-4">
-                <h5>Decision 2: Scope down to ship faster</h5>
-                <p>
-                  During design I identified a larger opportunity to simplify
-                  navigation by combining the Me and Transits pages into a
-                  tabbed experience.
-                </p>
-                <p>
-                  I decided to skip the change until a future release and focus
-                  this iteration on improving the Listen page.
-                </p>
-                <p>
-                  Shipping the bookmarking feature first delivers immediate
-                  value, reduces the amount of change users must learn at once,
-                  and establishes the tab pattern as a familiar interaction
-                  before expanding it elsewhere.
-                </p>
-              </div>
-            </div>
-            <div class="final-design space-y-4">
-              <h3>Final Design</h3>
+          <section class="space-y-8">
+            <div class="space-y-4">
+              <h3>Final</h3>
+              <a
+                href="https://www.figma.com/proto/okxB46aJdabZ8aRRYrrCbI/Chani-Prototype?node-id=1-1444&t=CMb4lcIwTSdarA3M-1"
+                target="_blank"
+                class="inline-block text-purple-900 font-medium hover:underline"
+              >
+                Explore Interactive Prototype →
+              </a>
               <p>
-                The prototype captures both flows: saving a meditation and
-                returning to find it.
+                The prototype shows how saving and returning to a meditation
+                work together in a single flow, with added space for a
+                full-width search input to support finding audio by name or
+                keyword.
               </p>
+              <ul
+                class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
+              >
+                <li>Retrieval in 2 taps</li>
+                <li>Uses familiar patterns with improved visibility</li>
+                <li>Saved content surfaces without scrolling or scanning</li>
+              </ul>
               <div class="w-72 md:w-80 rounded-3xl overflow-hidden shadow-md">
                 <video
                   autoplay
@@ -498,63 +408,12 @@
                   Your browser does not support this video tag.
                 </video>
               </div>
-              <a
-                href="https://www.figma.com/proto/okxB46aJdabZ8aRRYrrCbI/Chani-Prototype?node-id=1-1444&t=CMb4lcIwTSdarA3M-1"
-                target="_blank"
-                class="inline-block mt-4 text-purple-900 font-medium hover:underline"
-              >
-                Explore Interactive Prototype →
-              </a>
             </div>
-            <div class="subsection space-y-4">
-              <h4>Product Successes</h4>
-              <ul
-                class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
-              >
-                <li>
-                  <strong>Retrieval in 2 taps.</strong> From the Listen page, a
-                  saved meditation is reachable in two taps by selecting the
-                  Meditations tab and tapping the file at the top of the list.
-                  No scrolling and no scanning for a filled heart icon.
-                </li>
-                <li>
-                  <strong>Zero new interaction patterns introduced.</strong> The
-                  solution extended the tab pattern already present on the Home
-                  and Play screens rather than introducing a new UI convention.
-                  A user who knows the app already knows how to use the feature.
-                </li>
-                <li>
-                  <strong>Two problems solved with one design decision.</strong>
-                  The tab structure on the Listen page solved two distinct
-                  friction points - category navigation and the discoverability
-                  of favorites.
-                </li>
-                <li>
-                  <strong>Validated by the product team.</strong> The Chani team
-                  independently shipped a solution to the same problem,
-                  confirming the problem was real and worth prioritizing, not an
-                  edge case or personal preference.
-                </li>
-              </ul>
-            </div>
-            <div class="subsection space-y-4">
-              <h4>What I Learned</h4>
+            <div class="space-y-4">
+              <h4>Next: Expand the pattern to navigation</h4>
               <p>
-                Solving for the obvious problem often reveals a more important
-                one underneath and the better solution usually addresses both.
-              </p>
-            </div>
-            <div class="subsection space-y-4">
-              <h4>What's Next</h4>
-              <p>
-                The tab pattern introduced on the Listen page opens an
-                opportunity to simplify the app’s navigation.
-              </p>
-              <p>
-                The Me and Transits pages both rely on a user’s birth chart and
-                could live under a single page with tabs: Your Birth Chart and
-                Your Transits. This would reduce the main menu from five items
-                to four and extend a pattern users are already learning.
+                Use the tab pattern to simplify the app's navigation by
+                combining Me and Transit menu options.
               </p>
               <picture class="lightbox-trigger">
                 <source
