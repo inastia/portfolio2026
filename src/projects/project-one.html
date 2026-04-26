@@ -97,183 +97,58 @@
         <div class="max-w-7xl mx-auto px-4"> 
          <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
         <!-- Project Overview Section -->
-         <h2>Project Overview</h2>
           <section class="project-overview space-y-4">
             <div class="space-y-4">
               <p class="meta text-slate-500 text-sm">Mobile app | Solo project | 4 weeks | 2025</p>
               <p class="role text-slate-600">Led end-to-end discovery and design for a mobile currency exchange app. Conducted research, defined user flows, created wireframes and high-fidelity prototypes, and iterated based on usability feedback.</p>
-            </div>
-              
+            </div>   
             <div class="space-y-4">
               <h4>Problem</h4>
+              <blockquote class="bg-red-100 rounded-md p-6 my-6">👉 80% of travelers I interviewed said they double-check exchange rates across multiple apps due to concerns about hidden fees.</blockquote>
               <p>
                 How might we help global travelers quickly understand and exchange currencies without cognitive overload, uncertainty, or hidden friction?
               </p>
-              <blockquote class="bg-red-100 rounded-md p-6 my-6">👉 80% of travelers I interviewed said they double-check exchange rates across multiple apps due to concerns about hidden fees.</blockquote>
             </div> 
-
             <div class="space-y-4">
               <h4>Solution</h4>
-              <p>Designed a focused MVP centered on transparency and real-world usability.</p>
-              <p>The app includes two core experiences:</p>
-              <p><b>Convert</b> – For planning ahead</p>
-              <p>Displays the live mid-market rate with contextual education and refresh transparency. After entering currencies and amount, users see 4–5 ranked transfer options (lowest total cost first), including:</p>
-                <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
-                  <li>Exchange rate</li>
-                  <li>Transfer fee</li>
-                  <li>Total cost</li>
-                  <li>Final amount received after fees</li>
-                </ul>
-              <p><b>Calculate</b> – For in-the-moment decisions</p>
-              <p>A simplified calculator for use abroad. Users enter the exchange rate and optional service fee to instantly see the true final total.</p>
-              <p>By separating research from real-time calculation, the design reduces cognitive load and makes hidden costs immediately visible.</p>
+              <p>Design an app includes two core experiences: Convert and Calculate. Convert for preparing for a trip abroad and Calculate for on-location calculations.</p>
+            </div>
+            <div class="space-y-4">
+              <h4>Key Decision</h4>
+              <blockquote class="bg-green-100 rounded-md p-6 my-6">👉 Test existing design solutions from competitors.</blockquote>
+              <p>Defaults over guidance. Add image.</p>
             </div>
           </section>
 
-        <!-- Process Section -->
-         <section class="process-section space-y-4">
+        <!-- Research Section -->
+         <section class="space-y-4">
           <div class="space-y-4">
-          <h2>Process</h2>
-            <p>Followed a structured UX process: from research and synthesis to ideation, prototyping, and usability testing, with a focus on reducing financial complexity and increasing transparency.</p>
-            <blockquote class="bg-blue-100 rounded-md p-6">👇 Click to jump to the corresponding section</blockquote>
-            <div class="project-nav my-4">
-              <a href="#research-phase">Research →</a>
-              <a href="#design-phase">Design →</a>
-              <a href="#usability-study">Usability Study →</a>
-              <a href="#results">Results →</a>
-              <a href="#final-design">Final Design →</a>
-            </div>
-          </div>
-         
-
-          <!-- Research Phase -->
-          <div class="research-phase space-y-4">
-            <h3 id="research-phase">Research Phase</h3>
-            <div class="subsection space-y-4">
-              <h4 id="user-research">User Research</h4>
-              <p>
-              I interviewed four global travelers about how they prepare for and manage money while traveling abroad. The goal was to understand real behaviors, decision points, and moments of uncertainty during currency exchange.
-              </p>
-              <p>Examples of questions I asked:</p>
+            <h3>Research</h3>
+            <div class="space-y-4">
+              <h4>Interviews: What's important to the user</h4>
+              <h5>Examples of questions I asked</h5>
               <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
                 <li>"How do you usually plan and prepare for managing money before a trip?"</li>
                 <li>"Where do you typically exchange currency and how do you decide which place to use?"</li>
                 <li>"What tools do you use to check exchange rates or fees?"</li>
               </ul>
+              <h5>Trends</h5>
               <p>
-              Across interviews, participants described comparing rates across multiple sources, worrying about hidden fees, and struggling to understand the true cost of exchange. These patterns informed the development of the core persona.
-              </p>
-                <picture class="lightbox-trigger">
-                  <source 
-                    media="(min-width: 1920px)" 
-                    srcset="
-                    ../images/projects/project1/user-persona-large.png"
-                  />
-                  <source 
-                    media="(min-width: 768px)" 
-                    srcset="
-                    ../images/projects/project1/user-persona-medium.png"
-                  />
-                  <img 
-                  src="../images/projects/project1/user-persona-small.png" 
-                  srcset="
-                    ../images/projects/project1/user-persona-small.png 800w, 
-                    ../images/projects/project1/user-persona-medium.png 1400w,
-                    ../images/projects/project1/user-persona-large.png 2160w
-                    "
-                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
-                  alt="User persona of a frequent international traveler concerned about exchange fees, unclear rates, and finding trustworthy currency exchange options"
-                  loading="lazy"
-                  class="w-full h-auto rounded-lg shadow-md"/>
-                </picture>
-              <p>Visualized the user journey across four stages: search, open, use, and decide. While users felt analytical and focused, skepticism remained high. It highlighted opportunities to make fees visible, rank exchange methods by cost, and clearly explain the mid-market rate.</p>
-                <picture class="lightbox-trigger">
-                  <source 
-                  media="(min-width: 1920px)" 
-                  srcset="
-                  ../images/projects/project1/user-journey-large.png"
-                  />
-                  <source 
-                    media="(min-width: 768px)" 
-                    srcset="
-                      ../images/projects/project1/user-journey-medium.png"
-                  />
-                  <img 
-                    src="../images/projects/project1/user-journey-small.png" 
-                    srcset="
-                      ../images/projects/project1/user-journey-small.png 800w, 
-                      ../images/projects/project1/user-journey-medium.png 1400w,
-                      ../images/projects/project1/user-journey-large.png 2160w
-                    "
-                    sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
-                    alt="User journey map showing stages: search, open, use, decide"
-                    loading="lazy"
-                    class="w-full h-auto rounded-lg shadow-md"/>
-                </picture>
+              Across interviews, participants described comparing rates across multiple sources, worrying about hidden fees, and struggling to understand the true cost of exchange. 
+              </p>          
             </div>
-
-          <div class="subsection space-y-4">
-            <h4>Empathy Map</h4>
-            <p>Created an empathy map to capture what users say, think, feel, and do when navigating currency exchange. Patterns of uncertainty, mental math frustration, and fear of hidden fees directly informed the app’s focus on clarity and cost transparency.</p>
-              <picture class="lightbox-trigger">
-                <source 
-                  media="(min-width: 1920px)" 
-                  srcset="../images/projects/project1/empathy-map-large.png"
-                />
-                <source 
-                  media="(min-width: 768px)" 
-                  srcset="
-                  ../images/projects/project1/empathy-map-medium.png"
-                />
-                <img 
-                src="../images/projects/project1/empathy-map-small.png" 
-                srcset="
-                  ../images/projects/project1/empathy-map-small.png 800w, 
-                  ../images/projects/project1/empathy-map-medium.png 1400w,
-                  ./images/projects/project1/empathy-map-large.png 2160w
-                  "
-                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
-                  alt="Empathy map showing what travelers say, think, feel, and do when exchanging currency, highlighting confusion about exchange rates, concern about hidden fees, and the need for a transparent conversion experience"
-                  loading="lazy"
-                  class="w-full h-auto rounded-lg shadow-md"/>
-              </picture>
-          </div>
-
-          <div class="subsection space-y-4">
-            <h4>User Flow</h4>
+          <div class="space-y-4">
+            <h4>Persona: trends </h4>
             <p>Mapped the core decision path from app entry to conversion completion. The flow addresses two critical questions: “Is my currency available?” and “Do I understand the mid-market rate?”</p>
-              <picture class="lightbox-trigger">
-                <source 
-                media="(min-width: 1920px)" 
-                srcset="
-                ../images/projects/project1/user-flow-large.png"
-                />
-                <source 
-                media="(min-width: 768px)" 
-                srcset="
-                ../images/projects/project1/user-flow-medium.png"
-                />
-                <img 
-                src="../images/projects/project1/user-flow-small.png" 
-                srcset="
-                ../images/projects/project1/user-flow-small.png 800w, 
-                ../images/projects/project1/user-flow-medium.png 1400w, 
-                ../images/projects/project1/user-flow-large.png 2160w
-                "
-                sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
-                alt="User flow diagram showing the path from opening the currency app to completing a conversion, including currency selection and mid-market rate explanation decision points"
-                  loading="lazy"
-                  class="w-full h-auto rounded-lg shadow-md"/>
-              </picture>
             </div>
           </div>
 
-        <!-- Design Phase -->
-        <div class="design-phase space-y-4">
-          <h3 id="design-phase">Design Phase</h3>
-          <div class="subsection space-y-4">
-            <h4 id="sketches">Sketches</h4>
-            <p>Started with rapid hand-drawn sketches to map core screens and test information hierarchy. Early exploration allowed for fast iteration before committing to higher-fidelity designs.</p>
+        <!-- Design Section -->
+        <div class="space-y-4">
+          <h3>Design</h3>
+          <div class="space-y-4">
+            <h4 id="sketches">Sketches: screen vs pop-up</h4>
+            <p>Started with rapid hand-drawn sketches with an early idea of using pop up for information like Mid-Makret rate.</p>
               <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
@@ -299,9 +174,8 @@
           </div>
 
           <div class="subsection space-y-4">
-            <h4 id="wireframes">Wireframes & Prototypes</h4>
-            <p>Developed interactive wireframes in Figma for both core experiences: Convert and Calculate. The prototypes included currency selection, fee inputs, mid-market rate education, and ranked transfer options.</p>
-            <p>These wireframes went through multiple iterations and were used in moderated usability testing sessions. The screens shown reflect the latest refined versions.</p>
+            <h4 id="wireframes">Wireframes: design for clarity</h4>
+      
               <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
@@ -346,21 +220,13 @@
               </picture>
           </div>
           <div class="subsection space-y-4">
-            <h4 id="usability-study">Usability Study</h4>
+            <h4 id="usability-study">Usability Study: Empty states caused hesitation</h4>
             <p>I tested interactive wireframe prototypes with four participants across two rounds to validate core flows before moving to visual design.</p>
-            <p class="font-semibold text-slate-900">Test tasks</p>
+            <h5>Test tasks</h5>
             <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
               <li>Convert $1,000 USD to NZD, locate the mid-market rate, and calculate bank transfer fees</li>
               <li>Use the kiosk calculator to manually enter a custom exchange rate and service fee</li>
             </ul>
-            <p>In the first round, participants paused at empty input fields, uncertain where to begin. Testing the revised design in round two confirmed that pre-selected defaults resolved this friction more effectively than progress indicators.</p>
-            <h5>Key Finding</h5>
-            <p>In the first round of testing, several participants paused when encountering the empty input fields. The interface required users to first select a currency before entering an amount, but this step was not obvious. Participants hesitated, unsure where to begin.</p>
-            <p>To address this, I introduced a labeled progress bar that highlighted the first step as <strong>Currency</strong>.</p>
-            <h5>Iteration</h5>
-            <p>A second round of testing showed that the progress bar did not meaningfully improve task completion. Participants still hesitated before interacting with the inputs.</p>
-            <p>Instead, the most effective solution was to introduce <strong>pre-selected defaults</strong>: default currencies and a starting amount. With an existing value visible, participants immediately understood what the fields represented and began editing them without hesitation.</p>
-            <p>This iteration reinforced an important usability principle: <strong>modifying an existing value is often easier for users than creating one from an empty state.</strong></p>
             <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
@@ -388,27 +254,16 @@
 
       <!-- Results Section -->
       <section class="results space-y-4">
-        <h3 id="results">Results</h3>
-        <div class="decisions space-y-4">
-          <h4>Key Product Decisions</h4>
-          <div class="subsection space-y-4">
-            <h5>Decision 1: Prioritizing MVP Over Feature Expansion</h5>
-            <p>During interviews, users requested expanded features such as safety ratings for exchange locations, translation support at kiosks, and nearby exchange maps.</p>
-            <p>While valuable, these ideas introduced significant scope complexity. Through synthesis, I identified the core unmet need: trust in exchange rates and final totals.</p>
-            <p>I intentionally narrowed the product to two essential experiences, Convert and Calculate, focusing on transparency and clarity first.</p>
-            <p>This MVP approach supports faster iteration, clearer positioning, and a stronger foundation for future expansion.</p>
-          </div>
-          <div class="subsection space-y-4">
-            <h5>Decision 2: Replacing the Progress Bar with Stronger Defaults</h5>
-            <p>Usability testing revealed that a progress bar did not meaningfully help users begin the conversion task. Most participants either missed the indicator or ignored it.</p>
-            <p>Instead, the final design introduced pre-selected currencies and a default amount, creating a visible starting state that users could immediately modify.</p> 
-            <p>Testing revealed that users respond more confidently to editable defaults than to empty inputs. A visible starting state signals what action to take next more effectively than instructional text.</p>       
-          </div>
-        </div>
-
-        <div class="final-design space-y-4">
-          <h3 id="#final-design">Final Design</h3>
-          <p>The prototype captures the calculate user flow.</p>
+        <div class="space-y-4">
+          <h3>Final Design</h3>
+              <a
+              href="https://www.figma.com/proto/u39jbwjJKbceI6lQCkgcVP/Currency-App?node-id=454-1983&t=vtmKniYaFZrKNi8V-1"
+              target="_blank"
+              class="inline-block mt-4 text-purple-900 font-medium hover:underline"
+            >
+              Explore Interactive Prototype →
+            </a>
+          <p>Summary of product successes</p>
             <div class="w-72 md:w-80 rounded-3xl overflow-hidden shadow-md">
               <video
                 autoplay
@@ -428,33 +283,8 @@
                 />
                 Your browser does not support this video tag.
               </video>
-            </div>
-            <a
-              href="https://www.figma.com/proto/u39jbwjJKbceI6lQCkgcVP/Currency-App?node-id=454-1983&t=vtmKniYaFZrKNi8V-1"
-              target="_blank"
-              class="inline-block mt-4 text-purple-900 font-medium hover:underline"
-            >
-              Explore Interactive Prototype →
-            </a>
+            </div>   
           </div>
-
-        <div class="subsection space-y-4">
-          <h4>Product Successes</h4>
-          <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
-            <li>Users clearly understood the distinction between mid-market rate and final amount after fees</li>
-            <li>Default currency and amount inputs improved task completion confidence</li>
-            <li>Ranking transfer methods by total cost reduced comparison friction</li>
-            <li>Transparent fee breakdown increased trust and reduced cross-checking behavior</li>
-            <li>The Calculate feature supported quick, in-the-moment decisions abroad</li>
-          </ul>
-        </div>
-
-        <div class="subsection space-y-4">
-          <h4>What I Learned</h4>
-          <p>This project reinforced a simple lesson that clarity often comes from removing friction rather than adding features.</p>
-          <p>Testing early helped me simplify the inputs, strengthen the defaults, and focus the design on what matters most in financial decisions - trust.</p>
-          
-        </div>
       </section>
     </div>
   </div>
