@@ -97,57 +97,98 @@
         <div class="max-w-7xl mx-auto px-4"> 
          <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
         <!-- Project Overview Section -->
-          <section class="project-overview space-y-4">
+          <section class="space-y-8">
             <div class="space-y-4">
-              <p class="meta text-slate-500 text-sm">Mobile app | Solo project | 4 weeks | 2025</p>
-              <p class="role text-slate-600">Led end-to-end discovery and design for a mobile currency exchange app. Conducted research, defined user flows, created wireframes and high-fidelity prototypes, and iterated based on usability feedback.</p>
+              <p class="text-slate-700 text-sm font-semibold">Mobile app | Solo project | 4 weeks | 2025</p>
+              <p class="role text-slate-600">A currency exchange app that helps travelers understand the true cost of exchanging money by making fees and final amounts visible upfront. The product separates planning and real-time use into two focused experiences, reducing decision friction in unfamiliar environments. Through usability testing, the design evolved to replace empty inputs with meaningful defaults, allowing users to act immediately without hesitation.</p>
             </div>   
             <div class="space-y-4">
-              <h4>Problem</h4>
+              <h4>Problem: Hidden fees</h4>
               <blockquote class="bg-red-100 rounded-md p-6 my-6">👉 80% of travelers I interviewed said they double-check exchange rates across multiple apps due to concerns about hidden fees.</blockquote>
               <p>
-                How might we help global travelers quickly understand and exchange currencies without cognitive overload, uncertainty, or hidden friction?
+                Main goal is to help global travelers quickly understand and exchange currencies without cognitive overload, uncertainty, or hidden friction.
               </p>
             </div> 
             <div class="space-y-4">
-              <h4>Solution</h4>
+              <h4>Solution: Two core experiences</h4>
               <p>Design an app includes two core experiences: Convert and Calculate. Convert for preparing for a trip abroad and Calculate for on-location calculations.</p>
             </div>
             <div class="space-y-4">
-              <h4>Key Decision</h4>
-              <blockquote class="bg-green-100 rounded-md p-6 my-6">👉 Test existing design solutions from competitors.</blockquote>
-              <p>Defaults over guidance. Add image.</p>
+              <h4>Key Decision: Default inputs</h4>
+              <blockquote class="bg-green-100 rounded-md p-6 my-6">👉 Use default inputs over guidance indicators.</blockquote>
+              <p>In the first and second round of testing all users paused at currency input task. Competitor analysis informed my decision to switch generic icons to default currencies. The users no longer paused at the same task during the final round of testing.</p>
             </div>
+            <picture class="lightbox-trigger">
+                <source 
+                media="(min-width: 1920px)" 
+                srcset="../images/projects/project1/key-large.png"
+                />
+                <source 
+                media="(min-width: 768px)" 
+                srcset="
+                ../images/projects/project1/key-medium.png"
+                />
+                <img 
+                  src="../images/projects/project1/key-small.png" 
+                  srcset="
+                    ../images/projects/project1/key-small.png 800w, 
+                    ../images/projects/project1/key-medium.png 1400w,
+                    ../images/projects/project1/key-large.png 2160w
+                  "
+                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
+                  alt="Three-step comparison showing how input design evolved. Step one shows generic empty fields that caused hesitation. Step two introduces a progress bar, but it goes mostly unnoticed. Step three shows default currency and amount pre-filled, removing confusion and creating a clear starting point."
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>
           </section>
 
         <!-- Research Section -->
-         <section class="space-y-4">
+         <section class="space-y-8">
           <div class="space-y-4">
-            <h3>Research</h3>
+            <h3 class="mt-6">Research</h3>
             <div class="space-y-4">
-              <h4>Interviews: What's important to the user</h4>
+              <h4>Interviews: Clarity is important to the user</h4>
               <h5>Examples of questions I asked</h5>
               <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
                 <li>"How do you usually plan and prepare for managing money before a trip?"</li>
                 <li>"Where do you typically exchange currency and how do you decide which place to use?"</li>
                 <li>"What tools do you use to check exchange rates or fees?"</li>
               </ul>
-              <h5>Trends</h5>
-              <p>
-              Across interviews, participants described comparing rates across multiple sources, worrying about hidden fees, and struggling to understand the true cost of exchange. 
-              </p>          
+              <h5>Trends: trust depends on full disclosure</h5>
+              <p>Across interviews I found that users don’t trust exchange rates on their own. They look for the full picture (fees, final amount, and clear breakdowns) before making a decision. Without that, they cross-check multiple sources, trying to confirm whether they’re getting a fair deal, often struggling to interpret what the numbers actually mean.</p>
+                <picture class="lightbox-trigger">
+                <source 
+                media="(min-width: 1920px)" 
+                srcset="../images/projects/project1/trends-large.png"
+                />
+                <source 
+                media="(min-width: 768px)" 
+                srcset="
+                ../images/projects/project1/trends-medium.png"
+                />
+                <img 
+                  src="../images/projects/project1/trends-small.png" 
+                  srcset="
+                    ../images/projects/project1/trends-small.png 800w, 
+                    ../images/projects/project1/trends-medium.png 1400w,
+                    ../images/projects/project1/trends-large.png 2160w
+                  "
+                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
+                  alt="Three user quotes paired with final app screens. Quotes highlight need for transparency, checking rates in advance, and confusion with exchange numbers. Final design shows pre-filled currencies, visible mid-market rate, and total cost to reduce uncertainty."
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>        
             </div>
-          <div class="space-y-4">
-            <h4>Persona: trends </h4>
-            <p>Mapped the core decision path from app entry to conversion completion. The flow addresses two critical questions: “Is my currency available?” and “Do I understand the mid-market rate?”</p>
+            <div class="space-y-4">
+              <h4>Competitor Analysis</h4>
+              <p>Analysis of Wise and XE shows that while both provide reliable exchange rates, neither clearly presents the full cost upfront. Fees are hidden, delayed, or require sign-up, and key actions are interrupted by cluttered or limited interfaces.</p>
             </div>
-          </div>
 
         <!-- Design Section -->
         <div class="space-y-4">
-          <h3>Design</h3>
+          <h3 class="mt-6">Design</h3>
           <div class="space-y-4">
-            <h4 id="sketches">Sketches: screen vs pop-up</h4>
+            <h4 id="sketches">Sketches: Pop-up ideation</h4>
             <p>Started with rapid hand-drawn sketches with an early idea of using pop up for information like Mid-Makret rate.</p>
               <picture class="lightbox-trigger">
                 <source 
@@ -173,78 +214,82 @@
               </picture>
           </div>
 
-          <div class="subsection space-y-4">
-            <h4 id="wireframes">Wireframes: design for clarity</h4>
-      
+          <div class="space-y-4">
+            <h4 id="wireframes">Wireframes: Design for trust</h4>
+              <p>Early wireframes included a “Paying with” step and a separate Favorites flow. These features added extra decisions without helping users understand the final amount or build trust. In the final design, I removed them to keep the experience focused on rates, and detailed transfer methods.</p>
               <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
-                srcset="../images/projects/project1/convert-wireframe-large.png"
+                srcset="../images/projects/project1/mvp-large.png"
                 />
                 <source 
                 media="(min-width: 768px)" 
                 srcset="
-                 ../images/projects/project1/convert-wireframe-medium.png"
+                 ../images/projects/project1/mvp-medium.png"
                 />
                 <img 
-                  src="../images/projects/project1/convert-wireframe-small.png" 
+                  src="../images/projects/project1/mvp-small.png" 
                   srcset="
-                    ../images/projects/project1/convert-wireframe-small.png 800w, 
-                    ../images/projects/project1/convert-wireframe-medium.png 1400w,
-                    ../images/projects/project1/convert-wireframe-large.png 2160w
+                    ../images/projects/project1/mvp-small.png 800w, 
+                    ../images/projects/project1/mvp-medium.png 1400w,
+                    ../images/projects/project1/mvp-large.png 2160w
                     "
                   sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
-                  alt="Wireframes of the Convert flow showing currency selection, mid-market rate information, ranked transfer methods, and supporting interface elements like the calculator and fee details"
+                  alt="Side-by-side wireframe comparison labeled Original and Final. The original includes a “Paying with” section and additional page, while the final removes them to simplify the flow."
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
+              <p>Designing the rate and fee flow focused on reducing unnecessary steps. Early versions split actions across multiple buttons, bringing users back to the main screen multiple times before completing the calculation. The final design combines both into a single entry point and moves input to a dedicated screen, allowing users to complete the task in one step.</p>
               <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
-                srcset="../images/projects/project1/calculate-wireframe-large.png"
+                srcset="../images/projects/project1/calculate-large.png"
                 />
                 <source media="(min-width: 768px)" 
-                  srcset="../images/projects/project1/calculate-wireframe-medium.png"
+                  srcset="../images/projects/project1/calculate-medium.png"
                   />
                 <img 
-                src="../images/projects/project1/calculate-wireframe-small.png" 
+                src="../images/projects/project1/calculate-small.png" 
                 srcset="
-                ../images/projects/project1/calculate-wireframe-small.png 800w, 
-                ../images/projects/project1/calculate-wireframe-medium.png 1400w,
-                ../images/projects/project1/calculate-wireframe-large.png 2160w
+                ../images/projects/project1/calculate-small.png 800w, 
+                ../images/projects/project1/calculate-medium.png 1400w,
+                ../images/projects/project1/calculate-large.png 2160w
                 "
                 sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
-                alt="Wireframes of the Calculate flow showing currency inputs, exchange rate and service fee fields, and the final total calculation with supporting input panels"
+                alt="Four-step wireframe progression showing how the rate and fee input flow evolved. Initial design uses two side-by-side buttons, then shifts to links, then a single combined button, and finally a dedicated screen for entering rate and fees."
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
           </div>
-          <div class="subsection space-y-4">
-            <h4 id="usability-study">Usability Study: Empty states caused hesitation</h4>
+          <div class="space-y-4">
+            <h4>Usability Study: Currency inputs are unclear</h4>
             <p>I tested interactive wireframe prototypes with four participants across two rounds to validate core flows before moving to visual design.</p>
             <h5>Test tasks</h5>
             <ul class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed">
-              <li>Convert $1,000 USD to NZD, locate the mid-market rate, and calculate bank transfer fees</li>
-              <li>Use the kiosk calculator to manually enter a custom exchange rate and service fee</li>
+              <li>Convert $1,000 USD to NZD.</li>
+              <li>Find out what mid-market rate is.</li>
+              <li>Use calculator to manually enter 1.74 exchange rate and $5 service fee.</li>
             </ul>
+            <h5>Findings</h5>
+         <p>Users ignored the progress bar and hesitated at unclear inputs. Currency selection was not immediately understood, but consistently treated as the first logical step before entering an amount.</p>
             <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
-                srcset="../images/projects/project1/progress-bar-large.png"
+                srcset="../images/projects/project1/study-large.png"
                 />
                 <source 
                 media="(min-width: 768px)" 
-                srcset="../images/projects/project1/progress-bar-medium.png"
+                srcset="../images/projects/project1/study-medium.png"
                 />
                 <img 
-                src="../images/projects/project1/progress-bar-small.png" 
+                src="../images/projects/project1/study-small.png" 
                 srcset="
-                ../images/projects/project1/progress-bar-small.png 800w, 
-                ../images/projects/project1/progress-bar-medium.png 1400w,
-                ../images/projects/project1/progress-bar-large.png 2160w
+                ../images/projects/project1/study-small.png 800w, 
+                ../images/projects/project1/study-medium.png 1400w,
+                ../images/projects/project1/study-large.png 2160w
                 "
                 sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
-                alt="Wireframe comparison of the Convert flow showing early progress indicator and the final design with default currencies and a pre-filled amount to improve clarity and user confidence"
+                alt="Usability study image showing two key quotes mapped to the Convert screen."
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
@@ -253,17 +298,17 @@
       </section>
 
       <!-- Results Section -->
-      <section class="results space-y-4">
+      <section class="space-y-8">
         <div class="space-y-4">
-          <h3>Final Design</h3>
+          <h3 class="mt-6">Final</h3>
               <a
               href="https://www.figma.com/proto/u39jbwjJKbceI6lQCkgcVP/Currency-App?node-id=454-1983&t=vtmKniYaFZrKNi8V-1"
               target="_blank"
-              class="inline-block mt-4 text-purple-900 font-medium hover:underline"
+              class="inline-block mt-4 text-emerald-900 font-medium hover:underline"
             >
               Explore Interactive Prototype →
             </a>
-          <p>Summary of product successes</p>
+            <p>The final design made exchange costs easy to understand by clearly separating the mid-market rate from the final amount after fees. Pre-filled currencies and amounts, along with ranking options by total cost, helped users act with confidence. A transparent fee breakdown reinforced trust and reduced the need to double-check across multiple sources.</p>
             <div class="w-72 md:w-80 rounded-3xl overflow-hidden shadow-md">
               <video
                 autoplay
