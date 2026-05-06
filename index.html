@@ -111,7 +111,7 @@
 
           <!-- Header Image Column -->
           <div class="hidden md:flex flex-1 justify-end">
-            <picture>
+            <!-- Header Image Starts <picture>
               <source
                 media="(min-width: 1250px)"
                 srcset="src/images/profile/profile-large.png"
@@ -130,34 +130,32 @@
                 sizes="(min-width: 1250px) 1250px, (min-width: 768px) 900px, 100vw"
                 class="w-full h-auto"
               />
-            </picture>
-            <!-- Header Image Starts
+            </picture> Header Image Ends -->
             <picture>
               <source
                 media="(min-width: 1920px)"
                 srcset="
-                  /src/images/profile/home-page-avatar-large.png  1x,
-                  /src/images/profile/home-page-avatar-xlarge.png 2x
+                  /src/images/profile/home-large.png  1x,
+                  /src/images/profile/home-xlarge.png 2x
                 "
               />
               <source
                 media="(min-width: 768px)"
                 srcset="
-                  /src/images/profile/home-page-avatar-medium.png 1x,
-                  /src/images/profile/home-page-avatar-large.png  2x
+                  /src/images/profile/home-medium.png 1x,
+                  /src/images/profile/home-large.png  2x
                 "
               />
               <img
-                src="/src/images/profile/home-page-avatar-small.png"
+                src="/src/images/profile/home-small.png"
                 srcset="
-                  /src/images/profile/home-page-avatar-small.png  1x,
-                  /src/images/profile/home-page-avatar-medium.png 2x
+                  /src/images/profile/home-small.png  1x,
+                  /src/images/profile/home-medium.png 2x
                 "
                 alt="Home page avatar image"
-                loading="lazy"
                 class="w-full h-auto"
               />
-            </picture> Header Image Ends -->
+            </picture>
           </div>
           <!-- Header Image Column Ends -->
         </section>
