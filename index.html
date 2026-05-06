@@ -88,12 +88,19 @@
           <div
             class="flex-1 flex flex-col py-8 md:py-0 text-center md:text-left"
           >
-            <h3>anastasia bigun</h3>
-            <h2 class="text-5xl mb-6 text-emerald-900 font-bold">
+            <div>
+              <img
+                src="/src/images/profile/name.png"
+                alt="Anastasia Bigun — UX/UI Designer"
+                width="300"
+                class="mx-auto md:mx-0"
+              />
+            </div>
+            <h2 class="text-5xl text-blue-950 mb-4 font-bold">
               UX/UI Designer
             </h2>
             <div class="max-w-xl">
-              <h3 class="text-2xl font-light">
+              <h3 class="text-xl font-normal">
                 Onboarding Project Manager with 3+ years working directly with
                 user pain points, designing with a deep respect for how people
                 actually work.
@@ -104,6 +111,27 @@
 
           <!-- Header Image Column -->
           <div class="hidden md:flex flex-1 justify-end">
+            <picture>
+              <source
+                media="(min-width: 1250px)"
+                srcset="src/images/profile/profile-large.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="src/images/profile/profile-medium.png"
+              />
+              <img
+                src="src/images/profile/profile-small.png"
+                srcset="
+                  src/images/profile/profile-small.png   600w,
+                  src/images/profile/profile-medium.png  900w,
+                  src/images/profile/profile-large.png  1250w
+                "
+                sizes="(min-width: 1250px) 1250px, (min-width: 768px) 900px, 100vw"
+                class="w-full h-auto"
+              />
+            </picture>
+            <!-- Header Image Starts
             <picture>
               <source
                 media="(min-width: 1920px)"
@@ -125,11 +153,11 @@
                   /src/images/profile/home-page-avatar-small.png  1x,
                   /src/images/profile/home-page-avatar-medium.png 2x
                 "
-                alt="About me avatar image"
+                alt="Home page avatar image"
                 loading="lazy"
                 class="w-full h-auto"
               />
-            </picture>
+            </picture> Header Image Ends -->
           </div>
           <!-- Header Image Column Ends -->
         </section>

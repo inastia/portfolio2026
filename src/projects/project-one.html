@@ -96,7 +96,7 @@
         <!-- Main Content Container -->
         <div class="max-w-7xl mx-auto px-4"> 
          <section class="max-w-2xl mx-auto flex flex-col gap-2 px-4 py-6">
-        <!-- Project Overview Section -->
+        <!-- Overview Section -->
           <section class="space-y-8">
             <div class="space-y-4">
               <p class="text-sm font-semibold">Mobile app | Solo project | 4 weeks | 2025</p>
@@ -104,9 +104,9 @@
             </div>   
             <div class="space-y-4">
               <h4>Problem: Hidden fees</h4>
-              <blockquote class="bg-red-100 rounded-md p-6 my-6">👉 80% of travelers I interviewed said they double-check exchange rates across multiple apps due to concerns about hidden fees.</blockquote>
+              <blockquote class="bg-red-100 rounded-md p-6 my-6">👉 80% of travelers I interviewed said they double-check exchange rates across multiple sources due to concerns about hidden fees.</blockquote>
               <p>
-                Main goal is to help global travelers quickly understand and exchange currencies without cognitive overload, uncertainty, or hidden friction.
+                Main goal is to help global travelers quickly understand exchange rates and compare options to choose the most cost-effective way to exchange currency.
               </p>
             </div> 
             <div class="space-y-4">
@@ -141,6 +141,7 @@
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
           </section>
+            <!-- Overview Section Ends -->
 
         <!-- Research Section -->
          <section class="space-y-8">
@@ -180,12 +181,41 @@
               </picture>        
             </div>
             <div class="space-y-4">
-              <h4>Competitor Analysis</h4>
-              <p>Analysis of Wise and XE shows that while both provide reliable exchange rates, neither clearly presents the full cost upfront. Fees are hidden, delayed, or require sign-up, and key actions are interrupted by cluttered or limited interfaces.</p>
+              <h4>Competitor Insights</h4>
+              <blockquote class="bg-blue-100 rounded-md p-6 my-6">👉 Existing tools focus on tracking or transfers, not decision-making.</blockquote>
+              <h5>How I researched</h5>
+              <p>Reviewed app store feedback and tested tools like Specie, Wise, and XE to understand how users evaluate and use currency exchange apps.</p>
+              <h5>What I found</h5>
+              <p>Current tools make it difficult to compare total cost, hide key information behind sign-in, and interrupt basic actions like input and calculation.</p>
+              <p>These gaps shaped a design focused on clarity, speed, and complete cost visibility.</p>
+              <picture class="lightbox-trigger">
+                <source 
+                media="(min-width: 1920px)" 
+                srcset="../images/projects/project1/comp-large.png"
+                />
+                <source 
+                media="(min-width: 768px)" 
+                srcset="
+                ../images/projects/project1/comp-medium.png"
+                />
+                <img 
+                  src="../images/projects/project1/comp-small.png" 
+                  srcset="
+                    ../images/projects/project1/comp-small.png 800w, 
+                    ../images/projects/project1/comp-medium.png 1400w,
+                    ../images/projects/project1/comp-large.png 2160w
+                  "
+                  sizes="(min-width: 1920px) 2160px, (min-width: 768px) 1400px, 800px"  
+                  alt="Hand-drawn sketches exploring early layouts for the currency exchange app, outlining key screens such as conversion results, currency selection, and calculator input."
+                  loading="lazy"
+                  class="w-full h-auto rounded-lg shadow-md"/>
+              </picture>
             </div>
+            </section> <!-- Research Section Ends -->
 
         <!-- Design Section -->
-        <div class="space-y-4">
+         <section class="space-y-8">
+          <div class="space-y-4">
           <h3 class="mt-6">Design</h3>
           <div class="space-y-4">
             <h4 id="sketches">Sketches: Pop-up ideation</h4>
@@ -216,7 +246,10 @@
 
           <div class="space-y-4">
             <h4 id="wireframes">Wireframes: Design for trust</h4>
-              <p>Early wireframes included a “Paying with” step and a separate Favorites flow. These features added extra decisions without helping users understand the final amount or build trust. In the final design, I removed them to keep the experience focused on rates, and detailed transfer methods.</p>
+            <p>Original design was inflated. Having the goal front and center at every design session helped remove unnecessary pieces of design and simplify desired flows.</p>
+            <h5>Focus on the goal</h5>
+              <p>“Paying with” flow and Favorite page didn’t make it into the final wireframe. They added extra decisions and did not help users understand the final amount.</p>
+              <p>Without them the final design focuses on rates and detailed transfer options. </p>
               <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
@@ -239,7 +272,9 @@
                   loading="lazy"
                   class="w-full h-auto rounded-lg shadow-md"/>
               </picture>
-              <p>Designing the rate and fee flow focused on reducing unnecessary steps. Early versions split actions across multiple buttons, bringing users back to the main screen multiple times before completing the calculation. The final design combines both into a single entry point and moves input to a dedicated screen, allowing users to complete the task in one step.</p>
+              <h5>Keep clicks to a minimum</h5>
+              <p>Designing the rate and fee flow focused on reducing unnecessary steps. Early versions split actions across multiple buttons, bringing users back to the main screen multiple times before completing the calculation.</p>
+              <p>The final design combines both into a single entry point and moves input to a dedicated screen, allowing users to complete the task in fewer steps.</p>
               <picture class="lightbox-trigger">
                 <source 
                 media="(min-width: 1920px)" 
@@ -295,9 +330,11 @@
               </picture>
           </div>
         </div>
-      </section>
+         </section>
+        <!-- Design Section Ends -->
+      
 
-      <!-- Results Section -->
+      <!-- Final Section -->
       <section class="space-y-8">
         <div class="space-y-4">
           <h3 class="mt-6">Final</h3>
@@ -308,7 +345,7 @@
             >
               Explore Interactive Prototype →
             </a>
-            <p>The final design made exchange costs easy to understand by clearly separating the mid-market rate from the final amount after fees. Pre-filled currencies and amounts, along with ranking options by total cost, helped users act with confidence. A transparent fee breakdown reinforced trust and reduced the need to double-check across multiple sources.</p>
+            <p>The final design shows the full cost of exchange upfront, including fees and total amount across options. It works offline without sign-in, remembers user preferences, and includes a built-in calculator for real-world scenarios. Quick input tools and clear formatting make it easy to move through the flow without friction.</p>
             <div class="w-72 md:w-80 rounded-3xl overflow-hidden shadow-md">
               <video
                 autoplay
@@ -331,6 +368,7 @@
             </div>   
           </div>
       </section>
+        <!-- Final Section Ends -->
     </div>
   </div>
    <!-- PROJECT NAVIGATION -->
