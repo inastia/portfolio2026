@@ -10,6 +10,7 @@ export default defineConfig({
         projectOne: "src/projects/project-one.html",
         projectTwo: "src/projects/project-two.html",
         projectThree: "src/projects/project-three.html",
+        projectFour: "src/projects/project-four.html",
       },
     },
   },

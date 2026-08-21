@@ -3,6 +3,7 @@
 import projectOneImg from "../images/profile/project-one.png";
 import projectTwoImg from "../images/profile/project-two.png";
 import projectThreeImg from "../images/profile/project-three.png";
+import projectFourImg from "../images/profile/project-four.png";
 
 const projects = [
   {
@@ -32,6 +33,15 @@ const projects = [
     alt: "Project Two case study preview",
     url: "/chani",
     titleColor: "text-purple-900",
+  },
+  {
+    title: "Travel Guide",
+    description:
+      "A structural and editorial overhaul of a travel influencer's 70-page digital guide, reorganized around how readers actually search for what they need.",
+    image: projectFourImg,
+    alt: "Project Four case study preview",
+    url: "/travel-guide",
+    titleColor: "text-indigo-900",
   },
 ];
 

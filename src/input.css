@@ -32,6 +32,12 @@
     --project-h3: var(--color-blue-900);
   }
 
+  .theme-rose {
+    --project-h1: var(--color-rose-900);
+    --project-h2: var(--color-rose-800);
+    --project-h3: var(--color-rose-900);
+  }
+
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold m-10;
     color: var(--project-h1);

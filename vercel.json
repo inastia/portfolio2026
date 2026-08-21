@@ -10,6 +10,10 @@
       "source": "/camelot-vet",
       "destination": "/src/projects/project-three.html"
     },
+    {
+      "source": "/travel-guide",
+      "destination": "/src/projects/project-four.html"
+    },
 
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
