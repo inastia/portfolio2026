@@ -4,32 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UX Design Portfolio</title>
-
     <!-- Styles -->
-
     <!-- Favicons -->
-    <link rel="icon" href="/assets/favicon-CJbOpOTY.ico" />
+    <link rel="icon" href="/favicons/favicon.ico" />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="/assets/favicon-96x96-DUWNOABo.png"
+      href="/favicons/favicon-96x96.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/apple-touch-icon-oBKw0xo9.png"
+      href="/favicons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/src/favicons/android-chrome-192x192.png"
+      href="/favicons/web-app-manifest-192x192.png"
     />
-    <script type="module" crossorigin src="/assets/main-DYhIknn_.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/main-_BPesr5o.js">
-    <link rel="modulepreload" crossorigin href="/assets/includes-l0sNRNKZ.js">
-    <link rel="stylesheet" crossorigin href="/assets/output-BvNXiC1V.css">
+    <!-- Favicons End -->
+    <script type="module" crossorigin src="/assets/main-B-dyNrTS.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/main-y5SDgB-S.js">
+    <link rel="stylesheet" crossorigin href="/assets/main-p48-CUej.css">
   </head>
 
   <body>
@@ -44,14 +42,14 @@
           <div>
             <a href="/" class="logo">
               <img
-                src="/assets/logo-Bonn43jX.png"
+                src="/assets/logo-em-Cd1YtQL1.png"
                 alt="Anastasia Bigun — UX/UI Designer"
                 width="60"
                 height="60"
               />
             </a>
           </div>
-
+          <!-- MAIN MENU -->
           <div>
             <!-- Hamburger / X -->
             <label class="nav-toggle-label">
@@ -64,11 +62,21 @@
             <div class="nav-overlay"></div>
 
             <ul class="nav-menu">
-              <li><a href="/">projects</a></li>
-              <li><a href="/about">about</a></li>
-              <li><a href="/contact">contact</a></li>
+              <li>
+                <a href="/" class="text-base font-semibold text-emerald-900"
+                  >projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  class="text-base font-semibold text-emerald-900"
+                  >about</a
+                >
+              </li>
             </ul>
           </div>
+          <!-- MAIN MENU ENDS -->
         </nav>
       </div>
     </header>
@@ -76,45 +84,132 @@
     <!-- Main content section -->
     <main>
       <div class="max-w-7xl mx-auto px-4">
-        <section class="gap-8 max-w-7xl mx-auto px-4">
-          <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="/assets/header-img-large-DAKvLu9h.png 1x, /assets/header-img-xlarge-5jxpUGw7.png 2x"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="/assets/header-img-medium-CHNFtbeI.png 1x, /assets/header-img-large-DAKvLu9h.png 2x"
-            />
-            <img
-              src="/assets/header-img-small-BtgFHRl1.png"
-              srcset="/assets/header-img-small-BtgFHRl1.png 1x, /assets/header-img-medium-CHNFtbeI.png 2x"
-              alt="Header image"
-              loading="lazy"
-              class="w-full h-auto"
-            />
-          </picture>
+        <section class="flex md:flex-row items-center gap-8 px-4 py-4">
+          <!-- HEADER TEXT -->
+          <div
+            class="flex-1 flex flex-col py-8 md:py-0 text-center md:text-left"
+          >
+            <div>
+              <img
+                src="/assets/name-D_6YvkOo.png"
+                alt="Anastasia Bigun — UX/UI Designer"
+                width="300"
+                class="mx-auto md:mx-0"
+              />
+            </div>
+            <h2 class="text-5xl text-blue-950 mb-4 font-bold">
+              UX/UI Designer
+            </h2>
+            <div class="max-w-xl">
+              <h3 class="text-xl font-normal">
+                Onboarding Project Manager with 3+ years working directly with
+                user pain points, designing with a deep respect for how people
+                actually work.
+              </h3>
+            </div>
+          </div>
+          <!-- HEADER TEXT ENDS -->
+
+          <!-- Header Image Column -->
+          <div class="hidden md:flex flex-1 justify-end">
+            <!-- Header Image Starts <picture>
+              <source
+                media="(min-width: 1250px)"
+                srcset="src/images/profile/profile-large.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="src/images/profile/profile-medium.png"
+              />
+              <img
+                src="src/images/profile/profile-small.png"
+                srcset="
+                  src/images/profile/profile-small.png   600w,
+                  src/images/profile/profile-medium.png  900w,
+                  src/images/profile/profile-large.png  1250w
+                "
+                sizes="(min-width: 1250px) 1250px, (min-width: 768px) 900px, 100vw"
+                class="w-full h-auto"
+              />
+            </picture> Header Image Ends -->
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="/assets/home-large-ahaTFEuR.png 1x, /assets/home-xlarge-qkqA4iVV.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/assets/home-medium-BRKKgQUu.png 1x, /assets/home-large-ahaTFEuR.png 2x"
+              />
+              <img
+                src="/assets/home-small-CBjPia8B.png"
+                srcset="/assets/home-small-CBjPia8B.png 1x, /assets/home-medium-BRKKgQUu.png 2x"
+                alt="Home page avatar image"
+                class="w-full h-auto"
+              />
+            </picture>
+          </div>
+          <!-- Header Image Column Ends -->
         </section>
 
         <section>
           <!-- Cards section -->
           <div
             id="projects-grid"
-            class="grid grid-cols-1 gap-6 sm:grid-cols-2"
+            class="flex flex-col gap-6 md:flex-row md:flex-wrap"
           ></div>
         </section>
       </div>
     </main>
   </body>
   <!-- Footer section -->
-  <footer class="bg-white">
-    <div
-      class="max-w-7xl mx-auto px-4 py-12 mt-40 grid grid-cols-1 md:grid-cols-2 items-center gap-6 text-center md:text-left"
-    >
-      <h5>2026 ©  Anastasia Bigun. All Rights Reserved.</h5>
-      <h5 class="md:text-right">
-        Designed & built by me · HTML · Tailwind · JavaScript
-      </h5>
+  <footer class="bg-white mt-40">
+    <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+      <nav class="secondary-nav mt-10">
+        <ul>
+          <li>
+            <a
+              href="/documents/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/anastasiabigun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:hello@anastasiabigun.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-base font-semibold text-emerald-900"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <img
+          src="/assets/footer-img-two-C8tFvJZd.png"
+          class="w-38 h-38 object-contain mx-auto"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <h5>Designed & built by me · HTML · Tailwind · JavaScript</h5>
+      </div>
+
+      <div class="pt-4">
+        <h5>2026 © Anastasia Bigun. All Rights Reserved.</h5>
+      </div>
     </div>
   </footer>
 </html>

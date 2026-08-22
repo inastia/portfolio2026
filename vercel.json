@@ -2,17 +2,19 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/currency-exchange",
-      "destination": "/src/projects/project-one.html"
+      "source": "/travel-guide",
+      "destination": "/src/projects/travel-guide.html"
     },
-    { "source": "/chani", "destination": "/src/projects/project-two.html" },
+
     {
       "source": "/camelot-vet",
-      "destination": "/src/projects/project-three.html"
+      "destination": "/src/projects/camelot-vet.html"
     },
+    { "source": "/chani", "destination": "/src/projects/chani.html" },
+
     {
-      "source": "/travel-guide",
-      "destination": "/src/projects/project-four.html"
+      "source": "/currency-exchange",
+      "destination": "/src/projects/currency-exchange.html"
     },
 
     { "source": "/", "destination": "/index.html" },
