@@ -1,47 +1,47 @@
 // Page-specific logic - projects
 
-import projectOneImg from "../images/profile/project-one.png";
-import projectTwoImg from "../images/profile/project-two.png";
-import projectThreeImg from "../images/profile/project-three.png";
-import projectFourImg from "../images/profile/project-four.png";
+import travelGuideImg from "../images/profile/travel-guide.png";
+import vetClinicImg from "../images/profile/camelot-vet.png";
+import chaniImg from "../images/profile/chani.png";
+import currencyExchangeImg from "../images/profile/currency-exchange.png";
 
 const projects = [
+  {
+    title: "Travel Guide",
+    description:
+      "A structural and editorial overhaul of a travel influencer's 70-page digital guide, reorganized around how readers actually search for what they need.",
+    image: travelGuideImg,
+    alt: "Travel Guide case study preview",
+    url: "/travel-guide",
+    titleColor: "text-rose-900",
+  },
   {
     title: "Camelot Vet Services",
     liveUrl: "https://www.camelotvetclinic.com/",
     description:
       "A website launched for a small veterinary practice to meet 10DLC compliance and restore online presence.",
-    image: projectThreeImg,
+    image: vetClinicImg,
     alt: "Camelot Vet Clinic website case study preview",
     url: "/camelot-vet",
     titleColor: "text-blue-900",
   },
   {
-    title: "Currency exchange app",
-    description:
-      "An app that helps global travelers find the current exchange rates between two currencies.",
-    image: projectOneImg,
-    alt: "Project One case study preview",
-    url: "/currency-exchange",
-    titleColor: "text-emerald-900",
-  },
-  {
     title: "Chani",
     description:
       "A feature addition to the Chani astrology app that lets users save and quickly resurface their favorite audio assets.",
-    image: projectTwoImg,
-    alt: "Project Two case study preview",
+    image: chaniImg,
+    alt: "Chani App case study preview",
     url: "/chani",
     titleColor: "text-purple-900",
   },
   {
-    title: "Travel Guide",
+    title: "Currency exchange app",
     description:
-      "A structural and editorial overhaul of a travel influencer's 70-page digital guide, reorganized around how readers actually search for what they need.",
-    image: projectFourImg,
-    alt: "Project Four case study preview",
-    url: "/travel-guide",
-    titleColor: "text-indigo-900",
+      "An app that helps global travelers find the current exchange rates between two currencies.",
+    image: currencyExchangeImg,
+    alt: "Currency exchange app case study preview",
+    url: "/currency-exchange",
+    titleColor: "text-emerald-900",
   },
 ];
 

@@ -5,7 +5,12 @@ function initProjectNav() {
 
   if (!prevLink || !nextLink) return;
 
-  const projects = ["/currency-exchange", "/chani", "/camelot-vet"];
+  const projects = [
+    "/travel-guide",
+    "/camelot-vet",
+    "/chani",
+    "/currency-exchange",
+  ];
 
   const currentPage = window.location.pathname;
   const currentIndex = projects.indexOf(currentPage);

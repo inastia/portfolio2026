@@ -240,9 +240,6 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
-  .end {
-    inset-inline-end: var(--spacing);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -293,9 +290,6 @@
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
-  }
-  .h-7 {
-    height: calc(var(--spacing) * 7);
   }
   .h-38 {
     height: calc(var(--spacing) * 38);
@@ -530,9 +524,6 @@
   }
   .text-gray-400 {
     color: var(--color-gray-400);
-  }
-  .text-indigo-900 {
-    color: var(--color-indigo-900);
   }
   .text-purple-900 {
     color: var(--color-purple-900);
