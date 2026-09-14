@@ -238,7 +238,8 @@ svg {
   margin: 0;
 }
 
-.secondary-nav a {
+.secondary-nav a,
+.download-link {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -248,7 +249,8 @@ svg {
 }
 
 /* underline */
-.secondary-nav a::after {
+.secondary-nav a::after,
+.download-link::after {
   content: "";
   display: block;
   width: 0;
@@ -261,17 +263,22 @@ svg {
 }
 
 .secondary-nav a:hover,
-.secondary-nav a:focus {
+.secondary-nav a:focus,
+.download-link:hover,
+.download-link:focus {
   transform: scale(1.05);
   font-weight: 600;
 }
 
 .secondary-nav a:hover::after,
-.secondary-nav a:focus::after {
+.secondary-nav a:focus::after,
+.download-link:hover::after,
+.download-link:focus::after {
   width: 100%;
 }
 
-.secondary-nav a:active {
+.secondary-nav a:active,
+.download-link:active {
   transform: scale(1.02);
 }
 

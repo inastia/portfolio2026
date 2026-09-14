@@ -19,6 +19,7 @@
 
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
+    { "source": "/resources", "destination": "/resources.html" },
 
     { "source": "/projects/:name", "destination": "/projects/:name" }
   ]
