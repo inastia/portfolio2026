@@ -585,6 +585,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
   }
@@ -608,6 +611,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .font-archivo {
     font-family: var(--font-archivo);
@@ -950,6 +956,11 @@
       min-height: 50svh;
     }
   }
+  .md\:min-h-\[calc\(100svh-200px\)\] {
+    @media (width >= 48rem) {
+      min-height: calc(100svh - 200px);
+    }
+  }
   .md\:w-80 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 80);
@@ -1023,6 +1034,11 @@
   .md\:py-0 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:py-12 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 12);
     }
   }
   .md\:pb-12 {
