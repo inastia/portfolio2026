@@ -1,67 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap");
 @import "tailwindcss";
 @source "../";
 
 @theme {
-  --font-display: "Oswald", sans-serif;
-  --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  --font-display--font-variation-settings: "opsz" 32;
+  /* Fonts */
+  --font-sans: "Inter", sans-serif; /* default for all text */
+  --font-serif: Georgia, serif; /* titles: font-serif */
+  --font-archivo: "Archivo Black", sans-serif; /* hero name only */
+  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  /* Brand color (red-700) */
+  --color-brand: oklch(50.5% 0.213 27.518);
 }
 
 @layer base {
-  :root {
-    --project-h1: var(--color-slate-800);
-    --project-h2: var(--color-slate-800);
-    --project-h3: var(--color-slate-800);
-  }
-
-  .theme-emerald {
-    --project-h1: var(--color-emerald-900);
-    --project-h2: var(--color-emerald-800);
-    --project-h3: var(--color-emerald-900);
-  }
-
-  .theme-purple {
-    --project-h1: var(--color-purple-900);
-    --project-h2: var(--color-purple-800);
-    --project-h3: var(--color-purple-900);
-  }
-
-  .theme-blue {
-    --project-h1: var(--color-blue-900);
-    --project-h2: var(--color-blue-800);
-    --project-h3: var(--color-blue-900);
-  }
-
-  .theme-rose {
-    --project-h1: var(--color-rose-900);
-    --project-h2: var(--color-rose-800);
-    --project-h3: var(--color-rose-900);
-  }
-
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold m-10;
-    color: var(--project-h1);
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold m-10 text-brand;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-semibold;
-    color: var(--project-h2);
+    @apply text-3xl md:text-4xl font-semibold text-brand;
   }
 
   h3 {
-    @apply text-xl md:text-2xl font-semibold pt-4;
-    color: var(--project-h3);
+    @apply font-serif text-xl md:text-2xl font-bold pt-4 text-brand;
   }
 
   h4 {
-    @apply text-lg md:text-xl font-medium;
+    @apply text-lg md:text-xl font-medium text-stone-800;
   }
 
   h5 {
-    @apply text-base font-semibold text-slate-800;
+    @apply text-base font-semibold text-stone-800;
   }
 
   p {
-    @apply text-base font-light text-slate-700 leading-relaxed;
+    @apply text-base font-light text-stone-600 leading-relaxed;
   }
 }

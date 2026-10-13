@@ -7,18 +7,18 @@
     <link href="../styles/style.css" rel="stylesheet" />
     <link href="../output.css" rel="stylesheet" />
     <!-- Favicons -->
-    <link rel="icon" href="../../favicons/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="../../favicons/favicon.svg" />
+    <link rel="icon" href="/favicons/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="../../favicons/favicon-96x96.png"
+      href="/favicons/favicon-96x96.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../../favicons/apple-touch-icon.png"
+      href="/favicons/apple-touch-icon.png"
     />
     <!-- Favicons End -->
   </head>
@@ -29,55 +29,70 @@
         id="site-header"
         class="site-header-inner max-w-7xl mx-auto px-4 md:px-6 pt-6"
       >
-        <nav class="site-nav">
-          <!-- Logo -->
-          <div>
-            <a href="/" class="logo">
-              <img
-                src="/src/images/logo/logo-em.png"
-                alt="Anastasia Bigun — UX/UI Designer"
-                width="60"
-                height="60"
-              />
-            </a>
-          </div>
+        <nav class="site-nav flex justify-center">
           <!-- MAIN MENU -->
-          <div>
-            <!-- Hamburger / X -->
-            <label class="nav-toggle-label">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span class="sr-only">Toggle navigation</span>
-            </label>
+          <!-- Hamburger / X -->
+          <label class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Toggle navigation</span>
+          </label>
 
-            <div class="nav-overlay"></div>
+          <div class="nav-overlay"></div>
 
-            <ul class="nav-menu">
-              <li>
-                <a href="/" class="text-base font-semibold text-emerald-900"
-                  >projects</a
+          <ul class="nav-menu">
+            <li>
+              <a
+                href="/#projects"
+                data-nav="projects"
+                data-text="projects"
+                class="text-base"
+                >projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about"
+                data-nav="about"
+                data-text="about"
+                class="text-base"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:hello@anastasiabigun.com?subject=Project%20Inquiry"
+                data-text="work with me →"
+                class="group text-base"
+              >
+                work with me
+                <span
+                  class="inline-block transition-transform group-hover:translate-x-1"
+                  >→</span
                 >
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  class="text-base font-semibold text-emerald-900"
-                  >about</a
-                >
-              </li>
-            </ul>
-          </div>
+              </a>
+            </li>
+          </ul>
           <!-- MAIN MENU ENDS -->
         </nav>
       </div>
     </header>
+    <!-- Header section ends -->
 
     <main>
       <!-- Hero Section -->
       <div class="hero-section mb-12 text-center">
         <!-- Title of the project -->
-        <h1>Camelot Vet Services</h1>
+        <div
+          class="flex flex-col justify-end py-12 md:py-0 md:pb-12 md:min-h-[30svh]"
+        >
+          <h2
+            class="font-archivo font-normal leading-none text-center text-[clamp(2rem,11vw,10.5rem)]"
+          >
+            Camelot Vet
+          </h2>
+        </div>
         <!-- header image -->
         <picture>
           <source
@@ -114,9 +129,9 @@
           <section class="space-y-8">
             <div class="space-y-4">
               <p class="text-sm font-semibold">
-                Web UX | Client project | 2 weeks | 2026
+                Webside Design | Client project | Apr 2026
               </p>
-              <p class="role text-slate-600">
+              <p class="role">
                 A small veterinary practice was preparing to switch phone
                 providers and needed texting to transfer on the same day as
                 voice. Using my onboarding experience, I led strategy, UX
@@ -134,7 +149,7 @@
 
             <div class="space-y-4">
               <h4>Problem</h4>
-              <blockquote class="bg-red-100 rounded-md p-6 my-6">
+              <blockquote class="bg-red-50 rounded-md p-6 my-6">
                 👉 Patients can't be reached by text until a live compliance
                 site exists.
               </blockquote>
@@ -155,7 +170,7 @@
             </div>
             <h4>Key Decision</h4>
             <div class="space-y-4">
-              <blockquote class="bg-green-100 rounded-md p-6 my-6">
+              <blockquote class="bg-red-50 rounded-md p-6 my-6">
                 👉 Preserve the clinic's existing trust signals.
               </blockquote>
               <p>
@@ -179,7 +194,7 @@
                 </p>
                 <h5>Questions that shaped direction</h5>
                 <ul
-                  class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
+                  class="list-disc pl-6 space-y-1 text-base font-light leading-relaxed"
                 >
                   <li>What are your most important or profitable services?</li>
                   <li>Who are your typical clients?</li>
@@ -189,13 +204,13 @@
                   </li>
                 </ul>
                 <h5>What mattered</h5>
-                <blockquote class="bg-blue-100 rounded-md p-6">
+                <blockquote class="bg-red-50 rounded-md p-6">
                   👉 The clinic’s Google Business profile, with 4.7 stars and
                   more than two hundred reviews, became a key asset to preserve
                   and build on.
                 </blockquote>
                 <ul
-                  class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
+                  class="list-disc pl-6 space-y-1 text-base font-light leading-relaxed"
                 >
                   <li>Surgery emerged as the most important service.</li>
                   <li>
@@ -360,12 +375,12 @@
             </div>
             <div class="space-y-4">
               <h4>Outcome: Deadline met, system enabled</h4>
-              <blockquote class="bg-blue-100 rounded-md p-6">
+              <blockquote class="bg-red-50 rounded-md p-6">
                 👉 Met the April 17 deadline to switch phone providers, enabling
                 the clinic to begin texting patients without interruption.
               </blockquote>
               <ul
-                class="list-disc pl-6 space-y-1 text-base font-light text-slate-600 leading-relaxed"
+                class="list-disc pl-6 space-y-1 text-base font-light leading-relaxed"
               >
                 <li>
                   10DLC Terms &amp; Conditions page in place to enable carrier
@@ -443,60 +458,78 @@
       </nav>
       <!-- PROJECT NAVIGATION ENDS -->
     </main>
+    <!-- Footer section -->
+    <footer class="max-w-7xl mx-auto px-4 mt-32 pb-16">
+      <div class="border-t border-stone-300 pt-12">
+        <!-- Top row: name + nav -->
+        <div
+          class="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center"
+        >
+          <span class="font-archivo uppercase text-2xl text-brand"
+            >Anastasia Bigun</span
+          >
 
+          <nav class="secondary-nav">
+            <ul class="flex items-center gap-10 text-lg text-stone-700">
+              <li>
+                <a href="/#projects" class="hover:text-brand transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="/about" class="hover:text-brand transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/anastasiabigun"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 hover:text-brand transition-colors"
+                >
+                  LinkedIn
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7 17L17 7M9 7h8v8"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Bottom row: copyright, credit, back to top -->
+        <div
+          class="flex flex-col gap-3 md:grid md:grid-cols-3 md:items-center mt-10 text-base text-stone-600"
+        >
+          <span>2026 © Anastasia Bigun. All Rights Reserved.</span>
+          <span class="order-first md:order-none md:text-center"
+            >Designed & built by me · HTML · Tailwind · JavaScript</span
+          >
+          <a
+            href="#"
+            class="mt-6 md:mt-0 md:justify-self-end inline-flex items-center gap-1 font-semibold text-stone-700 hover:text-brand transition-colors"
+          >
+            Back to top
+            <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section ends -->
     <script type="module" src="../js/includes.js"></script>
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/lightbox.js"></script>
   </body>
-  <!-- Footer section -->
-  <footer class="bg-white mt-20">
-    <div class="max-w-7xl mx-auto px-4 py-12 text-center">
-      <nav class="secondary-nav">
-        <ul>
-          <li>
-            <a
-              href="/documents/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >Resume</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/anastasiabigun"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:hello@anastasiabigun.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >Email</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <img
-          src="/src/images/profile/footer-img-two.png"
-          class="w-38 h-38 object-contain mx-auto"
-          loading="lazy"
-        />
-      </div>
-
-      <div>
-        <h5>Designed & built by me · HTML · Tailwind · JavaScript</h5>
-      </div>
-
-      <div class="pt-4">
-        <h5>2026 © Anastasia Bigun. All Rights Reserved.</h5>
-      </div>
-    </div>
-  </footer>
 </html>

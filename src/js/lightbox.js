@@ -44,19 +44,19 @@ function initImageLightbox() {
 
   // Add click handlers to all lightbox trigger images
   document.querySelectorAll(".lightbox-trigger").forEach((trigger) => {
-    trigger.addEventListener("click", () => {
+    const openTrigger = () => {
       const largestSrc = getLargestImageSrc(trigger);
       const img = trigger.querySelector("img");
       openLightbox(largestSrc, img.alt);
-    });
+    };
+
+    trigger.addEventListener("click", openTrigger);
 
     // Make it keyboard accessible
     trigger.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        const largestSrc = getLargestImageSrc(trigger);
-        const img = trigger.querySelector("img");
-        openLightbox(largestSrc, img.alt);
+        openTrigger();
       }
     });
   });

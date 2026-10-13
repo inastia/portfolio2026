@@ -2,6 +2,10 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/corporate-gossip",
+      "destination": "/src/projects/corporate-gossip.html"
+    },
+    {
       "source": "/travel-guide",
       "destination": "/src/projects/travel-guide.html"
     },
@@ -11,11 +15,6 @@
       "destination": "/src/projects/camelot-vet.html"
     },
     { "source": "/chani", "destination": "/src/projects/chani.html" },
-
-    {
-      "source": "/currency-exchange",
-      "destination": "/src/projects/currency-exchange.html"
-    },
 
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },

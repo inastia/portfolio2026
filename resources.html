@@ -35,45 +35,51 @@
         id="site-header"
         class="site-header-inner max-w-7xl mx-auto px-4 md:px-6 pt-6"
       >
-        <nav class="site-nav">
-          <!-- Logo -->
-          <div>
-            <a href="/" class="logo">
-              <img
-                src="/src/images/logo/logo-em.png"
-                alt="Anastasia Bigun — UX/UI Designer"
-                width="60"
-                height="60"
-              />
-            </a>
-          </div>
+        <nav class="site-nav flex justify-center">
           <!-- MAIN MENU -->
-          <div>
-            <!-- Hamburger / X -->
-            <label class="nav-toggle-label">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span class="sr-only">Toggle navigation</span>
-            </label>
+          <!-- Hamburger / X -->
+          <label class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Toggle navigation</span>
+          </label>
 
-            <div class="nav-overlay"></div>
+          <div class="nav-overlay"></div>
 
-            <ul class="nav-menu">
-              <li>
-                <a href="/" class="text-base font-semibold text-emerald-900"
-                  >projects</a
+          <ul class="nav-menu">
+            <li>
+              <a
+                href="/#projects"
+                data-nav="projects"
+                data-text="projects"
+                class="text-base"
+                >projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about"
+                data-nav="about"
+                data-text="about"
+                class="text-base"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:hello@anastasiabigun.com?subject=Project%20Inquiry"
+                data-text="work with me →"
+                class="group text-base"
+              >
+                work with me
+                <span
+                  class="inline-block transition-transform group-hover:translate-x-1"
+                  >→</span
                 >
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  class="text-base font-semibold text-emerald-900"
-                  >about</a
-                >
-              </li>
-            </ul>
-          </div>
+              </a>
+            </li>
+          </ul>
           <!-- MAIN MENU ENDS -->
         </nav>
       </div>
@@ -81,16 +87,25 @@
     <main>
       <div class="max-w-7xl mx-auto px-4 pt-12">
         <section class="max-w-2xl mx-auto">
-          <h2 class="text-4xl font-bold text-slate-800">
-            AI Website Design System Resources
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-stone-700 mb-2"
+          >
+            AI Website
+          </p>
+          <h2
+            class="font-archivo font-normal leading-none text-[clamp(3rem,13vw,10.5rem)]"
+          >
+            Design System Resources
           </h2>
 
-          <div class="mt-4 space-y-4 leading-8 text-slate-700">
-            <p class="text-xl font-normal">
+          <div class="mt-4 space-y-4 leading-8 ">
+            <h3
+              class="font-normal pt-0 text-3xl text-stone-600 md:text-4xl lg:text-5xl leading-tight"
+            >
               Two free templates for auditing an AI-built website, turning
               inconsistent design decisions into a system, and giving that
               system back to AI in a form it can follow.
-            </p>
+            </h3>
 
             <p>
               I created these while consulting on a website built almost
@@ -100,11 +115,11 @@
           </div>
 
           <div class="mt-10">
-            <h3 class="text-2xl font-bold text-slate-800">
+            <h3 class="text-2xl font-bold ">
               Design System Template
             </h3>
 
-            <p class="mt-3 leading-8 text-slate-700">
+            <p class="mt-3 leading-8 ">
               A compact source-of-truth file for documenting your site's section
               names, typography, colors, spacing, and responsive navigation.
             </p>
@@ -112,18 +127,33 @@
             <a
               href="/downloads/ai-website-design-system-template.md"
               download
-              class="download-link mt-5 inline-block text-base font-semibold text-emerald-900"
+              class="download-link mt-5 items-center gap-2 text-base text-emerald-900"
+              style="display: inline-flex; font-weight: 500"
             >
               Download template
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M7 17L17 7M9 7h8v8"
+                />
+              </svg>
             </a>
           </div>
 
           <div class="mt-10">
-            <h3 class="text-2xl font-bold text-slate-800">
+            <h3 class="text-2xl font-bold ">
               Design System Process
             </h3>
 
-            <p class="mt-3 leading-8 text-slate-700">
+            <p class="mt-3 leading-8 ">
               A step-by-step workflow for auditing the existing site, making
               design decisions, completing the Design System Template, and
               preparing the system for handoff.
@@ -132,18 +162,33 @@
             <a
               href="/downloads/ai-website-design-system-process.md"
               download
-              class="download-link mt-5 inline-block text-base font-semibold text-emerald-900"
+              class="download-link mt-5 items-center gap-2 text-base text-emerald-900"
+              style="display: inline-flex; font-weight: 500"
             >
               Download process
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M7 17L17 7M9 7h8v8"
+                />
+              </svg>
             </a>
           </div>
 
           <div class="mt-12">
-            <h3 class="text-2xl font-bold text-slate-800">
+            <h3 class="text-2xl font-bold ">
               How to use these files
             </h3>
 
-            <p class="mt-3 leading-8 text-slate-700">
+            <p class="mt-3 leading-8 ">
               Start with the Process file to audit your site and work through
               the design decisions. Then complete the Design System Template
               with the final values. Attach the completed template at the
@@ -154,56 +199,76 @@
         </section>
       </div>
     </main>
-    <script type="module" src="/src/js/projects.js"></script>
-  </body>
-  <!-- Footer section -->
-  <footer class="bg-white mt-40">
-    <div class="max-w-7xl mx-auto px-4 py-12 text-center">
-      <nav class="secondary-nav mt-10">
-        <ul>
-          <li>
-            <a
-              href="/documents/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >Resume</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/anastasiabigun"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:hello@anastasiabigun.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >Email</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <img
-          src="/src/images/profile/footer-img-two.png"
-          class="w-38 h-38 object-contain mx-auto"
-          loading="lazy"
-        />
-      </div>
-      <div>
-        <h5>Designed & built by me · HTML · Tailwind · JavaScript</h5>
-      </div>
+    <!-- Footer section -->
+    <footer class="max-w-7xl mx-auto px-4 mt-32 pb-16">
+      <div class="border-t border-stone-300 pt-12">
+        <!-- Top row: name + nav -->
+        <div
+          class="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center"
+        >
+          <span class="font-archivo uppercase text-2xl text-brand"
+            >Anastasia Bigun</span
+          >
 
-      <div class="pt-4">
-        <h5>2026 © Anastasia Bigun. All Rights Reserved.</h5>
+          <nav class="secondary-nav">
+            <ul class="flex items-center gap-10 text-lg text-stone-700">
+              <li>
+                <a href="/#projects" class="hover:text-brand transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="/about" class="hover:text-brand transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/anastasiabigun"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 hover:text-brand transition-colors"
+                >
+                  LinkedIn
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7 17L17 7M9 7h8v8"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Bottom row: copyright, credit, back to top -->
+        <div
+          class="flex flex-col gap-3 md:grid md:grid-cols-3 md:items-center mt-10 text-base text-stone-600"
+        >
+          <span>2026 © Anastasia Bigun. All Rights Reserved.</span>
+          <span class="order-first md:order-none md:text-center"
+            >Designed & built by me · HTML · Tailwind · JavaScript</span
+          >
+          <a
+            href="#"
+            class="mt-6 md:mt-0 md:justify-self-end inline-flex items-center gap-1 font-semibold text-stone-700 hover:text-brand transition-colors"
+          >
+            Back to top
+            <span aria-hidden="true">↑</span>
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+    <!-- Footer section ends -->
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>

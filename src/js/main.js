@@ -17,3 +17,19 @@ function initNavigation() {
 
 // initialize once DOM is ready
 document.addEventListener("DOMContentLoaded", initNavigation);
+
+function setActiveNavLink() {
+  const path = window.location.pathname.replace(/\/$/, "");
+  const onHome = path === "" || path === "/index.html";
+
+  let active = null;
+  if (onHome && window.location.hash === "#projects") active = "projects";
+  if (path.startsWith("/about")) active = "about";
+
+  document.querySelectorAll(".nav-menu [data-nav]").forEach((link) => {
+    link.classList.toggle("active", link.dataset.nav === active);
+  });
+}
+
+setActiveNavLink();
+window.addEventListener("hashchange", setActiveNavLink);

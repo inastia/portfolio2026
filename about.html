@@ -3,33 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UX Design Portfolio</title>
-
+    <title>About Page | Design Portfolio</title>
     <!-- Styles -->
     <link rel="stylesheet" href="/src/styles/style.css" />
     <link rel="stylesheet" href="/src/output.css" />
-
     <!-- Favicons -->
-    <link rel="icon" href="/favicons/favicon.ico" />
-
+    <link rel="icon" href="/favicons/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
       href="/favicons/favicon-96x96.png"
     />
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/favicons/apple-touch-icon.png"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/favicons/web-app-manifest-192x192.png"
     />
     <!-- Favicons End -->
   </head>
@@ -41,92 +31,80 @@
         id="site-header"
         class="site-header-inner max-w-7xl mx-auto px-4 md:px-6 pt-6"
       >
-        <nav class="site-nav">
-          <!-- Logo -->
-          <div>
-            <a href="/" class="logo">
-              <img
-                src="/src/images/logo/logo-em.png"
-                alt="Anastasia Bigun — UX/UI Designer"
-                width="60"
-                height="60"
-              />
-            </a>
-          </div>
+        <nav class="site-nav flex justify-center">
           <!-- MAIN MENU -->
-          <div>
-            <!-- Hamburger / X -->
-            <label class="nav-toggle-label">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span class="sr-only">Toggle navigation</span>
-            </label>
+          <!-- Hamburger / X -->
+          <label class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Toggle navigation</span>
+          </label>
 
-            <div class="nav-overlay"></div>
+          <div class="nav-overlay"></div>
 
-            <ul class="nav-menu">
-              <li>
-                <a href="/" class="text-base font-semibold text-emerald-900"
-                  >projects</a
+          <ul class="nav-menu">
+            <li>
+              <a
+                href="/#projects"
+                data-nav="projects"
+                data-text="projects"
+                class="text-base"
+                >projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about"
+                data-nav="about"
+                data-text="about"
+                class="text-base"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:hello@anastasiabigun.com?subject=Project%20Inquiry"
+                data-text="work with me →"
+                class="group text-base"
+              >
+                work with me
+                <span
+                  class="inline-block transition-transform group-hover:translate-x-1"
+                  >→</span
                 >
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  class="text-base font-semibold text-emerald-900"
-                  >about</a
-                >
-              </li>
-            </ul>
-          </div>
+              </a>
+            </li>
+          </ul>
           <!-- MAIN MENU ENDS -->
         </nav>
       </div>
     </header>
+    <!-- Header section ends -->
 
     <!-- Main content section -->
     <main>
       <div class="max-w-7xl mx-auto px-4">
-        <section class="flex flex-col md:flex-row items-center gap-8 px-4 py-4">
-          <!-- Header Image Column -->
-          <div class="md:flex flex-1 justify-end">
-            <picture>
-              <source
-                media="(min-width: 1920px)"
-                srcset="
-                  /src/images/profile/about-me-avatar-large.png  1x,
-                  /src/images/profile/about-me-avatar-xlarge.png 2x
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  /src/images/profile/about-me-avatar-medium.png 1x,
-                  /src/images/profile/about-me-avatar-large.png  2x
-                "
-              />
-              <img
-                src="/src/images/profile/about-me-avatar-small.png"
-                srcset="
-                  /src/images/profile/about-me-avatar-small.png  1x,
-                  /src/images/profile/about-me-avatar-medium.png 2x
-                "
-                alt="About me avatar image"
-                loading="lazy"
-                class="w-full h-auto"
-              />
-            </picture>
-          </div>
-          <!-- Header Image Column Ends -->
+        <section
+          class="flex items-center justify-center md:justify-start px-4 py-12 md:py-0 md:min-h-[50svh]"
+        >
+          <h2
+            class="font-archivo font-normal leading-none text-center md:text-left text-[clamp(2rem,11vw,10.5rem)]"
+          >
+            hello, i'm anastasia
+          </h2>
+        </section>
+
+        <section
+          class="flex flex-col md:flex-row items-center md:items-start gap-8 px-4 py-4"
+        >
           <!-- HEADER TEXT COLUMN-->
           <div
-            class="flex-1 flex flex-col py-8 md:py-0 text-center md:text-left"
+            class="w-full md:flex-[6] flex flex-col py-8 md:py-0 text-center md:text-left"
           >
-            <h2 class="text-4xl text-emerald-900 font-semibold">
-              hello, i'm anastasia
-            </h2>
-            <h3 class="text-xl font-normal">
+            <h3
+              class="font-normal text-stone-600 pt-0 text-3xl md:text-3xl lg:text-4xl leading-tight"
+            >
               I design interfaces and systems that lower cognitive load through
               clarity, consistency, and thoughtful use of existing design
               frameworks.
@@ -140,60 +118,144 @@
             </p>
           </div>
           <!-- HEADER TEXT COLUMN Ends -->
+          <!-- Header Image Column -->
+          <div class="w-full md:flex-[4] md:flex justify-end">
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="/src/images/profile/about-me-large.png 1x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  /src/images/profile/about-me-medium.png 1x,
+                  /src/images/profile/about-me-large.png  2x
+                "
+              />
+              <img
+                src="/src/images/profile/about-me-small.png"
+                srcset="
+                  /src/images/profile/about-me-small.png  1x,
+                  /src/images/profile/about-me-medium.png 2x
+                "
+                alt="About me image"
+                loading="lazy"
+                class="w-full h-auto"
+              />
+            </picture>
+          </div>
+          <!-- Header Image Column Ends -->
         </section>
       </div>
     </main>
+    <!-- WORK WITH ME SECTION -->
+    <section class="max-w-7xl mx-auto px-4 mt-40">
+      <div class="border-t border-stone-300 pt-6">
+        <!-- Label row -->
+        <div
+          class="flex flex-col gap-2 md:flex-row md:justify-between text-sm font-semibold uppercase tracking-[0.2em] text-stone-700"
+        >
+          <span>Work with me</span>
+          <span>Freelance · Ongoing partnerships</span>
+        </div>
+
+        <!-- Headline -->
+        <h3
+          class="font-normal pt-0 mt-12 max-w-4xl text-4xl lg:text-5xl leading-tight text-stone-600"
+        >
+          Have a website that isn’t working the way it should? Let’s untangle it
+          together.
+        </h3>
+
+        <!-- Big CTA -->
+        <a
+          href="mailto:hello@anastasiabigun.com?subject=Project%20Inquiry"
+          class="group flex flex-col items-start gap-[0.3em] md:inline-flex md:flex-row md:items-center mt-12 font-archivo uppercase leading-none text-brand text-[clamp(3rem,8vw,6rem)]"
+        >
+          <span>
+            <span class="block md:inline">Work</span>
+            <span class="whitespace-nowrap">with me</span>
+          </span>
+          <img
+            src="/src/images/profile/work-with-me.svg"
+            alt=""
+            class="w-[0.8em] h-[0.74em] transition-transform group-hover:translate-x-2"
+          />
+        </a>
+      </div>
+    </section>
+    <!-- WORK WITH ME SECTION ENDS -->
+
+    <!-- Footer section -->
+    <footer class="max-w-7xl mx-auto px-4 mt-32 pb-16">
+      <div class="border-t border-stone-300 pt-12">
+        <!-- Top row: name + nav -->
+        <div
+          class="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center"
+        >
+          <span class="font-archivo uppercase text-2xl text-brand"
+            >Anastasia Bigun</span
+          >
+
+          <nav class="secondary-nav">
+            <ul class="flex items-center gap-10 text-lg text-stone-700">
+              <li>
+                <a href="/#projects" class="hover:text-brand transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="/about" class="hover:text-brand transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/anastasiabigun"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 hover:text-brand transition-colors"
+                >
+                  LinkedIn
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7 17L17 7M9 7h8v8"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Bottom row: copyright, credit, back to top -->
+        <div
+          class="flex flex-col gap-3 md:grid md:grid-cols-3 md:items-center mt-10 text-base text-stone-600"
+        >
+          <span>2026 © Anastasia Bigun. All Rights Reserved.</span>
+          <span class="order-first md:order-none md:text-center"
+            >Designed & built by me · HTML · Tailwind · JavaScript</span
+          >
+          <a
+            href="#"
+            class="mt-6 md:mt-0 md:justify-self-end inline-flex items-center gap-1 font-semibold text-stone-700 hover:text-brand transition-colors"
+          >
+            Back to top
+            <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section ends -->
     <script type="module" src="/src/js/main.js"></script>
   </body>
-  <!-- Footer section -->
-  <footer class="bg-white mt-40">
-    <div class="max-w-7xl mx-auto px-4 py-12 text-center">
-      <nav class="secondary-nav mt-10">
-        <ul>
-          <li>
-            <a
-              href="/documents/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >Resume</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/anastasiabigun"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:hello@anastasiabigun.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-base font-semibold text-emerald-900"
-              >Email</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <img
-          src="/src/images/profile/footer-img-two.png"
-          class="w-38 h-38 object-contain mx-auto"
-          loading="lazy"
-        />
-      </div>
-
-      <div>
-        <h5>Designed & built by me · HTML · Tailwind · JavaScript</h5>
-      </div>
-
-      <div class="pt-4">
-        <h5>2026 © Anastasia Bigun. All Rights Reserved.</h5>
-      </div>
-    </div>
-  </footer>
 </html>
